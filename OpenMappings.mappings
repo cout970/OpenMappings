@@ -799,6 +799,7 @@ CLASS none/dr net/minecraft/util/nbt/TagCompound
 	METHOD c getKeys ()Ljava/util/Set;
 	METHOD c getTag (Ljava/lang/String;)Lnone/ef;
 		ARG 0 name
+	METHOD c getTag (Ljava/lang/String;I)Lnone/dx;
 	METHOD d getSize ()I
 	METHOD d getType (Ljava/lang/String;)B
 		ARG 0 name
@@ -910,7 +911,13 @@ CLASS none/kn net/minecraft/util/Identifier
 	METHOD b getDomain ()Ljava/lang/String;
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 0 other
+CLASS none/lb net/minecraft/util/Ticking
+	METHOD E_ tick ()V
 CLASS none/ls net/minecraft/world/WorldServer
+CLASS none/me
+	METHOD E_ tick ()V
+CLASS none/mg
+	METHOD E_ tick ()V
 CLASS none/od
 	METHOD iterator iterator ()Ljava/util/Iterator;
 CLASS none/ok net/minecraft/util/IntegerMap
@@ -919,7 +926,40 @@ CLASS none/ot net/minecraft/util/StringSerializable
 	METHOD m asString ()Ljava/lang/String;
 CLASS none/qb
 	FIELD a LOGGER Lorg/apache/logging/log4j/Logger;
+CLASS none/ql net/minecraft/inventory/Inventory
+	METHOD a getStack (I)Lnone/adz;
+		ARG 0 slot
+	METHOD a putStack (ILnone/adz;)V
+		ARG 0 slot
+		ARG 1 stack
+	METHOD a (Lnone/zs;)Z
+		ARG 0 player
+	METHOD b (ILnone/adz;)Z
+		ARG 1 stack
+	METHOD b (Lnone/zs;)V
+		ARG 0 player
+	METHOD c (Lnone/zs;)V
+		ARG 0 player
+CLASS none/qs
+	METHOD a (Lnone/zr;Lnone/zs;)Lnone/abd;
+		ARG 1 player
+CLASS none/qy net/minecraft/util/Nameable
+	METHOD h_ getName ()Ljava/lang/String;
+	METHOD i_ getNameMessage ()Lnone/ey;
+	METHOD n_ hasName ()Z
+CLASS none/ra
+	METHOD a getStack (I)Lnone/adz;
+	METHOD a putStack (ILnone/adz;)V
 CLASS none/rb net/minecraft/util/snooper/Snooper
+CLASS none/rd net/minecraft/inventory/SidedInventory
+	METHOD a (ILnone/adz;Lnone/ct;)Z
+		ARG 1 stack
+		ARG 2 side
+	METHOD a getSlotsAccesibleFromSide (Lnone/ct;)[I
+		ARG 0 side
+	METHOD b (ILnone/adz;Lnone/ct;)Z
+		ARG 1 stack
+		ARG 2 side
 CLASS none/rw net/minecraft/entity/Entity
 	FIELD p x D
 	FIELD q y D
@@ -932,6 +972,9 @@ CLASS none/yy
 		ARG 0 tag
 CLASS none/za
 	FIELD j LOGGER Lorg/apache/logging/log4j/Logger;
+CLASS none/zr
+	METHOD a getStack (I)Lnone/adz;
+	METHOD a putStack (ILnone/adz;)V
 CLASS none/zs net/minecraft/entity/EntityPlayer
 CLASS none/aap
 	CLASS none/aap$b BoatType
@@ -953,6 +996,15 @@ CLASS none/aap
 	METHOD j getItem ()Lnone/adx;
 CLASS none/aav
 	METHOD D getWorld ()Lnone/aid;
+CLASS none/abl
+	METHOD a getStack (I)Lnone/adz;
+	METHOD a putStack (ILnone/adz;)V
+CLASS none/abw
+	METHOD a getStack (I)Lnone/adz;
+	METHOD a putStack (ILnone/adz;)V
+CLASS none/aca
+	METHOD a getStack (I)Lnone/adz;
+	METHOD a putStack (ILnone/adz;)V
 CLASS none/acf net/minecraft/item/ItemArmor
 	CLASS none/acf$a ArmorType
 		FIELD a LEATHER Lnone/acf$a;
@@ -965,11 +1017,14 @@ CLASS none/acf net/minecraft/item/ItemArmor
 		METHOD c getMaterial ()Lnone/adx;
 		METHOD d getName ()Ljava/lang/String;
 CLASS none/acg net/minecraft/item/ItemArmorStand
+CLASS none/acj
+	METHOD b getCreativeTab ()Lnone/acz;
 CLASS none/acl net/minecraft/item/ItemBlock
 	FIELD a block Lnone/akf;
 	METHOD <init> (Lnone/akf;)V
 		ARG 0 block
 	METHOD a getUnlocalizedName ()Ljava/lang/String;
+	METHOD b getCreativeTab ()Lnone/acz;
 	METHOD c setName (Ljava/lang/String;)Lnone/adx;
 	METHOD d getBlock ()Lnone/akf;
 	METHOD f_ getUnlocalizedName (Lnone/adz;)Ljava/lang/String;
@@ -1025,6 +1080,12 @@ CLASS none/acz net/minecraft/util/CreativeTab
 	METHOD c getUnlocalizedName ()Ljava/lang/String;
 	METHOD e getItem ()Lnone/adx;
 	METHOD g getTexture ()Ljava/lang/String;
+CLASS none/ada net/minecraft/item/ItemTool
+	FIELD d type Lnone/adx$a;
+	FIELD e validBlocks Ljava/util/Set;
+	METHOD <init> (FFLnone/adx$a;Ljava/util/Set;)V
+		ARG 2 type
+		ARG 3 validBlocks
 CLASS none/adc
 	METHOD m asString ()Ljava/lang/String;
 CLASS none/add
@@ -1046,6 +1107,7 @@ CLASS none/adx net/minecraft/item/Item
 		FIELD e GOLD Lnone/adx$a;
 	FIELD a blockToItemMap Ljava/util/Map;
 	FIELD g REGISTRY Lnone/da;
+	FIELD n creativeTab Lnone/acz;
 	FIELD q name Ljava/lang/String;
 	METHOD a getUnlocalizedName ()Ljava/lang/String;
 	METHOD a registerItem (ILjava/lang/String;Lnone/adx;)V
@@ -1056,10 +1118,13 @@ CLASS none/adx net/minecraft/item/Item
 		ARG 0 id
 		ARG 1 name
 		ARG 2 item
+	METHOD a setCreativeTab (Lnone/acz;)Lnone/adx;
 	METHOD a getItem (Lnone/akf;)Lnone/adx;
 	METHOD a registerItem (Lnone/akf;Lnone/adx;)V
 		ARG 0 block
 		ARG 1 item
+	METHOD a isToolEffective (Lnone/ars;)Z
+	METHOD b getCreativeTab ()Lnone/acz;
 	METHOD b registerItem (Lnone/akf;)V
 		ARG 0 block
 	METHOD c setName (Ljava/lang/String;)Lnone/adx;
@@ -1280,13 +1345,29 @@ CLASS none/aed
 CLASS none/aef net/minecraft/item/ItemFilledMap
 CLASS none/aei
 	METHOD f_ getUnlocalizedName (Lnone/adz;)Ljava/lang/String;
+CLASS none/aek
+	METHOD a isToolEffective (Lnone/ars;)Z
 CLASS none/aem net/minecraft/item/ItemPotion
 CLASS none/aeo net/minecraft/item/ItemRecord
 CLASS none/aeu net/minecraft/item/ItemShears
+	METHOD a isToolEffective (Lnone/ars;)Z
+CLASS none/aev
+	METHOD b getCreativeTab ()Lnone/acz;
+CLASS none/aew
+	METHOD a isToolEffective (Lnone/ars;)Z
 CLASS none/aez
 	METHOD f_ getUnlocalizedName (Lnone/adz;)Ljava/lang/String;
 CLASS none/afa net/minecraft/item/ItemSlab
 	METHOD f_ getUnlocalizedName (Lnone/adz;)Ljava/lang/String;
+CLASS none/afg net/minecraft/item/ItemSword
+	FIELD b type Lnone/adx$a;
+	METHOD a (Lnone/adz;Lnone/ars;)F
+		ARG 0 stack
+		ARG 1 state
+	METHOD a (Lnone/adz;Lnone/sf;Lnone/sf;)Z
+		ARG 0 stack
+	METHOD a isToolEffective (Lnone/ars;)Z
+		ARG 0 state
 CLASS none/afh
 	METHOD f_ getUnlocalizedName (Lnone/adz;)Ljava/lang/String;
 CLASS none/afs
@@ -1398,13 +1479,19 @@ CLASS none/aid net/minecraft/world/World
 	FIELD r random Ljava/util/Random;
 	FIELD u eventHandlers Ljava/util/List;
 	FIELD x worldData Lnone/baa;
+	METHOD E isYValid (Lnone/cm;)Z
+		ARG 0 pos
 	METHOD b getBiome (Lnone/cm;)Lnone/aiq;
+		ARG 0 pos
+	METHOD r getBlockEntity (Lnone/cm;)Lnone/aqk;
 		ARG 0 pos
 CLASS none/aif net/minecraft/world/WorldEventHandler
 CLASS none/aih net/minecraft/world/BlockAccessor
 	METHOD b getBiome (Lnone/cm;)Lnone/aiq;
+	METHOD r getBlockEntity (Lnone/cm;)Lnone/aqk;
 CLASS none/aim
 	METHOD b getBiome (Lnone/cm;)Lnone/aiq;
+	METHOD r getBlockEntity (Lnone/cm;)Lnone/aqk;
 CLASS none/aiq net/minecraft/world/biome/Biome
 CLASS none/ajw
 	METHOD a getState (I)Lnone/ars;
@@ -2287,6 +2374,8 @@ CLASS none/aqi net/minecraft/block/entity/BlockEntityBanner
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 	METHOD c save ()Lnone/dr;
 CLASS none/aqj net/minecraft/block/entity/BlockEntityBeacon
+	METHOD E_ tick ()V
+	METHOD a getSlotsAccesibleFromSide (Lnone/ct;)[I
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 	METHOD c save ()Lnone/dr;
@@ -2319,11 +2408,17 @@ CLASS none/aqk net/minecraft/block/entity/BlockEntity
 	METHOD c save ()Lnone/dr;
 	METHOD c save (Lnone/dr;)Lnone/dr;
 		ARG 0 tag
+	METHOD i_ getNameMessage ()Lnone/ey;
 	METHOD t hasWorld ()Z
 CLASS none/aql net/minecraft/block/entity/BlockEntityCauldron
+	METHOD E_ tick ()V
+	METHOD a getSlotsAccesibleFromSide (Lnone/ct;)[I
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 CLASS none/aqm net/minecraft/block/entity/BlockEntityChest
+	METHOD E_ tick ()V
+	METHOD a getStack (I)Lnone/adz;
+	METHOD a putStack (ILnone/adz;)V
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 CLASS none/aqn net/minecraft/block/entity/BlockEntityControl
@@ -2333,30 +2428,78 @@ CLASS none/aqo net/minecraft/block/entity/BlockEntityComparator
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 CLASS none/aqp net/minecraft/block/entity/BlockEntityDLDetector
+	METHOD E_ tick ()V
 CLASS none/aqq net/minecraft/block/entity/BlockEntityTrap
+	METHOD a getStack (I)Lnone/adz;
+	METHOD a putStack (ILnone/adz;)V
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 CLASS none/aqr net/minecraft/block/entity/BlockEntityDropper
 CLASS none/aqs net/minecraft/block/entity/BlockEntityEnchantingTable
+	METHOD E_ tick ()V
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
+	METHOD i_ getNameMessage ()Lnone/ey;
 CLASS none/aqt net/minecraft/block/entity/BlockEntityEnderChest
+	METHOD E_ tick ()V
 CLASS none/aqu net/minecraft/block/entity/BlockEntityFlowerPot
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 	METHOD c save ()Lnone/dr;
 CLASS none/aqv net/minecraft/block/entity/BlockEntityFurnace
+	FIELD a UP_SLOTS [I
+	FIELD f DOWN_SLOTS [I
+	FIELD g SIDE_SLOTS [I
+	FIELD h inventory [Lnone/adz;
+	FIELD i burnTime I
+	FIELD k cookTime I
+	FIELD l cookTimeTotal I
+	FIELD m customName Ljava/lang/String;
+	METHOD E_ tick ()V
+	METHOD a getStack (I)Lnone/adz;
+		ARG 0 slot
+	METHOD a (ILnone/adz;)V
+		ARG 1 stack
+	METHOD a setCustomName (Ljava/lang/String;)V
+		ARG 0 name
+	METHOD a (Lnone/adz;)I
+		ARG 0 stack
+	METHOD a getSlotsAccesibleFromSide (Lnone/ct;)[I
 	METHOD a readFromNBT (Lnone/dr;)V
+		ARG 0 tag
+	METHOD a (Lnone/ql;)Z
+		ARG 0 inv
+	METHOD a (Lnone/zr;Lnone/zs;)Lnone/abd;
+		ARG 1 player
+	METHOD a (Lnone/zs;)Z
+		ARG 0 player
+	METHOD b getBurnTime (Lnone/adz;)I
+		ARG 0 stack
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
+		ARG 0 tag
+	METHOD b (Lnone/zs;)V
+		ARG 0 player
+	METHOD c canBurn (Lnone/adz;)Z
+		ARG 0 stack
+	METHOD c (Lnone/zs;)V
+		ARG 0 player
+	METHOD h_ getName ()Ljava/lang/String;
+	METHOD m isBurning ()Z
+	METHOD n_ hasCustomName ()Z
+	METHOD u_ getInventorySize ()I
+	METHOD w_ getMaxStackSize ()I
 CLASS none/aqw
 	METHOD D getWorld ()Lnone/aid;
 CLASS none/aqx net/minecraft/block/entity/BlockEntityHopper
+	METHOD E_ tick ()V
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 CLASS none/aqy
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
+	METHOD i_ getNameMessage ()Lnone/ey;
 CLASS none/aqz net/minecraft/block/entity/BlockEntitySpawner
+	METHOD E_ tick ()V
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 	METHOD c save ()Lnone/dr;
@@ -2368,6 +2511,7 @@ CLASS none/arc net/minecraft/block/entity/BlockEntitySign
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 	METHOD c save ()Lnone/dr;
 CLASS none/ard net/minecraft/block/entity/BlockEntitySkull
+	METHOD E_ tick ()V
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 	METHOD c save ()Lnone/dr;
@@ -2377,7 +2521,9 @@ CLASS none/are net/minecraft/block/entity/BlockEntityStructure
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 	METHOD c save ()Lnone/dr;
+	METHOD i_ getNameMessage ()Lnone/ey;
 CLASS none/arf net/minecraft/block/entity/BlockEntityEndGateway
+	METHOD E_ tick ()V
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 	METHOD c save ()Lnone/dr;
@@ -2399,6 +2545,7 @@ CLASS none/arl
 	METHOD b createState ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/arm net/minecraft/block/entity/BlockEntityPiston
+	METHOD E_ tick ()V
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 CLASS none/arp
@@ -2530,6 +2677,10 @@ CLASS none/bcx net/minecraft/client/MinecraftClient
 	METHOD G shutdown ()V
 	METHOD I getTime ()J
 	METHOD a start ()V
+CLASS none/bzt
+	METHOD E_ tick ()V
+CLASS none/bzw
+	METHOD E_ tick ()V
 CLASS none/bzx
 	METHOD b createMap ()Ljava/util/Map;
 CLASS net/minecraft/client/main/Main net/minecraft/client/main/Main
