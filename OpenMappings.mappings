@@ -543,10 +543,63 @@ CLASS none/ci net/minecraft/command/CommandUsageException
 	METHOD <init> (Ljava/lang/String;[Ljava/lang/Object;)V
 		ARG 0 args
 CLASS none/cm net/minecraft/util/Position
+	CLASS none/cm$1
+		METHOD iterator iterator ()Ljava/util/Iterator;
 	CLASS none/cm$a
 		METHOD p getX ()I
 		METHOD q getY ()I
 		METHOD r getZ ()I
+	FIELD a ORIGIN Lnone/cm;
+	FIELD b LOGGER Lorg/apache/logging/log4j/Logger;
+	METHOD <init> (DDD)V
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD <init> (III)V
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD <init> (Lnone/di;)V
+		ARG 0 vec
+	METHOD <init> (Lnone/rw;)V
+		ARG 0 entity
+	METHOD a up ()Lnone/cm;
+	METHOD a add (DDD)Lnone/cm;
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD a add (III)Lnone/cm;
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD a offset (Lnone/ct;)Lnone/cm;
+		ARG 0 side
+	METHOD a offset (Lnone/ct;I)Lnone/cm;
+		ARG 0 side
+		ARG 1 amount
+	METHOD a add (Lnone/di;)Lnone/cm;
+		ARG 0 vec
+	METHOD b down ()Lnone/cm;
+	METHOD b up (I)Lnone/cm;
+		ARG 0 amount
+	METHOD b subtract (Lnone/di;)Lnone/cm;
+		ARG 0 vec
+	METHOD c north ()Lnone/cm;
+	METHOD c down (I)Lnone/cm;
+		ARG 0 amount
+	METHOD c (Lnone/di;)Lnone/cm;
+		ARG 0 vec
+	METHOD d south ()Lnone/cm;
+	METHOD d north (I)Lnone/cm;
+		ARG 0 amount
+	METHOD e west ()Lnone/cm;
+	METHOD e south (I)Lnone/cm;
+		ARG 0 amount
+	METHOD f east ()Lnone/cm;
+	METHOD f west (I)Lnone/cm;
+		ARG 0 amount
+	METHOD g east (I)Lnone/cm;
+		ARG 0 amount
 CLASS none/cr net/minecraft/registry/DefaultedMappedRegistry
 	FIELD d defaultKey Ljava/lang/Object;
 	FIELD e defaultValue Ljava/lang/Object;
@@ -603,6 +656,9 @@ CLASS none/ct net/minecraft/util/EnumSide
 		ARG 0 direction
 		ARG 1 axis
 	METHOD c getDirection ()Lnone/ct$b;
+	METHOD g xOffset ()I
+	METHOD h yOffset ()I
+	METHOD i zOffset ()I
 	METHOD m asString ()Ljava/lang/String;
 	METHOD values values ()[Lnone/ct;
 CLASS none/cv net/minecraft/util/Iterable
@@ -859,6 +915,9 @@ CLASS none/qb
 	FIELD a LOGGER Lorg/apache/logging/log4j/Logger;
 CLASS none/rb net/minecraft/util/snooper/Snooper
 CLASS none/rw net/minecraft/entity/Entity
+	FIELD p x D
+	FIELD q y D
+	FIELD r z D
 CLASS none/vx net/minecraft/world/structure/village/VillageList
 	FIELD b world Lnone/aid;
 CLASS none/yy
@@ -1339,18 +1398,23 @@ CLASS none/aih net/minecraft/world/BlockAccessor
 CLASS none/aim
 	METHOD b getBiome (Lnone/cm;)Lnone/aiq;
 CLASS none/aiq net/minecraft/world/biome/Biome
+CLASS none/ajx
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/akb
 	CLASS none/akb$b
 		METHOD m asString ()Ljava/lang/String;
 CLASS none/akd
 	CLASS none/akd$a
 		METHOD m asString ()Ljava/lang/String;
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/akf net/minecraft/block/Block
 	FIELD a identitier Lnone/kn;
 	FIELD h REGISTRY Lnone/cr;
+	METHOD a getAmountDropped (Ljava/util/Random;)I
 	METHOD a getBlock (Lnone/adx;)Lnone/akf;
 		ARG 0 item
 	METHOD a getBlockID (Lnone/akf;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 	METHOD b getBlock (I)Lnone/akf;
 CLASS none/akg net/minecraft/block/Blocks
 	FIELD A SANDSTONE Lnone/akf;
@@ -1575,9 +1639,37 @@ CLASS none/akg net/minecraft/block/Blocks
 	FIELD z DISPENSER Lnone/akf;
 	METHOD a find (Ljava/lang/String;)Lnone/akf;
 		ARG 0 name
+CLASS none/akj
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/akk
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/ako
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/akq
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/aks
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/akt
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/aku
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/akx
+	METHOD a getAmountDropped (Ljava/util/Random;)I
 CLASS none/aky
 	CLASS none/aky$a
 		METHOD m asString ()Ljava/lang/String;
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/ala
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/alb
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/alc
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/alg
 	CLASS none/alg$a
 		METHOD m asString ()Ljava/lang/String;
@@ -1586,6 +1678,7 @@ CLASS none/ali
 		METHOD m asString ()Ljava/lang/String;
 	CLASS none/ali$b
 		METHOD m asString ()Ljava/lang/String;
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/alj net/minecraft/block/BlockDoublePlant
 	CLASS none/alj$a FlowerHalf
 		FIELD a UPPER Lnone/alj$a;
@@ -1605,30 +1698,102 @@ CLASS none/alj net/minecraft/block/BlockDoublePlant
 		METHOD m asString ()Ljava/lang/String;
 	FIELD a TYPE Lnone/asg;
 	FIELD c HALF Lnone/asg;
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/alo
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+CLASS none/alp
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+CLASS none/alq
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/als
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/alv
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/aly
+	METHOD a getAmountDropped (Ljava/util/Random;)I
 CLASS none/alz
 	CLASS none/alz$a
 		METHOD m asString ()Ljava/lang/String;
 CLASS none/ama
 	CLASS none/ama$a
 		METHOD m asString ()Ljava/lang/String;
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/amf
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/amg
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+CLASS none/amh
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/ami
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/amj
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/amk
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/amm net/minecraft/block/BlockSlab
 	CLASS none/amm$a
 		METHOD m asString ()Ljava/lang/String;
+	METHOD a getAmountDropped (Ljava/util/Random;)I
 CLASS none/amu
 	CLASS none/amu$a
 		METHOD m asString ()Ljava/lang/String;
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/amv
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+CLASS none/amy
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/ana
 	CLASS none/ana$a
 		METHOD m asString ()Ljava/lang/String;
+CLASS none/anb
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/anc
 	CLASS none/anc$a
 		METHOD m asString ()Ljava/lang/String;
+CLASS none/ane
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/ang
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/anh
 	CLASS none/anh$a
 		METHOD m asString ()Ljava/lang/String;
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+CLASS none/anj
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/anl
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/anp
 	CLASS none/anp$a
 		METHOD m asString ()Ljava/lang/String;
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/anq
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/ans
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/anv net/minecraft/block/BlockOre
+	METHOD <init> (Lnone/axy;)V
+		ARG 0 color
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+		ARG 0 rand
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/ars;FI)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+		ARG 0 state
+		ARG 1 rand
+		ARG 2 fortune
+CLASS none/anw
+	METHOD a getAmountDropped (Ljava/util/Random;)I
 CLASS none/anx net/minecraft/block/BlockLog
 	CLASS none/anx$a LogType
 		FIELD a OAK Lnone/anx$a;
@@ -1639,50 +1804,98 @@ CLASS none/anx net/minecraft/block/BlockLog
 		FIELD f DARK_OAK Lnone/anx$a;
 		FIELD g VALUES [Lnone/anx$a;
 		METHOD m asString ()Ljava/lang/String;
+CLASS none/any
+	METHOD a getAmountDropped (Ljava/util/Random;)I
 CLASS none/aod
 	CLASS none/aod$a
 		METHOD m asString ()Ljava/lang/String;
 CLASS none/aof
 	CLASS none/aof$c
 		METHOD m asString ()Ljava/lang/String;
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/aog
 	CLASS none/aog$a
 		METHOD m asString ()Ljava/lang/String;
 CLASS none/aoj
 	CLASS none/aoj$a
 		METHOD m asString ()Ljava/lang/String;
+CLASS none/aok
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/aol
 	CLASS none/aol$a
 		METHOD m asString ()Ljava/lang/String;
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/aom
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/aon
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/aoo
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/aoq
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/aot
 	CLASS none/aot$a
 		METHOD m asString ()Ljava/lang/String;
 CLASS none/aou
 	CLASS none/aou$a
 		METHOD m asString ()Ljava/lang/String;
+CLASS none/aow
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/aox
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/aoy
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/apa
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/apb
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/apf
+	METHOD a getAmountDropped (Ljava/util/Random;)I
 CLASS none/aph
 	CLASS none/aph$a
 		METHOD m asString ()Ljava/lang/String;
 	CLASS none/aph$b
 		METHOD m asString ()Ljava/lang/String;
+CLASS none/apk
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/apl
 	CLASS none/apl$a
 		METHOD m asString ()Ljava/lang/String;
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/apm
 	CLASS none/apm$a
 		METHOD m asString ()Ljava/lang/String;
 CLASS none/apo
 	CLASS none/apo$a
 		METHOD m asString ()Ljava/lang/String;
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/app
+	METHOD a getAmountDropped (Ljava/util/Random;)I
 CLASS none/apr
 	CLASS none/apr$a
 		METHOD m asString ()Ljava/lang/String;
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/aps
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/apv
 	CLASS none/apv$a
 		METHOD m asString ()Ljava/lang/String;
+CLASS none/apw
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/apy
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/apz
 	CLASS none/apz$a
 		METHOD m asString ()Ljava/lang/String;
+CLASS none/aqc
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+CLASS none/aqf
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/aqk net/minecraft/block/entity/BlockEntity
 CLASS none/are
 	CLASS none/are$a
@@ -1690,6 +1903,9 @@ CLASS none/are
 CLASS none/ark
 	CLASS none/ark$a
 		METHOD m asString ()Ljava/lang/String;
+	METHOD a getAmountDropped (Ljava/util/Random;)I
+CLASS none/arl
+	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/arp
 	METHOD a (Lnone/asi;)Lnone/ars;
 CLASS none/ars net/minecraft/block/state/IBlockState
@@ -1752,6 +1968,12 @@ CLASS none/asm net/minecraft/world/WorldBorder
 CLASS none/asq net/minecraft/world/chunk/ChunkHandler
 CLASS none/asv net/minecraft/world/chunk/Chunk
 CLASS none/atl net/minecraft/world/Dimension
+CLASS none/axx net/minecraft/block/material/Material
+	FIELD N color Lnone/axy;
+	FIELD e ROCK Lnone/axx;
+	METHOD <init> (Lnone/axy;)V
+		ARG 0 color
+	METHOD r getColor ()Lnone/axy;
 CLASS none/axy net/minecraft/util/MapColor
 	FIELD L color I
 	FIELD M index I
