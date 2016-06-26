@@ -543,6 +543,10 @@ CLASS none/ci net/minecraft/command/CommandUsageException
 	METHOD <init> (Ljava/lang/String;[Ljava/lang/Object;)V
 		ARG 0 args
 CLASS none/cm net/minecraft/util/Position
+	CLASS none/cm$a
+		METHOD p getX ()I
+		METHOD q getY ()I
+		METHOD r getZ ()I
 CLASS none/cr net/minecraft/registry/DefaultedMappedRegistry
 	FIELD d defaultKey Ljava/lang/Object;
 	FIELD e defaultValue Ljava/lang/Object;
@@ -560,15 +564,47 @@ CLASS none/cr net/minecraft/registry/DefaultedMappedRegistry
 CLASS none/cs
 	METHOD c get (Ljava/lang/Object;)Ljava/lang/Object;
 CLASS none/ct net/minecraft/util/EnumSide
-	CLASS none/ct$a
+	CLASS none/ct$a Axis
+		FIELD a X Lnone/ct$a;
+		FIELD b Y Lnone/ct$a;
+		FIELD c Z Lnone/ct$a;
+		FIELD d NAME_VALUE_MAP Ljava/util/Map;
+		FIELD e name Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnone/ct$c;)V
+			ARG 3 name
+		METHOD a getName ()Ljava/lang/String;
+		METHOD a get (Ljava/lang/String;)Lnone/ct$a;
+			ARG 0 name
 		METHOD m asString ()Ljava/lang/String;
+	CLASS none/ct$b Direction
+		FIELD a POSITIVE Lnone/ct$b;
+		FIELD b NEGATIVE Lnone/ct$b;
+		FIELD d name Ljava/lang/String;
+	CLASS none/ct$c
+		METHOD iterator iterator ()Ljava/util/Iterator;
 	FIELD a DOWN Lnone/ct;
 	FIELD b UP Lnone/ct;
 	FIELD c NORTH Lnone/ct;
 	FIELD d SOUTH Lnone/ct;
 	FIELD e WEST Lnone/ct;
 	FIELD f EAST Lnone/ct;
+	FIELD j name Ljava/lang/String;
+	FIELD k axis Lnone/ct$a;
+	FIELD l direction Lnone/ct$b;
+	FIELD n VALUES [Lnone/ct;
+	FIELD o HORIZONTALS [Lnone/ct;
+	FIELD p NAME_VALUE_MAP Ljava/util/Map;
+	METHOD <init> (Ljava/lang/String;IIIILjava/lang/String;Lnone/ct$b;Lnone/ct$a;Lnone/di;)V
+	METHOD a get (Ljava/lang/String;)Lnone/ct;
+		ARG 0 name
+	METHOD a getRandom (Ljava/util/Random;)Lnone/ct;
+		ARG 0 rand
+	METHOD a (Lnone/ct$b;Lnone/ct$a;)Lnone/ct;
+		ARG 0 direction
+		ARG 1 axis
+	METHOD c getDirection ()Lnone/ct$b;
 	METHOD m asString ()Ljava/lang/String;
+	METHOD values values ()[Lnone/ct;
 CLASS none/cv net/minecraft/util/Iterable
 CLASS none/da net/minecraft/registry/BiRegistry
 	FIELD b map Ljava/util/Map;
@@ -608,6 +644,24 @@ CLASS none/dg net/minecraft/registry/Registry
 	METHOD d contains (Ljava/lang/Object;)Z
 		ARG 0 key
 	METHOD iterator iterator ()Ljava/util/Iterator;
+CLASS none/di net/minecraft/util/Vector3i
+	FIELD a x I
+	FIELD b y I
+	FIELD c z I
+	FIELD e ORIGIN Lnone/di;
+	METHOD <init> (DDD)V
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD <init> (III)V
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 0 other
+	METHOD p getX ()I
+	METHOD q getY ()I
+	METHOD r getZ ()I
 CLASS none/dp net/minecraft/util/nbt/TagByteArray
 	METHOD a getType ()B
 	METHOD c getByteArray ()[B
