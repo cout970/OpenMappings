@@ -96,7 +96,7 @@ CLASS none/h net/minecraft/util/Utilities
 	METHOD a runTask (Ljava/util/concurrent/FutureTask;Lorg/apache/logging/log4j/Logger;)Ljava/lang/Object;
 		ARG 0 task
 		ARG 1 logger
-CLASS none/j net/minecraft/command/Command
+CLASS none/j net/minecraft/command/AbstractCommand
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a (Lcom/google/gson/JsonParseException;)Lnone/cf;
 		ARG 0 ex
@@ -105,7 +105,12 @@ CLASS none/j net/minecraft/command/Command
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD a ([Ljava/lang/String;[Ljava/lang/String;)Ljava/util/List;
 	METHOD b getAliases ()Ljava/util/List;
-CLASS none/l net/minecraft/command/ICommand
+CLASS none/k net/minecraft/command/AbstractCommandManager
+	FIELD b commands Ljava/util/Map;
+	FIELD c commandSet Ljava/util/Set;
+	METHOD a getPermissionLevel (Lnone/n;Ljava/lang/String;)I
+	METHOD b getCommands ()Ljava/util/Map;
+CLASS none/l net/minecraft/command/Command
 	METHOD a (Lnet/minecraft/server/MinecraftServer;Lnone/n;)Z
 		ARG 0 server
 		ARG 1 user
@@ -121,7 +126,10 @@ CLASS none/l net/minecraft/command/ICommand
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 		ARG 0 user
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/n net/minecraft/command/ICommandUser
+CLASS none/m net/minecraft/command/CommandManager
+	METHOD a getPermissionLevel (Lnone/n;Ljava/lang/String;)I
+	METHOD b getCommands ()Ljava/util/Map;
+CLASS none/n net/minecraft/command/CommandUser
 CLASS none/o
 	METHOD a (Lnet/minecraft/server/MinecraftServer;Lnone/n;Lnone/o$a;I)V
 		ARG 0 server
@@ -534,6 +542,7 @@ CLASS none/cf net/minecraft/command/CommandSyntaxException
 CLASS none/ci net/minecraft/command/CommandUsageException
 	METHOD <init> (Ljava/lang/String;[Ljava/lang/Object;)V
 		ARG 0 args
+CLASS none/cm net/minecraft/util/Position
 CLASS none/cr net/minecraft/registry/DefaultedMappedRegistry
 	FIELD d defaultKey Ljava/lang/Object;
 	FIELD e defaultValue Ljava/lang/Object;
@@ -758,6 +767,7 @@ CLASS none/ef net/minecraft/util/nbt/Tag
 	METHOD a getType ()B
 	METHOD b_ isEmpty ()Z
 	METHOD c_ getString ()Ljava/lang/String;
+CLASS none/ey net/minecraft/chat/ChatMessage
 CLASS none/kn net/minecraft/util/Identifier
 	FIELD a domain Ljava/lang/String;
 	FIELD b name Ljava/lang/String;
@@ -774,16 +784,24 @@ CLASS none/kn net/minecraft/util/Identifier
 	METHOD b getDomain ()Ljava/lang/String;
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 0 other
+CLASS none/ls net/minecraft/world/WorldServer
 CLASS none/od
 	METHOD iterator iterator ()Ljava/util/Iterator;
+CLASS none/ok net/minecraft/util/IntegerMap
+CLASS none/oq net/minecraft/util/Profiler
 CLASS none/qb
 	FIELD a LOGGER Lorg/apache/logging/log4j/Logger;
+CLASS none/rb net/minecraft/util/snooper/Snooper
+CLASS none/rw net/minecraft/entity/Entity
+CLASS none/vx net/minecraft/world/structure/village/VillageList
+	FIELD b world Lnone/aid;
 CLASS none/yy
 	FIELD bx anger I
 	METHOD a (Lnone/dr;)V
 		ARG 0 tag
 CLASS none/za
 	FIELD j LOGGER Lorg/apache/logging/log4j/Logger;
+CLASS none/zs net/minecraft/entity/EntityPlayer
 CLASS none/aap
 	CLASS none/aap$b BoatType
 		FIELD a OAK Lnone/aap$b;
@@ -1160,6 +1178,24 @@ CLASS none/ahs
 		ARG 0 tag
 	METHOD b (Lnone/dr;)V
 		ARG 0 tag
+CLASS none/aid net/minecraft/world/World
+	FIELD A villages Lnone/vx;
+	FIELD B loot Lnone/bas;
+	FIELD C profiler Lnone/oq;
+	FIELD D scoreboard Lnone/bch;
+	FIELD N border Lnone/asm;
+	FIELD i players Ljava/util/List;
+	FIELD r random Ljava/util/Random;
+	FIELD u eventHandlers Ljava/util/List;
+	FIELD x worldData Lnone/baa;
+	METHOD b getBiome (Lnone/cm;)Lnone/aiq;
+		ARG 0 pos
+CLASS none/aif net/minecraft/world/WorldEventHandler
+CLASS none/aih net/minecraft/world/BlockAccessor
+	METHOD b getBiome (Lnone/cm;)Lnone/aiq;
+CLASS none/aim
+	METHOD b getBiome (Lnone/cm;)Lnone/aiq;
+CLASS none/aiq net/minecraft/world/biome/Biome
 CLASS none/akf net/minecraft/block/Block
 	FIELD a identitier Lnone/kn;
 	FIELD h REGISTRY Lnone/cr;
@@ -1400,6 +1436,7 @@ CLASS none/anx net/minecraft/block/BlockLog
 		FIELD e ACACIA Lnone/anx$a;
 		FIELD f DARK_OAK Lnone/anx$a;
 		FIELD g VALUES [Lnone/anx$a;
+CLASS none/aqk net/minecraft/block/entity/BlockEntity
 CLASS none/arp
 	METHOD a (Lnone/asi;)Lnone/ars;
 CLASS none/ars net/minecraft/block/state/IBlockState
@@ -1428,6 +1465,10 @@ CLASS none/asi net/minecraft/block/state/IProperty
 	METHOD b getValue (Ljava/lang/String;)Lcom/google/common/base/Optional;
 		ARG 0 name
 	METHOD c getValues ()Ljava/util/Collection;
+CLASS none/asm net/minecraft/world/WorldBorder
+CLASS none/asq net/minecraft/world/chunk/ChunkHandler
+CLASS none/asv net/minecraft/world/chunk/Chunk
+CLASS none/atl net/minecraft/world/Dimension
 CLASS none/axy net/minecraft/util/MapColor
 	FIELD L color I
 	FIELD M index I
@@ -1435,7 +1476,12 @@ CLASS none/axy net/minecraft/util/MapColor
 	METHOD <init> (II)V
 		ARG 0 index
 		ARG 1 color
-CLASS none/bcx net/minecraft/Minecraft
+CLASS none/baa net/minecraft/world/WorldData
+CLASS none/bab net/minecraft/world/save/SaveHandler
+CLASS none/bad net/minecraft/world/save/SaveFormat
+CLASS none/bas net/minecraft/world/save/loot/LootManager
+CLASS none/bch net/minecraft/world/scoreboard/Scoreboard
+CLASS none/bcx net/minecraft/client/MinecraftClient
 	FIELD J LOGGER Lorg/apache/logging/log4j/Logger;
 	FIELD K SPLASH_TEXTURE Lnone/kn;
 	METHOD G shutdown ()V
@@ -1449,6 +1495,14 @@ CLASS net/minecraft/client/main/Main net/minecraft/client/main/Main
 	METHOD main main ([Ljava/lang/String;)V
 		ARG 0 args
 CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
+	FIELD a usercacheFile Ljava/io/File;
+	FIELD b commandManager Lnone/m;
+	FIELD c profiler Lnone/oq;
+	FIELD d worlds [Lnone/ls;
+	FIELD e proxy Ljava/net/Proxy;
 	FIELD k LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD l saveFormat Lnone/bad;
+	FIELD m snooper Lnone/rb;
+	FIELD r random Ljava/util/Random;
 CLASS net/minecraft/client/ClientBrandRetriever net/minecraft/client/ClientBrand
 	METHOD getClientModName getBrand ()Ljava/lang/String;
