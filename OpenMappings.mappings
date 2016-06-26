@@ -559,6 +559,16 @@ CLASS none/cr net/minecraft/registry/DefaultedMappedRegistry
 		ARG 0 key
 CLASS none/cs
 	METHOD c get (Ljava/lang/Object;)Ljava/lang/Object;
+CLASS none/ct net/minecraft/util/EnumSide
+	CLASS none/ct$a
+		METHOD m asString ()Ljava/lang/String;
+	FIELD a DOWN Lnone/ct;
+	FIELD b UP Lnone/ct;
+	FIELD c NORTH Lnone/ct;
+	FIELD d SOUTH Lnone/ct;
+	FIELD e WEST Lnone/ct;
+	FIELD f EAST Lnone/ct;
+	METHOD m asString ()Ljava/lang/String;
 CLASS none/cv net/minecraft/util/Iterable
 CLASS none/da net/minecraft/registry/BiRegistry
 	FIELD b map Ljava/util/Map;
@@ -789,6 +799,8 @@ CLASS none/od
 	METHOD iterator iterator ()Ljava/util/Iterator;
 CLASS none/ok net/minecraft/util/IntegerMap
 CLASS none/oq net/minecraft/util/Profiler
+CLASS none/ot net/minecraft/util/StringSerializable
+	METHOD m asString ()Ljava/lang/String;
 CLASS none/qb
 	FIELD a LOGGER Lorg/apache/logging/log4j/Logger;
 CLASS none/rb net/minecraft/util/snooper/Snooper
@@ -836,11 +848,73 @@ CLASS none/acl net/minecraft/item/ItemBlock
 	FIELD a block Lnone/akf;
 	METHOD <init> (Lnone/akf;)V
 		ARG 0 block
+	METHOD a getUnlocalizedName ()Ljava/lang/String;
+	METHOD c setName (Ljava/lang/String;)Lnone/adx;
 	METHOD d getBlock ()Lnone/akf;
+	METHOD f_ getUnlocalizedName (Lnone/adz;)Ljava/lang/String;
 CLASS none/acn net/minecraft/item/ItemBoat
 CLASS none/acq net/minecraft/item/ItemBow
+CLASS none/acw
+	METHOD f_ getUnlocalizedName (Lnone/adz;)Ljava/lang/String;
+CLASS none/acz net/minecraft/util/CreativeTab
+	CLASS none/acz$1
+		METHOD e getItem ()Lnone/adx;
+	CLASS none/acz$2
+		METHOD e getItem ()Lnone/adx;
+	CLASS none/acz$3
+		METHOD e getItem ()Lnone/adx;
+	CLASS none/acz$4
+		METHOD e getItem ()Lnone/adx;
+	CLASS none/acz$5
+		METHOD e getItem ()Lnone/adx;
+	CLASS none/acz$6
+		METHOD e getItem ()Lnone/adx;
+	CLASS none/acz$7
+		METHOD e getItem ()Lnone/adx;
+	CLASS none/acz$8
+		METHOD e getItem ()Lnone/adx;
+	CLASS none/acz$9
+		METHOD e getItem ()Lnone/adx;
+	CLASS none/acz$10
+		METHOD e getItem ()Lnone/adx;
+	CLASS none/acz$11
+		METHOD e getItem ()Lnone/adx;
+	CLASS none/acz$12
+		METHOD e getItem ()Lnone/adx;
+	FIELD a TABS [Lnone/acz;
+	FIELD b BUILDING_BLOCKS Lnone/acz;
+	FIELD c DECORATIONS Lnone/acz;
+	FIELD d REDSTONE Lnone/acz;
+	FIELD e TRANSPORTATION Lnone/acz;
+	FIELD f MISC Lnone/acz;
+	FIELD g SEARCH Lnone/acz;
+	FIELD h FOOD Lnone/acz;
+	FIELD i TOOLS Lnone/acz;
+	FIELD j COMBAT Lnone/acz;
+	FIELD k BREWING Lnone/acz;
+	FIELD l MATERIALS Lnone/acz;
+	FIELD m INVENTORY Lnone/acz;
+	FIELD o name Ljava/lang/String;
+	FIELD p texture Ljava/lang/String;
+	METHOD <init> (ILjava/lang/String;)V
+		ARG 1 name
+	METHOD a setTexture (Ljava/lang/String;)Lnone/acz;
+		ARG 0 texture
+	METHOD b getName ()Ljava/lang/String;
+	METHOD c getUnlocalizedName ()Ljava/lang/String;
+	METHOD e getItem ()Lnone/adx;
+	METHOD g getTexture ()Ljava/lang/String;
+CLASS none/adc
+	METHOD m asString ()Ljava/lang/String;
+CLASS none/add
+	METHOD f_ getUnlocalizedName (Lnone/adz;)Ljava/lang/String;
+CLASS none/ade
+	METHOD f_ getUnlocalizedName (Lnone/adz;)Ljava/lang/String;
 CLASS none/adh net/minecraft/item/ItemEmptyMap
 CLASS none/adi net/minecraft/item/ItemEnchantedBook
+CLASS none/adj net/minecraft/item/ItemEndCrystal
+CLASS none/adq
+	METHOD f_ getUnlocalizedName (Lnone/adz;)Ljava/lang/String;
 CLASS none/adr net/minecraft/item/ItemFishingRod
 CLASS none/adx net/minecraft/item/Item
 	CLASS none/adx$a ToolType
@@ -851,6 +925,8 @@ CLASS none/adx net/minecraft/item/Item
 		FIELD e GOLD Lnone/adx$a;
 	FIELD a blockToItemMap Ljava/util/Map;
 	FIELD g REGISTRY Lnone/da;
+	FIELD q name Ljava/lang/String;
+	METHOD a getUnlocalizedName ()Ljava/lang/String;
 	METHOD a registerItem (ILjava/lang/String;Lnone/adx;)V
 		ARG 0 id
 		ARG 1 name
@@ -865,6 +941,10 @@ CLASS none/adx net/minecraft/item/Item
 		ARG 1 item
 	METHOD b registerItem (Lnone/akf;)V
 		ARG 0 block
+	METHOD c setName (Ljava/lang/String;)Lnone/adx;
+		ARG 0 name
+	METHOD f_ getUnlocalizedName (Lnone/adz;)Ljava/lang/String;
+		ARG 0 stack
 CLASS none/adz net/minecraft/item/ItemStack
 CLASS none/aeb net/minecraft/item/Items
 	FIELD A STICK Lnone/adx;
@@ -1074,11 +1154,20 @@ CLASS none/aeb net/minecraft/item/Items
 	FIELD z DIAMOND_AXE Lnone/adx;
 	METHOD a find (Ljava/lang/String;)Lnone/adx;
 		ARG 0 name
+CLASS none/aed
+	METHOD f_ getUnlocalizedName (Lnone/adz;)Ljava/lang/String;
 CLASS none/aef net/minecraft/item/ItemFilledMap
+CLASS none/aei
+	METHOD f_ getUnlocalizedName (Lnone/adz;)Ljava/lang/String;
 CLASS none/aem net/minecraft/item/ItemPotion
 CLASS none/aeo net/minecraft/item/ItemRecord
 CLASS none/aeu net/minecraft/item/ItemShears
+CLASS none/aez
+	METHOD f_ getUnlocalizedName (Lnone/adz;)Ljava/lang/String;
 CLASS none/afa net/minecraft/item/ItemSlab
+	METHOD f_ getUnlocalizedName (Lnone/adz;)Ljava/lang/String;
+CLASS none/afh
+	METHOD f_ getUnlocalizedName (Lnone/adz;)Ljava/lang/String;
 CLASS none/afs
 	METHOD a getSize ()I
 	METHOD b getResult ()Lnone/adz;
@@ -1196,6 +1285,12 @@ CLASS none/aih net/minecraft/world/BlockAccessor
 CLASS none/aim
 	METHOD b getBiome (Lnone/cm;)Lnone/aiq;
 CLASS none/aiq net/minecraft/world/biome/Biome
+CLASS none/akb
+	CLASS none/akb$b
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/akd
+	CLASS none/akd$a
+		METHOD m asString ()Ljava/lang/String;
 CLASS none/akf net/minecraft/block/Block
 	FIELD a identitier Lnone/kn;
 	FIELD h REGISTRY Lnone/cr;
@@ -1426,7 +1521,60 @@ CLASS none/akg net/minecraft/block/Blocks
 	FIELD z DISPENSER Lnone/akf;
 	METHOD a find (Ljava/lang/String;)Lnone/akf;
 		ARG 0 name
+CLASS none/aky
+	CLASS none/aky$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/alg
+	CLASS none/alg$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/ali
+	CLASS none/ali$a
+		METHOD m asString ()Ljava/lang/String;
+	CLASS none/ali$b
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/alj net/minecraft/block/BlockDoublePlant
+	CLASS none/alj$a FlowerHalf
+		FIELD a UPPER Lnone/alj$a;
+		FIELD b LOWER Lnone/alj$a;
+		METHOD m asString ()Ljava/lang/String;
+	CLASS none/alj$b FlowerType
+		FIELD a SUNFLOWER Lnone/alj$b;
+		FIELD b SYRINGA Lnone/alj$b;
+		FIELD c GRASS Lnone/alj$b;
+		FIELD d FERN Lnone/alj$b;
+		FIELD e ROSE Lnone/alj$b;
+		FIELD f PAEONIA Lnone/alj$b;
+		FIELD g VALUES [Lnone/alj$b;
+		FIELD i name Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V
+			ARG 4 name
+		METHOD m asString ()Ljava/lang/String;
+	FIELD a TYPE Lnone/asg;
+	FIELD c HALF Lnone/asg;
+CLASS none/alz
+	CLASS none/alz$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/ama
+	CLASS none/ama$a
+		METHOD m asString ()Ljava/lang/String;
 CLASS none/amm net/minecraft/block/BlockSlab
+	CLASS none/amm$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/amu
+	CLASS none/amu$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/ana
+	CLASS none/ana$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/anc
+	CLASS none/anc$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/anh
+	CLASS none/anh$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/anp
+	CLASS none/anp$a
+		METHOD m asString ()Ljava/lang/String;
 CLASS none/anx net/minecraft/block/BlockLog
 	CLASS none/anx$a LogType
 		FIELD a OAK Lnone/anx$a;
@@ -1436,7 +1584,58 @@ CLASS none/anx net/minecraft/block/BlockLog
 		FIELD e ACACIA Lnone/anx$a;
 		FIELD f DARK_OAK Lnone/anx$a;
 		FIELD g VALUES [Lnone/anx$a;
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/aod
+	CLASS none/aod$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/aof
+	CLASS none/aof$c
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/aog
+	CLASS none/aog$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/aoj
+	CLASS none/aoj$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/aol
+	CLASS none/aol$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/aot
+	CLASS none/aot$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/aou
+	CLASS none/aou$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/aph
+	CLASS none/aph$a
+		METHOD m asString ()Ljava/lang/String;
+	CLASS none/aph$b
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/apl
+	CLASS none/apl$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/apm
+	CLASS none/apm$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/apo
+	CLASS none/apo$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/apr
+	CLASS none/apr$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/apv
+	CLASS none/apv$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/apz
+	CLASS none/apz$a
+		METHOD m asString ()Ljava/lang/String;
 CLASS none/aqk net/minecraft/block/entity/BlockEntity
+CLASS none/are
+	CLASS none/are$a
+		METHOD m asString ()Ljava/lang/String;
+CLASS none/ark
+	CLASS none/ark$a
+		METHOD m asString ()Ljava/lang/String;
 CLASS none/arp
 	METHOD a (Lnone/asi;)Lnone/ars;
 CLASS none/ars net/minecraft/block/state/IBlockState
@@ -1447,15 +1646,45 @@ CLASS none/art
 	CLASS none/art$a
 		METHOD r getProperties ()Ljava/util/Collection;
 		METHOD t getBlock ()Lnone/akf;
-CLASS none/asd
+CLASS none/asd net/minecraft/block/state/PropertyBase
+	FIELD a clazz Ljava/lang/Class;
+	FIELD b name Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;Ljava/lang/Class;)V
+		ARG 0 name
+		ARG 1 clazz
 	METHOD a getName ()Ljava/lang/String;
 	METHOD b getValueClass ()Ljava/lang/Class;
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 0 other
 CLASS none/ase
 	METHOD b getValue (Ljava/lang/String;)Lcom/google/common/base/Optional;
 	METHOD c getValues ()Ljava/util/Collection;
-CLASS none/asg
+CLASS none/asg net/minecraft/block/state/PropertyEnum
+	FIELD a values Lcom/google/common/collect/ImmutableSet;
+	FIELD b nameValueMap Ljava/util/Map;
+	METHOD <init> (Ljava/lang/String;Ljava/lang/Class;Ljava/util/Collection;)V
+		ARG 1 clazz
+		ARG 2 values
+	METHOD a getName (Ljava/lang/Enum;)Ljava/lang/String;
+		ARG 0 value
+	METHOD a create (Ljava/lang/String;Ljava/lang/Class;)Lnone/asg;
+		ARG 0 name
+		ARG 1 clazz
+	METHOD a create (Ljava/lang/String;Ljava/lang/Class;Lcom/google/common/base/Predicate;)Lnone/asg;
+		ARG 1 clazz
+		ARG 2 predicate
+	METHOD a create (Ljava/lang/String;Ljava/lang/Class;Ljava/util/Collection;)Lnone/asg;
+		ARG 1 clazz
+		ARG 2 values
+	METHOD a create (Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Enum;)Lnone/asg;
+		ARG 0 name
+		ARG 1 clazz
+		ARG 2 values
 	METHOD b getValue (Ljava/lang/String;)Lcom/google/common/base/Optional;
+		ARG 0 name
 	METHOD c getValues ()Ljava/util/Collection;
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 0 other
 CLASS none/ash
 	METHOD b getValue (Ljava/lang/String;)Lcom/google/common/base/Optional;
 	METHOD c getValues ()Ljava/util/Collection;
