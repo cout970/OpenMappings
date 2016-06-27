@@ -1784,7 +1784,7 @@ CLASS none/aid net/minecraft/world/World
 	FIELD B loot Lnone/bas;
 	FIELD C profiler Lnone/oq;
 	FIELD D scoreboard Lnone/bch;
-	FIELD E client Z
+	FIELD E isLocal Z
 	FIELD N border Lnone/asm;
 	FIELD i players Ljava/util/List;
 	FIELD r random Ljava/util/Random;
@@ -3786,9 +3786,225 @@ CLASS none/bch net/minecraft/world/scoreboard/Scoreboard
 CLASS none/bcx net/minecraft/client/MinecraftClient
 	FIELD J LOGGER Lorg/apache/logging/log4j/Logger;
 	FIELD K SPLASH_TEXTURE Lnone/kn;
+	FIELD f world Lnone/bln;
+	FIELD k textRenderer Lnone/bdl;
+	FIELD m currentGUI Lnone/bft;
 	METHOD G shutdown ()V
 	METHOD I getTime ()J
 	METHOD a start ()V
+	METHOD a openGUI (Lnone/bft;)V
+		ARG 0 gui
+CLASS none/bdl net/minecraft/client/util/TextRenderer
+CLASS none/bdn net/minecraft/client/util/GUIHelper
+CLASS none/bdr net/minecraft/client/gui/GUIButton
+	FIELD a TEXTURE Lnone/kn;
+	FIELD f width I
+	FIELD g height I
+	FIELD h x I
+	FIELD i y I
+	FIELD j text Ljava/lang/String;
+	FIELD k id I
+	FIELD l isEnabled Z
+	FIELD m isVisible Z
+	FIELD n isHovered Z
+	METHOD <init> (IIIIILjava/lang/String;)V
+		ARG 0 id
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+		ARG 5 text
+	METHOD <init> (IIILjava/lang/String;)V
+		ARG 0 id
+		ARG 1 x
+		ARG 2 y
+		ARG 3 text
+	METHOD a render (Lnone/bcx;II)V
+		ARG 0 client
+		ARG 1 mouseX
+		ARG 2 mouseY
+CLASS none/bdx net/minecraft/client/gui/GUILabel
+	FIELD a width I
+	FIELD f height I
+	FIELD g x I
+	FIELD h y I
+	FIELD i id I
+	FIELD j isVisible Z
+	FIELD k labels Ljava/util/List;
+	FIELD m isBackgroundVisible Z
+	FIELD n color I
+	FIELD r textRenderer Lnone/bdl;
+	METHOD <init> (Lnone/bdl;IIIIII)V
+		ARG 0 textRenderer
+		ARG 1 id
+		ARG 2 x
+		ARG 3 y
+		ARG 4 width
+		ARG 5 height
+		ARG 6 color
+	METHOD a addText (Ljava/lang/String;)V
+		ARG 0 text
+	METHOD a render (Lnone/bcx;II)V
+		ARG 0 client
+		ARG 1 mouseX
+		ARG 2 mouseY
+	METHOD b renderBackground (Lnone/bcx;II)V
+		ARG 0 client
+		ARG 1 mouseX
+		ARG 2 mouseY
+CLASS none/bdy
+	METHOD a render (Lnone/bcx;II)V
+CLASS none/bec
+	METHOD a render (Lnone/bcx;II)V
+CLASS none/ber
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bev
+	METHOD a render (IIF)V
+CLASS none/bew
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bex
+	METHOD a render (IIF)V
+CLASS none/bez
+	METHOD a render (IIF)V
+CLASS none/bfa
+	METHOD a render (IIF)V
+CLASS none/bfb
+	METHOD a render (IIF)V
+CLASS none/bfc
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bfd
+	METHOD a render (IIF)V
+CLASS none/bfe
+	METHOD a render (IIF)V
+CLASS none/bff
+	METHOD a render (IIF)V
+CLASS none/bfg
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bfh
+	METHOD a render (IIF)V
+CLASS none/bfi
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bfj
+	METHOD a render (IIF)V
+CLASS none/bfl
+	METHOD a render (IIF)V
+CLASS none/bfn
+	METHOD a render (IIF)V
+CLASS none/bfo
+	METHOD a render (IIF)V
+CLASS none/bfp
+	METHOD a render (IIF)V
+CLASS none/bfq
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bfr
+	METHOD a render (IIF)V
+CLASS none/bfs
+	METHOD a render (IIF)V
+CLASS none/bft net/minecraft/client/gui/GUI
+	FIELD a LOGGER Lorg/apache/logging/log4j/Logger;
+	FIELD f URL_PROTOCOLS Ljava/util/Set;
+	FIELD g NEWLINE_SPLITTER Lcom/google/common/base/Splitter;
+	FIELD h currentButton Lnone/bdr;
+	FIELD j client Lnone/bcx;
+	FIELD l width I
+	FIELD m height I
+	FIELD n buttons Ljava/util/List;
+	FIELD o labels Ljava/util/List;
+	FIELD q textRenderer Lnone/bdl;
+	FIELD t currentURI Ljava/net/URI;
+	METHOD a render (IIF)V
+		ARG 0 mouseX
+		ARG 1 mouseY
+		ARG 2 delta
+	METHOD b addButton (Lnone/bdr;)Lnone/bdr;
+		ARG 0 button
+	METHOD e setClipboardText (Ljava/lang/String;)V
+		ARG 0 text
+	METHOD m onGUIClosed ()V
+	METHOD o getClipboardText ()Ljava/lang/String;
+CLASS none/bfu
+	METHOD a render (IIF)V
+CLASS none/bfv
+	METHOD a render (IIF)V
+CLASS none/bfw
+	METHOD a render (IIF)V
+CLASS none/bfx
+	METHOD a render (IIF)V
+CLASS none/bga net/minecraft/client/gui/GUIStartMenu
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bgb
+	METHOD a render (IIF)V
+CLASS none/bgc
+	METHOD a render (IIF)V
+CLASS none/bge
+	METHOD a render (IIF)V
+CLASS none/bgf
+	METHOD a render (IIF)V
+CLASS none/bgj
+	METHOD a render (IIF)V
+CLASS none/bgl
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bgm
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bgn
+	CLASS none/bgn$d
+		METHOD a render (Lnone/bcx;II)V
+CLASS none/bgo
+	CLASS none/bgo$a
+		METHOD a render (Lnone/bcx;II)V
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bgq
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bgu
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bgw
+	METHOD a render (IIF)V
+CLASS none/bgy
+	METHOD a render (IIF)V
+CLASS none/bhb
+	METHOD a render (IIF)V
+CLASS none/bhc
+	METHOD a render (IIF)V
+CLASS none/bhd
+	CLASS none/bhd$a
+		METHOD a render (Lnone/bcx;II)V
+	METHOD a render (IIF)V
+CLASS none/bhe
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bhf
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bhg
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bhj
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bhq
+	METHOD a render (IIF)V
+CLASS none/bic
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bid
+	METHOD a render (IIF)V
+	METHOD m onGUIClosed ()V
+CLASS none/bie
+	METHOD a render (IIF)V
+CLASS none/bob net/minecraft/client/util/OpenGL
+	METHOD c setColor (FFFF)V
 CLASS none/bzt
 	METHOD E_ tick ()V
 CLASS none/bzw
