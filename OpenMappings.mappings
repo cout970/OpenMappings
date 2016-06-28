@@ -83,6 +83,12 @@ CLASS none/c net/minecraft/util/crash/CrashReportElement
 	METHOD a addEntry (Ljava/lang/String;Ljava/lang/Object;)V
 	METHOD a addEntry (Ljava/lang/String;Lnone/d;)V
 CLASS none/d net/minecraft/util/crash/CrashReportEntry
+CLASS none/f net/minecraft/util/crash/MinecraftException
+CLASS none/g net/minecraft/chat/StringFilter
+	METHOD a filter (C)Z
+		ARG 0 character
+	METHOD a filter (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 str
 CLASS none/h net/minecraft/util/Utilities
 	CLASS none/h$a OS
 		FIELD a LINUX Lnone/h$a;
@@ -96,6 +102,10 @@ CLASS none/h net/minecraft/util/Utilities
 	METHOD a runTask (Ljava/util/concurrent/FutureTask;Lorg/apache/logging/log4j/Logger;)Ljava/lang/Object;
 		ARG 0 task
 		ARG 1 logger
+CLASS none/i net/minecraft/command/CommandInformer
+	METHOD a informAdmins (Lnone/n;Lnone/l;ILjava/lang/String;[Ljava/lang/Object;)V
+		ARG 0 user
+		ARG 1 command
 CLASS none/j net/minecraft/command/AbstractCommand
 	CLASS none/j$a Pos
 		FIELD a x D
@@ -108,6 +118,7 @@ CLASS none/j net/minecraft/command/AbstractCommand
 		METHOD a getX ()D
 		METHOD b getY ()D
 		METHOD c getZ ()Z
+	FIELD a commandExecutor Lnone/i;
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a getPos (DLjava/lang/String;Z)Lnone/j$a;
 		ARG 0 x
@@ -159,7 +170,7 @@ CLASS none/j net/minecraft/command/AbstractCommand
 		ARG 0 user
 	METHOD a (Lnone/n;[Ljava/lang/String;IZ)Lnone/cm;
 		ARG 0 user
-	METHOD a (Lnone/rw;)Lnone/dr;
+	METHOD a getTagFromEntity (Lnone/rw;)Lnone/dr;
 		ARG 0 entity
 	METHOD a ([Ljava/lang/String;[Ljava/lang/String;)Ljava/util/List;
 	METHOD b getAliases ()Ljava/util/List;
@@ -180,9 +191,25 @@ CLASS none/j net/minecraft/command/AbstractCommand
 	METHOD d parseBoolean (Ljava/lang/String;)Z
 		ARG 0 s
 CLASS none/k net/minecraft/command/AbstractCommandManager
+	FIELD a LOGGER Lorg/apache/logging/log4j/Logger;
 	FIELD b commands Ljava/util/Map;
 	FIELD c commandSet Ljava/util/Set;
+	METHOD a getServer ()Lnet/minecraft/server/MinecraftServer;
+	METHOD a registerCommand (Lnone/l;)Lnone/l;
+		ARG 0 command
+	METHOD a (Lnone/l;[Ljava/lang/String;)I
+		ARG 0 command
+		ARG 1 args
+	METHOD a getAvaliableCommands (Lnone/n;)Ljava/util/List;
+		ARG 0 user
 	METHOD a getPermissionLevel (Lnone/n;Ljava/lang/String;)I
+	METHOD a getAutoCompletionOptions (Lnone/n;Ljava/lang/String;Lnone/cm;)Ljava/util/List;
+	METHOD a executeCommand (Lnone/n;[Ljava/lang/String;Lnone/l;Ljava/lang/String;)Z
+		ARG 0 user
+		ARG 1 args
+		ARG 2 command
+		ARG 3 commandName
+	METHOD a copy ([Ljava/lang/String;)[Ljava/lang/String;
 	METHOD b getCommands ()Ljava/util/Map;
 CLASS none/l net/minecraft/command/Command
 	METHOD a (Lnet/minecraft/server/MinecraftServer;Lnone/n;)Z
@@ -200,24 +227,49 @@ CLASS none/l net/minecraft/command/Command
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 		ARG 0 user
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/m net/minecraft/command/CommandManager
+CLASS none/m net/minecraft/command/CommandRegistry
+	METHOD a getAvaliableCommands (Lnone/n;)Ljava/util/List;
+		ARG 0 user
 	METHOD a getPermissionLevel (Lnone/n;Ljava/lang/String;)I
+		ARG 0 user
+		ARG 1 commandName
+	METHOD a getAutoCompletionOptions (Lnone/n;Ljava/lang/String;Lnone/cm;)Ljava/util/List;
+		ARG 0 user
+		ARG 1 commandName
+		ARG 2 pos
 	METHOD b getCommands ()Ljava/util/Map;
 CLASS none/n net/minecraft/command/CommandUser
+	METHOD a sendMessage (Lnone/ey;)V
+	METHOD c getPos ()Lnone/cm;
+	METHOD d getLocation ()Lnone/bcb;
+	METHOD e getWorld ()Lnone/aid;
+	METHOD f getEntity ()Lnone/rw;
+	METHOD h getServer ()Lnet/minecraft/server/MinecraftServer;
+	METHOD h_ getName ()Ljava/lang/String;
+	METHOD i_ getChatName ()Lnone/ey;
 CLASS none/o
+	CLASS none/o$1
+		METHOD a sendMessage (Lnone/ey;)V
+		METHOD c getPos ()Lnone/cm;
+		METHOD d getLocation ()Lnone/bcb;
+		METHOD e getWorld ()Lnone/aid;
+		METHOD f getEntity ()Lnone/rw;
+		METHOD h getServer ()Lnet/minecraft/server/MinecraftServer;
+		METHOD h_ getName ()Ljava/lang/String;
+		METHOD i_ getChatName ()Lnone/ey;
 	METHOD a (Lnet/minecraft/server/MinecraftServer;Lnone/n;Lnone/o$a;I)V
 		ARG 0 server
 		ARG 1 user
 CLASS none/p
 	METHOD b (Lnone/n;Ljava/lang/String;)Lnone/ey;
 		ARG 0 user
-CLASS none/q
+CLASS none/q net/minecraft/command/CommandAchievement
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/r net/minecraft/command/CommandBanIP
+CLASS none/r net/minecraft/command/CommandBanIp
 	FIELD a IP_MATCHER Ljava/util/regex/Pattern;
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a (Lnet/minecraft/server/MinecraftServer;Lnone/n;)Z
@@ -237,26 +289,26 @@ CLASS none/r net/minecraft/command/CommandBanIP
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 		ARG 0 user
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/s net/minecraft/command/CommandBase
+CLASS none/s net/minecraft/command/CommandBan
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 		ARG 0 user
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/t
+CLASS none/t net/minecraft/command/CommandBlockdata
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/u
+CLASS none/u net/minecraft/command/CommandClear
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/v
+CLASS none/v net/minecraft/command/CommandClone
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
@@ -275,19 +327,19 @@ CLASS none/w net/minecraft/command/CommandTestForBlocks
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 		ARG 0 user
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/x
+CLASS none/x net/minecraft/command/CommandDeOp
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/y
+CLASS none/y net/minecraft/command/CommandDebug
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/z
+CLASS none/z net/minecraft/command/CommandDefaultGamemode
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 		ARG 0 server
 		ARG 1 user
@@ -297,133 +349,142 @@ CLASS none/z
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 		ARG 0 user
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/aa
+CLASS none/aa net/minecraft/command/CommandEffect
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/ab
+CLASS none/ab net/minecraft/command/CommandMe
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/ac
+CLASS none/ac net/minecraft/command/CommandEnchant
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/ad
+CLASS none/ad net/minecraft/command/CommandEntityData
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/ae
-	METHOD a getMinimumPermissionLevel ()I
-	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
-	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
-	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
-	METHOD c getName ()Ljava/lang/String;
-CLASS none/af
-	METHOD a getMinimumPermissionLevel ()I
-	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
-	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
-	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
-	METHOD c getName ()Ljava/lang/String;
-CLASS none/ag
+CLASS none/ae net/minecraft/command/CommandExecute
+	CLASS none/ae$1
+		METHOD a sendMessage (Lnone/ey;)V
+		METHOD c getPos ()Lnone/cm;
+		METHOD d getLocation ()Lnone/bcb;
+		METHOD e getWorld ()Lnone/aid;
+		METHOD f getEntity ()Lnone/rw;
+		METHOD h getServer ()Lnet/minecraft/server/MinecraftServer;
+		METHOD h_ getName ()Ljava/lang/String;
+		METHOD i_ getChatName ()Lnone/ey;
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/ah
+CLASS none/af net/minecraft/command/CommandXp
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/ai
+CLASS none/ag net/minecraft/command/CommandFill
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/aj
+CLASS none/ah net/minecraft/command/CommandDifficulty
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/ak
+CLASS none/ai net/minecraft/command/CommandGamemode
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/al
-	METHOD a getMinimumPermissionLevel ()I
-	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
-	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
-	METHOD b getAliases ()Ljava/util/List;
-	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
-	METHOD c getName ()Ljava/lang/String;
-CLASS none/am
+CLASS none/aj net/minecraft/command/CommandGamerule
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/an
+CLASS none/ak net/minecraft/command/CommandGive
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/ao
-	METHOD a getMinimumPermissionLevel ()I
-	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
-	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
-	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
-	METHOD c getName ()Ljava/lang/String;
-CLASS none/ap
-	METHOD a getMinimumPermissionLevel ()I
-	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
-	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
-	METHOD c getName ()Ljava/lang/String;
-CLASS none/aq
+CLASS none/al net/minecraft/command/CommandHelp
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getAliases ()Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/ar
+CLASS none/am net/minecraft/command/CommandKick
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/as
+CLASS none/an net/minecraft/command/CommandKill
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/at
+CLASS none/ao net/minecraft/command/CommandBanlist
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/au
+CLASS none/ap net/minecraft/command/CommandList
+	METHOD a getMinimumPermissionLevel ()I
+	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
+	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
+	METHOD c getName ()Ljava/lang/String;
+CLASS none/aq net/minecraft/command/CommandTell
+	METHOD a getMinimumPermissionLevel ()I
+	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
+	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
+	METHOD b getAliases ()Ljava/util/List;
+	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
+	METHOD c getName ()Ljava/lang/String;
+CLASS none/ar net/minecraft/command/CommandOp
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/av
+CLASS none/as net/minecraft/command/CommandPardonIp
+	METHOD a getMinimumPermissionLevel ()I
+	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
+	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
+	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
+	METHOD c getName ()Ljava/lang/String;
+CLASS none/at net/minecraft/command/CommandPardon
+	METHOD a getMinimumPermissionLevel ()I
+	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
+	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
+	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
+	METHOD c getName ()Ljava/lang/String;
+CLASS none/au net/minecraft/command/CommandParticle
+	METHOD a getMinimumPermissionLevel ()I
+	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
+	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
+	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
+	METHOD c getName ()Ljava/lang/String;
+CLASS none/av net/minecraft/command/CommandPlaySound
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
@@ -433,60 +494,71 @@ CLASS none/aw
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/ax
+CLASS none/ax net/minecraft/command/CommandReplaceItem
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/ay
+CLASS none/ay net/minecraft/command/CommandSaveAll
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/az
+CLASS none/az net/minecraft/command/CommandSaveOff
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/ba
+CLASS none/ba net/minecraft/command/CommandSaveOn
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/bb
+CLASS none/bb net/minecraft/command/CommandSay
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/bc
+CLASS none/bc net/minecraft/command/CommandScoreboard
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/be
+CLASS none/bd net/minecraft/command/CommandManagerServer
+	FIELD a server Lnet/minecraft/server/MinecraftServer;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 0 server
+	METHOD a getServer ()Lnet/minecraft/server/MinecraftServer;
+	METHOD a informAdmins (Lnone/n;Lnone/l;ILjava/lang/String;[Ljava/lang/Object;)V
+		ARG 0 user
+		ARG 1 command
+		ARG 2 argLength
+		ARG 3 name
+		ARG 4 args
+CLASS none/be net/minecraft/command/CommandSetBlock
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/bf
+CLASS none/bf net/minecraft/command/CommandSetWorldSpawn
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/bg
+CLASS none/bg net/minecraft/command/CommandSetIdleTimeout
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/bh
+CLASS none/bh net/minecraft/command/CommandSpawnPoint
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/bi
+CLASS none/bi net/minecraft/command/CommandSeed
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
@@ -503,47 +575,47 @@ CLASS none/bj net/minecraft/command/CommandSpreadPlayers
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 		ARG 0 user
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/bk
+CLASS none/bk net/minecraft/command/CommandStats
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/bl
+CLASS none/bl net/minecraft/command/CommandStop
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/bm
+CLASS none/bm net/minecraft/command/CommandStopSound
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/bn
+CLASS none/bn net/minecraft/command/CommandSummon
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/bo
+CLASS none/bo net/minecraft/command/CommandTeleport
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/bp
+CLASS none/bp net/minecraft/command/CommandTellraw
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/br
+CLASS none/br net/minecraft/command/CommandTestForBlock
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/bs
+CLASS none/bs net/minecraft/command/CommandTestFor
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
@@ -566,42 +638,42 @@ CLASS none/bt net/minecraft/command/CommandTime
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 		ARG 0 user
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/bu
+CLASS none/bu net/minecraft/command/CommandTitle
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/bv
+CLASS none/bv net/minecraft/command/CommandToggledownfall
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/bw
-	METHOD a getMinimumPermissionLevel ()I
-	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
-	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
-	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
-	METHOD c getName ()Ljava/lang/String;
-CLASS none/bx
+CLASS none/bw net/minecraft/command/CommandTp
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/by
+CLASS none/bx net/minecraft/command/CommandTrigger
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/bz
+CLASS none/by net/minecraft/command/CommandWeather
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
 	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
 	METHOD c getName ()Ljava/lang/String;
-CLASS none/ca
+CLASS none/bz net/minecraft/command/CommandWhitelist
+	METHOD a getMinimumPermissionLevel ()I
+	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
+	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
+	METHOD b getHelp (Lnone/n;)Ljava/lang/String;
+	METHOD c getName ()Ljava/lang/String;
+CLASS none/ca net/minecraft/command/CommandWorldBorder
 	METHOD a getMinimumPermissionLevel ()I
 	METHOD a execute (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V
 	METHOD a getTabCompletions (Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;
@@ -610,6 +682,7 @@ CLASS none/ca
 CLASS none/cc net/minecraft/command/CommandException
 	METHOD <init> (Ljava/lang/String;[Ljava/lang/Object;)V
 		ARG 0 message
+CLASS none/ce net/minecraft/command/InvalidCommandArgumentException
 CLASS none/cf net/minecraft/command/CommandSyntaxException
 	METHOD <init> (Ljava/lang/String;[Ljava/lang/Object;)V
 		ARG 0 message
@@ -620,6 +693,7 @@ CLASS none/cm net/minecraft/util/Position
 	CLASS none/cm$1
 		METHOD iterator iterator ()Ljava/util/Iterator;
 	CLASS none/cm$a MutablePosition
+		METHOD d cross (Lnone/di;)Lnone/di;
 		METHOD p getX ()I
 		METHOD q getY ()I
 		METHOD r getZ ()I
@@ -672,6 +746,7 @@ CLASS none/cm net/minecraft/util/Position
 	METHOD d south ()Lnone/cm;
 	METHOD d north (I)Lnone/cm;
 		ARG 0 amount
+	METHOD d cross (Lnone/di;)Lnone/di;
 	METHOD e west ()Lnone/cm;
 	METHOD e south (I)Lnone/cm;
 		ARG 0 amount
@@ -712,7 +787,9 @@ CLASS none/ct net/minecraft/util/EnumSide
 	CLASS none/ct$b Direction
 		FIELD a POSITIVE Lnone/ct$b;
 		FIELD b NEGATIVE Lnone/ct$b;
+		FIELD c value I
 		FIELD d name Ljava/lang/String;
+		METHOD a getValue ()I
 	CLASS none/ct$c Plane
 		FIELD a HORIZONTAL Lnone/ct$c;
 		FIELD b VERTICAL Lnone/ct$c;
@@ -728,25 +805,51 @@ CLASS none/ct net/minecraft/util/EnumSide
 	FIELD d SOUTH Lnone/ct;
 	FIELD e WEST Lnone/ct;
 	FIELD f EAST Lnone/ct;
+	FIELD g index I
+	FIELD h opposite I
+	FIELD i horizontalIndex I
 	FIELD j name Ljava/lang/String;
 	FIELD k axis Lnone/ct$a;
 	FIELD l direction Lnone/ct$b;
+	FIELD m vector Lnone/di;
 	FIELD n VALUES [Lnone/ct;
 	FIELD o HORIZONTALS [Lnone/ct;
 	FIELD p NAME_VALUE_MAP Ljava/util/Map;
 	METHOD <init> (Ljava/lang/String;IIIILjava/lang/String;Lnone/ct$b;Lnone/ct$a;Lnone/di;)V
+		ARG 3 name1
+		ARG 4 direction
+		ARG 5 axis1
+		ARG 6 name
+		ARG 7 dir
+		ARG 8 axis
+	METHOD a getIndex ()I
+	METHOD a getHorizontalSideFromAngle (D)Lnone/ct;
+	METHOD a getSide (I)Lnone/ct;
 	METHOD a get (Ljava/lang/String;)Lnone/ct;
 		ARG 0 name
 	METHOD a getRandom (Ljava/util/Random;)Lnone/ct;
 		ARG 0 rand
-	METHOD a (Lnone/ct$b;Lnone/ct$a;)Lnone/ct;
+	METHOD a rotateCW (Lnone/ct$a;)Lnone/ct;
+		ARG 0 axis
+	METHOD a fromAxisAndDirection (Lnone/ct$b;Lnone/ct$a;)Lnone/ct;
 		ARG 0 direction
 		ARG 1 axis
+	METHOD b getOppositeIndex ()I
+	METHOD b getHorizontalSide (I)Lnone/ct;
 	METHOD c getDirection ()Lnone/ct$b;
+	METHOD d getOpposite ()Lnone/ct;
+	METHOD e rotateY ()Lnone/ct;
+	METHOD f rotateCCW ()Lnone/ct;
 	METHOD g xOffset ()I
 	METHOD h yOffset ()I
 	METHOD i zOffset ()I
+	METHOD j getName ()Ljava/lang/String;
+	METHOD k getAxis ()Lnone/ct$a;
+	METHOD l getPitch ()F
 	METHOD m asString ()Ljava/lang/String;
+	METHOD n toVector3i ()Lnone/di;
+	METHOD o rotateX ()Lnone/ct;
+	METHOD q rotateZ ()Lnone/ct;
 	METHOD values values ()[Lnone/ct;
 CLASS none/cv net/minecraft/util/Iterable
 CLASS none/da net/minecraft/registry/BiRegistry
@@ -800,7 +903,23 @@ CLASS none/di net/minecraft/util/Vector3i
 		ARG 0 x
 		ARG 1 y
 		ARG 2 z
+	METHOD d cross (Lnone/di;)Lnone/di;
+		ARG 0 other
 	METHOD equals (Ljava/lang/Object;)Z
+		ARG 0 other
+	METHOD f distanceToSquared (DDD)D
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD g distanceToCenterSquared (DDD)D
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD h distanceTo (III)D
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD n distanceToSquared (Lnone/di;)D
 		ARG 0 other
 	METHOD p getX ()I
 	METHOD q getY ()I
@@ -981,6 +1100,9 @@ CLASS none/ef net/minecraft/util/nbt/Tag
 	METHOD a getType ()B
 	METHOD b_ isEmpty ()Z
 	METHOD c_ getString ()Ljava/lang/String;
+CLASS none/ew
+	FIELD a siblings Ljava/util/List;
+	METHOD b getStyle ()Lnone/fd;
 CLASS none/ey net/minecraft/chat/ChatMessage
 	CLASS none/ey$a Serializer
 		FIELD a gson Lcom/google/gson/Gson;
@@ -995,6 +1117,10 @@ CLASS none/ey net/minecraft/chat/ChatMessage
 		METHOD a (Lnone/fd;Lcom/google/gson/JsonObject;Lcom/google/gson/JsonSerializationContext;)V
 			ARG 1 obj
 			ARG 2 context
+	METHOD b getStyle ()Lnone/fd;
+CLASS none/ff net/minecraft/chat/TranslatableComponent
+	FIELD d key Ljava/lang/String;
+	FIELD e args [Ljava/lang/Object;
 CLASS none/kn net/minecraft/util/Identifier
 	FIELD a domain Ljava/lang/String;
 	FIELD b name Ljava/lang/String;
@@ -1024,10 +1150,21 @@ CLASS none/lu net/minecraft/entity/player/EntityPlayerServer
 		ARG 2 profile
 	METHOD a readFromNBT (Lnone/dr;)V
 		ARG 0 tag
+	METHOD a sendMessage (Lnone/ey;)V
+	METHOD c getPos ()Lnone/cm;
 CLASS none/me
 	METHOD E_ tick ()V
 CLASS none/mg
 	METHOD E_ tick ()V
+CLASS none/nb
+	METHOD a sendMessage (Lnone/ey;)V
+	METHOD c getPos ()Lnone/cm;
+	METHOD d getLocation ()Lnone/bcb;
+	METHOD e getWorld ()Lnone/aid;
+	METHOD f getEntity ()Lnone/rw;
+	METHOD h getServer ()Lnet/minecraft/server/MinecraftServer;
+	METHOD h_ getName ()Ljava/lang/String;
+	METHOD i_ getChatName ()Lnone/ey;
 CLASS none/od
 	METHOD iterator iterator ()Ljava/util/Iterator;
 CLASS none/ok net/minecraft/util/IntegerMap
@@ -1087,6 +1224,14 @@ CLASS none/rw net/minecraft/entity/Entity
 	FIELD q y D
 	FIELD r z D
 	METHOD a readFromNBT (Lnone/dr;)V
+	METHOD a sendMessage (Lnone/ey;)V
+	METHOD c getPos ()Lnone/cm;
+	METHOD d getLocation ()Lnone/bcb;
+	METHOD e getWorld ()Lnone/aid;
+	METHOD f getEntity ()Lnone/rw;
+	METHOD h getServer ()Lnet/minecraft/server/MinecraftServer;
+	METHOD h_ getName ()Ljava/lang/String;
+	METHOD i_ getChatName ()Lnone/ey;
 CLASS none/sc
 	METHOD a readFromNBT (Lnone/dr;)V
 CLASS none/sf
@@ -1106,6 +1251,7 @@ CLASS none/wd
 	METHOD a readFromNBT (Lnone/dr;)V
 CLASS none/wh
 	METHOD a readFromNBT (Lnone/dr;)V
+	METHOD h_ getName ()Ljava/lang/String;
 CLASS none/wi
 	METHOD a readFromNBT (Lnone/dr;)V
 CLASS none/wj
@@ -1120,6 +1266,7 @@ CLASS none/wq
 	METHOD a readFromNBT (Lnone/dr;)V
 CLASS none/wr
 	METHOD a readFromNBT (Lnone/dr;)V
+	METHOD h_ getName ()Ljava/lang/String;
 CLASS none/wz
 	METHOD a readFromNBT (Lnone/dr;)V
 CLASS none/xa
@@ -1146,6 +1293,7 @@ CLASS none/yj
 	METHOD a readFromNBT (Lnone/dr;)V
 CLASS none/yk
 	METHOD a readFromNBT (Lnone/dr;)V
+	METHOD h_ getName ()Ljava/lang/String;
 CLASS none/yl
 	METHOD a readFromNBT (Lnone/dr;)V
 CLASS none/yp
@@ -1172,8 +1320,10 @@ CLASS none/zf
 	METHOD a readFromNBT (Lnone/dr;)V
 CLASS none/zi
 	METHOD a readFromNBT (Lnone/dr;)V
+	METHOD h_ getName ()Ljava/lang/String;
 CLASS none/zn
 	METHOD a readFromNBT (Lnone/dr;)V
+	METHOD i_ getChatName ()Lnone/ey;
 CLASS none/zr net/minecraft/entity/player/InventoryPlayer
 	FIELD d selectedSlot I
 	FIELD e player Lnone/zs;
@@ -1193,6 +1343,8 @@ CLASS none/zs net/minecraft/entity/player/EntityPlayer
 	FIELD h xpSeed I
 	METHOD a readFromNBT (Lnone/dr;)V
 		ARG 0 tag
+	METHOD h_ getName ()Ljava/lang/String;
+	METHOD i_ getChatName ()Lnone/ey;
 CLASS none/zv
 	METHOD a readFromNBT (Lnone/dr;)V
 CLASS none/zx
@@ -1235,6 +1387,12 @@ CLASS none/aap
 CLASS none/aaq
 	METHOD a readFromNBT (Lnone/dr;)V
 CLASS none/aas
+	CLASS none/aas$1
+		METHOD c getPos ()Lnone/cm;
+		METHOD d getLocation ()Lnone/bcb;
+		METHOD e getWorld ()Lnone/aid;
+		METHOD f getEntity ()Lnone/rw;
+		METHOD h getServer ()Lnet/minecraft/server/MinecraftServer;
 	METHOD a readFromNBT (Lnone/dr;)V
 CLASS none/aat
 	METHOD a readFromNBT (Lnone/dr;)V
@@ -1324,6 +1482,7 @@ CLASS none/acz net/minecraft/util/CreativeTab
 		METHOD e getItem ()Lnone/adx;
 	CLASS none/acz$5
 		METHOD e getItem ()Lnone/adx;
+		METHOD f getItemMetadata ()I
 	CLASS none/acz$6
 		METHOD e getItem ()Lnone/adx;
 	CLASS none/acz$7
@@ -1351,16 +1510,23 @@ CLASS none/acz net/minecraft/util/CreativeTab
 	FIELD k BREWING Lnone/acz;
 	FIELD l MATERIALS Lnone/acz;
 	FIELD m INVENTORY Lnone/acz;
+	FIELD n index I
 	FIELD o name Ljava/lang/String;
 	FIELD p texture Ljava/lang/String;
+	FIELD t cacheItemStack Lnone/adz;
 	METHOD <init> (ILjava/lang/String;)V
+		ARG 0 index
 		ARG 1 name
+	METHOD a getIndex ()I
 	METHOD a setTexture (Ljava/lang/String;)Lnone/acz;
 		ARG 0 texture
 	METHOD b getName ()Ljava/lang/String;
 	METHOD c getUnlocalizedName ()Ljava/lang/String;
+	METHOD d getItemStack ()Lnone/adz;
 	METHOD e getItem ()Lnone/adx;
+	METHOD f getItemMetadata ()I
 	METHOD g getTexture ()Ljava/lang/String;
+	METHOD l getSlot ()I
 CLASS none/ada net/minecraft/item/ItemTool
 	FIELD d type Lnone/adx$a;
 	FIELD e validBlocks Ljava/util/Set;
@@ -1779,8 +1945,11 @@ CLASS none/ahs
 	FIELD f customName Ljava/lang/String;
 	METHOD a writeToNBT (Lnone/dr;)Lnone/dr;
 		ARG 0 tag
+	METHOD a sendMessage (Lnone/ey;)V
 	METHOD b (Lnone/dr;)V
 		ARG 0 tag
+	METHOD h_ getName ()Ljava/lang/String;
+	METHOD i_ getChatName ()Lnone/ey;
 CLASS none/aid net/minecraft/world/World
 	FIELD A villages Lnone/vx;
 	FIELD B loot Lnone/bas;
@@ -3387,6 +3556,12 @@ CLASS none/aqm net/minecraft/block/entity/BlockEntityChest
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 CLASS none/aqn net/minecraft/block/entity/BlockEntityControl
+	CLASS none/aqn$1
+		METHOD c getPos ()Lnone/cm;
+		METHOD d getLocation ()Lnone/bcb;
+		METHOD e getWorld ()Lnone/aid;
+		METHOD f getEntity ()Lnone/rw;
+		METHOD h getServer ()Lnet/minecraft/server/MinecraftServer;
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 CLASS none/aqo net/minecraft/block/entity/BlockEntityComparator
@@ -3472,6 +3647,24 @@ CLASS none/ara net/minecraft/block/entity/BlockEntityMusicPlayer
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 CLASS none/arc net/minecraft/block/entity/BlockEntitySign
+	CLASS none/arc$1
+		METHOD a sendMessage (Lnone/ey;)V
+		METHOD c getPos ()Lnone/cm;
+		METHOD d getLocation ()Lnone/bcb;
+		METHOD e getWorld ()Lnone/aid;
+		METHOD f getEntity ()Lnone/rw;
+		METHOD h getServer ()Lnet/minecraft/server/MinecraftServer;
+		METHOD h_ getName ()Ljava/lang/String;
+		METHOD i_ getChatName ()Lnone/ey;
+	CLASS none/arc$2
+		METHOD a sendMessage (Lnone/ey;)V
+		METHOD c getPos ()Lnone/cm;
+		METHOD d getLocation ()Lnone/bcb;
+		METHOD e getWorld ()Lnone/aid;
+		METHOD f getEntity ()Lnone/rw;
+		METHOD h getServer ()Lnet/minecraft/server/MinecraftServer;
+		METHOD h_ getName ()Ljava/lang/String;
+		METHOD i_ getChatName ()Lnone/ey;
 	METHOD a readFromNBT (Lnone/dr;)V
 	METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 	METHOD c save ()Lnone/dr;
@@ -3779,11 +3972,44 @@ CLASS none/bby net/minecraft/util/BoundingBox
 		ARG 3 maxX
 		ARG 4 maxY
 		ARG 5 maxZ
+	METHOD <init> (Lnone/bcb;Lnone/bcb;)V
+		ARG 0 start
+		ARG 1 end
 	METHOD <init> (Lnone/cm;)V
 		ARG 0 pos
 	METHOD <init> (Lnone/cm;Lnone/cm;)V
 		ARG 0 minPos
 		ARG 1 maxPos
+	METHOD a extend (DDD)Lnone/bby;
+	METHOD a collide (DDDDDD)Z
+		ARG 0 minX
+		ARG 1 minY
+		ARG 2 minZ
+		ARG 3 maxX
+		ARG 4 maxY
+		ARG 5 maxZ
+	METHOD a join (Lnone/bby;)Lnone/bby;
+		ARG 0 other
+	METHOD a isInside (Lnone/bcb;)Z
+		ARG 0 point
+	METHOD a collide (Lnone/bcb;Lnone/bcb;)Z
+	METHOD a translate (Lnone/cm;)Lnone/bby;
+		ARG 0 pos
+	METHOD b expand (DDD)Lnone/bby;
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD b collide (Lnone/bby;)Z
+		ARG 0 other
+	METHOD c translate (DDD)Lnone/bby;
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD e withMaxY (D)Lnone/bby;
+		ARG 0 maxY
+	METHOD g expand (D)Lnone/bby;
+		ARG 0 amount
+	METHOD h contract (D)Lnone/bby;
 CLASS none/bcb net/minecraft/util/Vector3d
 	FIELD a ORIGIN Lnone/bcb;
 	FIELD b x D
@@ -4065,14 +4291,22 @@ CLASS none/bid
 	METHOD m onGUIClosed ()V
 CLASS none/bie
 	METHOD a render (IIF)V
+CLASS none/bnn
+	METHOD a sendMessage (Lnone/ey;)V
+	METHOD c getPos ()Lnone/cm;
+CLASS none/bno
+	METHOD a sendMessage (Lnone/ey;)V
+	METHOD c getPos ()Lnone/cm;
 CLASS none/bob net/minecraft/client/util/OpenGL
 	METHOD c setColor (FFFF)V
+CLASS none/bzm net/minecraft/command/CommandManagerInternalServer
 CLASS none/bzt
 	METHOD E_ tick ()V
 CLASS none/bzw
 	METHOD E_ tick ()V
 CLASS none/bzx
 	METHOD b createMap ()Ljava/util/Map;
+CLASS none/cab net/minecraft/util/Matrix4
 CLASS net/minecraft/client/main/Main net/minecraft/client/main/Main
 	CLASS net/minecraft/client/main/Main$1
 		METHOD getPasswordAuthentication getPasswordAuthentication ()Ljava/net/PasswordAuthentication;
@@ -4088,5 +4322,13 @@ CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
 	FIELD l saveFormat Lnone/bad;
 	FIELD m snooper Lnone/rb;
 	FIELD r random Ljava/util/Random;
+	METHOD a sendMessage (Lnone/ey;)V
+	METHOD c getPos ()Lnone/cm;
+	METHOD d getLocation ()Lnone/bcb;
+	METHOD e getWorld ()Lnone/aid;
+	METHOD f getEntity ()Lnone/rw;
+	METHOD h getServer ()Lnet/minecraft/server/MinecraftServer;
+	METHOD h_ getName ()Ljava/lang/String;
+	METHOD i_ getChatName ()Lnone/ey;
 CLASS net/minecraft/client/ClientBrandRetriever net/minecraft/client/ClientBrand
 	METHOD getClientModName getBrand ()Ljava/lang/String;
