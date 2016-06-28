@@ -1031,6 +1031,8 @@ CLASS none/mg
 CLASS none/od
 	METHOD iterator iterator ()Ljava/util/Iterator;
 CLASS none/ok net/minecraft/util/IntegerMap
+CLASS none/op net/minecraft/util/MathUtil
+	METHOD a sqrt (D)F
 CLASS none/oq net/minecraft/util/Profiler
 CLASS none/ot net/minecraft/util/StringSerializable
 	METHOD m asString ()Ljava/lang/String;
@@ -3782,6 +3784,66 @@ CLASS none/bby net/minecraft/util/BoundingBox
 	METHOD <init> (Lnone/cm;Lnone/cm;)V
 		ARG 0 minPos
 		ARG 1 maxPos
+CLASS none/bcb net/minecraft/util/Vector3d
+	FIELD a ORIGIN Lnone/bcb;
+	FIELD b x D
+	FIELD c y D
+	FIELD d z D
+	METHOD <init> (DDD)V
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD <init> (Lnone/di;)V
+		ARG 0 other
+	METHOD a norm ()Lnone/bcb;
+	METHOD a mul (D)Lnone/bcb;
+		ARG 0 other
+	METHOD a sub (DDD)Lnone/bcb;
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD a rotatePitch (F)Lnone/bcb;
+		ARG 0 pitch
+	METHOD a fromRotation (FF)Lnone/bcb;
+		ARG 0 pitch
+		ARG 1 yaw
+	METHOD a directionTo (Lnone/bcb;)Lnone/bcb;
+		ARG 0 other
+	METHOD a interpolateX (Lnone/bcb;D)Lnone/bcb;
+		ARG 0 other
+		ARG 1 x
+	METHOD b length ()D
+	METHOD b add (DDD)Lnone/bcb;
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD b rotateYaw (F)Lnone/bcb;
+		ARG 0 yaw
+	METHOD b dot (Lnone/bcb;)D
+		ARG 0 other
+	METHOD b interpolateY (Lnone/bcb;D)Lnone/bcb;
+		ARG 0 other
+		ARG 1 y
+	METHOD c lengthSquared ()D
+	METHOD c distanceToSquared (DDD)D
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD c cross (Lnone/bcb;)Lnone/bcb;
+		ARG 0 other
+	METHOD c interpolateZ (Lnone/bcb;D)Lnone/bcb;
+		ARG 0 other
+		ARG 1 z
+	METHOD d sub (Lnone/bcb;)Lnone/bcb;
+		ARG 0 other
+	METHOD e add (Lnone/bcb;)Lnone/bcb;
+		ARG 0 other
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 0 other
+	METHOD f distanceTo (Lnone/bcb;)D
+		ARG 0 other
+	METHOD g distanceToSquared (Lnone/bcb;)D
+		ARG 0 other
 CLASS none/bch net/minecraft/world/scoreboard/Scoreboard
 CLASS none/bcx net/minecraft/client/MinecraftClient
 	FIELD J LOGGER Lorg/apache/logging/log4j/Logger;
