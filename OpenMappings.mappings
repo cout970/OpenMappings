@@ -1151,6 +1151,7 @@ CLASS none/lu net/minecraft/entity/player/EntityPlayerServer
 	METHOD a readFromNBT (Lnone/dr;)V
 		ARG 0 tag
 	METHOD a sendMessage (Lnone/ey;)V
+	METHOD a interact (Lnone/qs;)V
 	METHOD c getPos ()Lnone/cm;
 CLASS none/me
 	METHOD E_ tick ()V
@@ -1192,8 +1193,9 @@ CLASS none/ql net/minecraft/inventory/Inventory
 CLASS none/qr net/minecraft/util/EnumHand
 	FIELD a MAIN Lnone/qr;
 	FIELD b OFF Lnone/qr;
-CLASS none/qs
+CLASS none/qs net/minecraft/util/Interaction
 	METHOD a (Lnone/zr;Lnone/zs;)Lnone/abd;
+		ARG 0 inventory
 		ARG 1 player
 CLASS none/qy net/minecraft/util/Nameable
 	METHOD h_ getName ()Ljava/lang/String;
@@ -1341,8 +1343,21 @@ CLASS none/zs net/minecraft/entity/player/EntityPlayer
 	FIELD bt inventory Lnone/zr;
 	FIELD d sleepTimer I
 	FIELD h xpSeed I
+	METHOD a (Lnone/adz;Lnone/qr;)V
+		ARG 0 stack
+		ARG 1 hand
 	METHOD a readFromNBT (Lnone/dr;)V
 		ARG 0 tag
+	METHOD a interact (Lnone/qs;)V
+		ARG 0 interaction
+	METHOD a (Lnone/rw;Lnone/adz;Lnone/qr;)Lnone/qt;
+		ARG 0 entity
+		ARG 1 stack
+		ARG 2 hand
+	METHOD a (Lnone/wr;Lnone/ql;)V
+		ARG 1 inv
+	METHOD f (Lnone/rw;)V
+		ARG 0 entity
 	METHOD h_ getName ()Ljava/lang/String;
 	METHOD i_ getChatName ()Lnone/ey;
 CLASS none/zv
@@ -1543,10 +1558,59 @@ CLASS none/ade
 CLASS none/adh net/minecraft/item/ItemEmptyMap
 CLASS none/adi net/minecraft/item/ItemEnchantedBook
 CLASS none/adj net/minecraft/item/ItemEndCrystal
-CLASS none/adq
+CLASS none/adq net/minecraft/item/ItemFish
+	CLASS none/adq$a Type
+		FIELD a COD Lnone/adq$a;
+		FIELD b SALMON Lnone/adq$a;
+		FIELD c CLOWNFISH Lnone/adq$a;
+		FIELD d PUFFERFISH Lnone/adq$a;
+		FIELD e VALUES Ljava/util/Map;
+		FIELD f meta I
+		FIELD g name Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;IILjava/lang/String;IF)V
+		METHOD <init> (Ljava/lang/String;IILjava/lang/String;IFIF)V
+		METHOD a getMeta ()I
+		METHOD a getType (I)Lnone/adq$a;
+			ARG 0 meta
+		METHOD a getType (Lnone/adz;)Lnone/adq$a;
+			ARG 0 stack
+		METHOD b getName ()Ljava/lang/String;
+		METHOD values values ()[Lnone/adq$a;
 	METHOD a addSubItems (Lnone/adx;Lnone/acz;Ljava/util/List;)V
+		ARG 0 item
+		ARG 1 tab
+		ARG 2 list
+	METHOD a (Lnone/adz;Lnone/aid;Lnone/zs;)V
+		ARG 0 stack
+		ARG 1 world
+		ARG 2 player
 	METHOD f_ getUnlocalizedName (Lnone/adz;)Ljava/lang/String;
+	METHOD h (Lnone/adz;)I
+		ARG 0 stack
+	METHOD i (Lnone/adz;)F
+		ARG 0 stack
 CLASS none/adr net/minecraft/item/ItemFishingRod
+CLASS none/adt net/minecraft/item/ItemFood
+	METHOD a (Lnone/adz;Lnone/aid;Lnone/sf;)Lnone/adz;
+		ARG 0 stack
+		ARG 1 world
+	METHOD a (Lnone/adz;Lnone/aid;Lnone/zs;)V
+		ARG 0 stack
+		ARG 1 world
+		ARG 2 player
+	METHOD a (Lnone/adz;Lnone/aid;Lnone/zs;Lnone/qr;)Lnone/qu;
+		ARG 0 stack
+		ARG 1 world
+		ARG 2 player
+		ARG 3 hand
+	METHOD e (Lnone/adz;)I
+		ARG 0 stack
+	METHOD f (Lnone/adz;)Lnone/afj;
+		ARG 0 stack
+	METHOD h (Lnone/adz;)I
+		ARG 0 stack
+	METHOD i (Lnone/adz;)F
+		ARG 0 stack
 CLASS none/adu
 	METHOD a addSubItems (Lnone/adx;Lnone/acz;Ljava/util/List;)V
 CLASS none/adx net/minecraft/item/Item
@@ -2013,6 +2077,7 @@ CLASS none/ajv net/minecraft/block/BlockAir
 CLASS none/ajw
 	METHOD a getState (I)Lnone/ars;
 	METHOD a addSubItems (Lnone/adx;Lnone/acz;Ljava/util/List;)V
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/ajx
@@ -2056,6 +2121,7 @@ CLASS none/akb
 		METHOD m asString ()Ljava/lang/String;
 CLASS none/akc
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 CLASS none/akd net/minecraft/block/BlockBed
 	CLASS none/akd$a BedPart
 		FIELD a HEAD Lnone/akd$a;
@@ -2066,6 +2132,7 @@ CLASS none/akd net/minecraft/block/BlockBed
 	FIELD b OCCUPIED Lnone/ase;
 	FIELD c BOX Lnone/bby;
 	METHOD a getState (I)Lnone/ars;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
@@ -2117,6 +2184,7 @@ CLASS none/akf net/minecraft/block/Block
 		ARG 1 pos
 		ARG 2 state
 		ARG 3 player
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD a (Lnone/aid;Lnone/cm;Lnone/rw;F)V
 		ARG 0 world
 		ARG 1 pos
@@ -2413,6 +2481,7 @@ CLASS none/akj
 CLASS none/akk
 	METHOD a getState (I)Lnone/ars;
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
@@ -2460,6 +2529,7 @@ CLASS none/akl
 		ARG 0 state
 CLASS none/akm
 	METHOD a getState (I)Lnone/ars;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD b randomTick (Lnone/aid;Lnone/cm;Lnone/ars;Ljava/util/Random;)V
 	METHOD e getMeta (Lnone/ars;)I
@@ -2503,17 +2573,20 @@ CLASS none/akn net/minecraft/block/BlockCrop
 CLASS none/ako
 	METHOD a getState (I)Lnone/ars;
 	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/akq
 	METHOD a getState (I)Lnone/ars;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/akr
 	METHOD a getState (I)Lnone/ars;
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/aks
@@ -2532,6 +2605,7 @@ CLASS none/aku
 	METHOD a getAmountDropped (Ljava/util/Random;)I
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/akv
+	FIELD a AGE Lnone/ash;
 	METHOD a getState (I)Lnone/ars;
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD b randomTick (Lnone/aid;Lnone/cm;Lnone/ars;Ljava/util/Random;)V
@@ -2546,6 +2620,7 @@ CLASS none/akx
 	METHOD a getState (I)Lnone/ars;
 	METHOD a getAmountDropped (Ljava/util/Random;)I
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD b randomTick (Lnone/aid;Lnone/cm;Lnone/ars;Ljava/util/Random;)V
 	METHOD e getMeta (Lnone/ars;)I
@@ -2554,10 +2629,32 @@ CLASS none/aky
 		METHOD m asString ()Ljava/lang/String;
 	METHOD a getState (I)Lnone/ars;
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD b randomTick (Lnone/aid;Lnone/cm;Lnone/ars;Ljava/util/Random;)V
 	METHOD e getMeta (Lnone/ars;)I
+CLASS none/akz net/minecraft/block/BlockCrafting
+	CLASS none/akz$a Interaction
+		FIELD a world Lnone/aid;
+		FIELD b pos Lnone/cm;
+		METHOD <init> (Lnone/aid;Lnone/cm;)V
+			ARG 0 world
+			ARG 1 pos
+		METHOD a (Lnone/zr;Lnone/zs;)Lnone/abd;
+			ARG 0 inventory
+			ARG 1 player
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 player
+		ARG 4 hand
+		ARG 5 stack
+		ARG 6 side
+		ARG 7 hitX
+		ARG 8 hitY
+		ARG 9 hitZ
 CLASS none/ala
 	METHOD a getState (I)Lnone/ars;
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
@@ -2570,6 +2667,7 @@ CLASS none/alb net/minecraft/block/BlockDaylightDetector
 	METHOD a getState (I)Lnone/ars;
 	METHOD a addSubItems (Lnone/adx;Lnone/acz;Ljava/util/List;)V
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
@@ -2641,7 +2739,7 @@ CLASS none/alh net/minecraft/block/BlockDispenser
 		ARG 1 pos
 		ARG 2 state
 		ARG 4 stack
-	METHOD a (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 		ARG 0 world
 		ARG 1 pos
 		ARG 2 state
@@ -2702,6 +2800,7 @@ CLASS none/ali
 	CLASS none/ali$b
 		METHOD m asString ()Ljava/lang/String;
 	METHOD a getState (I)Lnone/ars;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
@@ -2731,6 +2830,7 @@ CLASS none/alj net/minecraft/block/BlockDoublePlant
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/alk
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD b randomTick (Lnone/aid;Lnone/cm;Lnone/ars;Ljava/util/Random;)V
 CLASS none/all
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
@@ -2738,6 +2838,7 @@ CLASS none/alm
 	METHOD b randomTick (Lnone/aid;Lnone/cm;Lnone/ars;Ljava/util/Random;)V
 CLASS none/aln
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 CLASS none/alo
 	METHOD a getAmountDropped (Ljava/util/Random;)I
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
@@ -2746,22 +2847,107 @@ CLASS none/alp
 	METHOD a getAmountDropped (Ljava/util/Random;)I
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
 	METHOD r getColor (Lnone/ars;)Lnone/axy;
-CLASS none/alq
+CLASS none/alq net/minecraft/block/BlockEndPotalFrame
+	FIELD a FACING Lnone/asf;
+	FIELD b EYE Lnone/ase;
 	METHOD a getState (I)Lnone/ars;
+		ARG 0 meta
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/ct;FFFILnone/sf;)Lnone/ars;
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 side
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+		ARG 0 state
+		ARG 1 rand
+		ARG 2 fortune
+	METHOD a (Lnone/ars;Lnone/aid;Lnone/cm;Lnone/bby;Ljava/util/List;Lnone/rw;)V
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 box
+		ARG 4 list
+		ARG 5 entity
+	METHOD a (Lnone/ars;Lnone/aih;Lnone/cm;)Lnone/bby;
+		ARG 0 state
+		ARG 1 accessor
+		ARG 2 pos
+	METHOD a (Lnone/ars;Lnone/anf;)Lnone/ars;
+		ARG 0 state
+	METHOD a (Lnone/ars;Lnone/aos;)Lnone/ars;
+		ARG 0 state
 	METHOD b createStateContainer ()Lnone/art;
+	METHOD b (Lnone/ars;)Z
+		ARG 0 state
+	METHOD c (Lnone/ars;)Z
+		ARG 0 state
+	METHOD d (Lnone/ars;Lnone/aid;Lnone/cm;)I
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
 	METHOD e getMeta (Lnone/ars;)I
+		ARG 0 state
+	METHOD v (Lnone/ars;)Z
+		ARG 0 state
 CLASS none/alr
 	METHOD a getState (I)Lnone/ars;
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/als
+	FIELD a FACING Lnone/asf;
+	FIELD b BOX Lnone/bby;
 	METHOD a getState (I)Lnone/ars;
+		ARG 0 meta
 	METHOD a getAmountDropped (Ljava/util/Random;)I
+		ARG 0 rand
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
+		ARG 0 world
+		ARG 1 meta
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/sf;Lnone/adz;)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+		ARG 4 stack
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 player
+		ARG 4 hand
+		ARG 5 stack
+		ARG 6 side
+		ARG 7 hitX
+		ARG 8 hitY
+		ARG 9 hitZ
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/ct;FFFILnone/sf;)Lnone/ars;
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 side
+	METHOD a (Lnone/ars;)Lnone/aop;
+		ARG 0 state
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+		ARG 0 state
+		ARG 1 rand
+		ARG 2 fortune
+	METHOD a (Lnone/ars;Lnone/aid;Lnone/cm;Ljava/util/Random;)V
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 rand
+	METHOD a (Lnone/ars;Lnone/aih;Lnone/cm;)Lnone/bby;
+		ARG 0 state
+		ARG 1 accessor
+		ARG 2 pos
+	METHOD a (Lnone/ars;Lnone/anf;)Lnone/ars;
+		ARG 0 state
+	METHOD a (Lnone/ars;Lnone/aos;)Lnone/ars;
+		ARG 0 state
 	METHOD b createStateContainer ()Lnone/art;
+	METHOD b (Lnone/ars;)Z
+		ARG 0 state
+	METHOD c (Lnone/ars;)Z
+		ARG 0 state
 	METHOD e getMeta (Lnone/ars;)I
+		ARG 0 state
 CLASS none/alt net/minecraft/block/entity/BlockEntityProvider
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
 		ARG 0 world
@@ -2800,17 +2986,62 @@ CLASS none/alu net/minecraft/block/BlockFalling
 		ARG 0 state
 	METHOD x (Lnone/ars;)I
 		ARG 0 state
-CLASS none/alv
+CLASS none/alv net/minecraft/block/BlockFarmland
+	FIELD a MOISTURE Lnone/ash;
+	FIELD b BOX Lnone/bby;
 	METHOD a getState (I)Lnone/ars;
+		ARG 0 meta
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/ars;)Lnone/adz;
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/rw;F)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 entity
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+		ARG 0 state
+		ARG 1 rand
+		ARG 2 fortune
+	METHOD a (Lnone/ars;Lnone/aid;Lnone/cm;Lnone/akf;)V
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 block
+	METHOD a (Lnone/ars;Lnone/aih;Lnone/cm;)Lnone/bby;
+		ARG 0 state
+		ARG 1 accessor
+		ARG 2 pos
+	METHOD a (Lnone/ars;Lnone/aih;Lnone/cm;Lnone/ct;)Z
+		ARG 0 state
+		ARG 1 accessor
+		ARG 2 pos
+		ARG 3 side
 	METHOD b createStateContainer ()Lnone/art;
+	METHOD b (Lnone/aid;Lnone/cm;)Z
+		ARG 0 world
+		ARG 1 pos
 	METHOD b randomTick (Lnone/aid;Lnone/cm;Lnone/ars;Ljava/util/Random;)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 rand
+	METHOD b (Lnone/ars;)Z
+		ARG 0 state
+	METHOD c (Lnone/aid;Lnone/cm;)Z
+		ARG 0 world
+		ARG 1 pos
+	METHOD c (Lnone/ars;)Z
+		ARG 0 state
 	METHOD e getMeta (Lnone/ars;)I
+		ARG 0 state
 CLASS none/alw
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/alx
 	METHOD a getState (I)Lnone/ars;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/aly
@@ -2831,6 +3062,7 @@ CLASS none/ama
 	CLASS none/ama$a
 		METHOD m asString ()Ljava/lang/String;
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
@@ -2842,6 +3074,7 @@ CLASS none/amb
 CLASS none/amf
 	METHOD a getState (I)Lnone/ars;
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
@@ -2907,6 +3140,7 @@ CLASS none/amq
 CLASS none/ams
 	METHOD a getState (I)Lnone/ars;
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/amt net/minecraft/block/BlockFacing
@@ -2919,12 +3153,35 @@ CLASS none/amt net/minecraft/block/BlockFacing
 CLASS none/amu
 	CLASS none/amu$a
 		METHOD m asString ()Ljava/lang/String;
+	METHOD <init> (Lnone/axx;Lnone/axy;Lnone/akf;)V
+		ARG 0 material
+		ARG 1 color
+		ARG 2 block
 	METHOD a getState (I)Lnone/ars;
+		ARG 0 meta
 	METHOD a getAmountDropped (Ljava/util/Random;)I
+		ARG 0 rand
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/ars;)Lnone/adz;
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/ct;FFFILnone/sf;)Lnone/ars;
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 side
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+		ARG 0 state
+		ARG 1 rand
+		ARG 2 fortune
+	METHOD a (Lnone/ars;Lnone/anf;)Lnone/ars;
+		ARG 0 state
+	METHOD a (Lnone/ars;Lnone/aos;)Lnone/ars;
+		ARG 0 state
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
+		ARG 0 state
 	METHOD r getColor (Lnone/ars;)Lnone/axy;
+		ARG 0 state
 CLASS none/amv
 	METHOD a getAmountDropped (Ljava/util/Random;)I
 	METHOD b randomTick (Lnone/aid;Lnone/cm;Lnone/ars;Ljava/util/Random;)V
@@ -2934,6 +3191,7 @@ CLASS none/amw
 		METHOD b writeToNBT (Lnone/dr;)Lnone/dr;
 	METHOD a getState (I)Lnone/ars;
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/amx
@@ -2948,6 +3206,7 @@ CLASS none/ana
 	CLASS none/ana$a
 		METHOD m asString ()Ljava/lang/String;
 	METHOD a getState (I)Lnone/ars;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/anb
@@ -3027,7 +3286,7 @@ CLASS none/anr net/minecraft/block/BlockNoteBlock
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
 		ARG 0 world
 		ARG 1 meta
-	METHOD a (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 		ARG 0 world
 		ARG 1 pos
 		ARG 2 state
@@ -3161,6 +3420,7 @@ CLASS none/aoj
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/aok
 	METHOD a getAmountDropped (Ljava/util/Random;)I
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 	METHOD b randomTick (Lnone/aid;Lnone/cm;Lnone/ars;Ljava/util/Random;)V
 CLASS none/aol
@@ -3184,6 +3444,7 @@ CLASS none/aoo
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/aoq
 	METHOD a getState (I)Lnone/ars;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
@@ -3306,6 +3567,7 @@ CLASS none/aow
 	METHOD r getColor (Lnone/ars;)Lnone/axy;
 CLASS none/aox
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 CLASS none/aoy
 	METHOD a getState (I)Lnone/ars;
@@ -3342,16 +3604,144 @@ CLASS none/apg
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
 	METHOD r getColor (Lnone/ars;)Lnone/axy;
-CLASS none/aph
-	CLASS none/aph$a
+CLASS none/aph net/minecraft/block/BlockStairs
+	CLASS none/aph$a Half
+		FIELD a TOP Lnone/aph$a;
+		FIELD b BOTTOM Lnone/aph$a;
+		FIELD c name Ljava/lang/String;
 		METHOD m asString ()Ljava/lang/String;
-	CLASS none/aph$b
+	CLASS none/aph$b Shape
+		FIELD a STRAIGHT Lnone/aph$b;
+		FIELD b INNER_LEFT Lnone/aph$b;
+		FIELD c INNER_RIGHT Lnone/aph$b;
+		FIELD d OUTER_LEFT Lnone/aph$b;
+		FIELD e OUTER_RIGHT Lnone/aph$b;
+		FIELD f name Ljava/lang/String;
 		METHOD m asString ()Ljava/lang/String;
+	FIELD a FACING Lnone/asf;
+	FIELD b HALF Lnone/asg;
+	FIELD c SHAPE Lnone/asg;
+	METHOD <init> (Lnone/ars;)V
+		ARG 0 state
 	METHOD a getState (I)Lnone/ars;
+		ARG 0 meta
+	METHOD a (Lnone/aid;)I
+		ARG 0 world
+	METHOD a (Lnone/aid;Lnone/cm;)Z
+		ARG 0 world
+		ARG 1 pos
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/ahy;)V
+		ARG 0 world
+		ARG 1 pos
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 player
+		ARG 4 hand
+		ARG 5 stack
+		ARG 6 side
+		ARG 7 hitX
+		ARG 8 hitY
+		ARG 9 hitZ
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/ct;FFFILnone/sf;)Lnone/ars;
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 side
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/rw;)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 entity
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/rw;Lnone/bcb;)Lnone/bcb;
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 entity
+		ARG 3 vec
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/zs;)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 player
+	METHOD a (Lnone/ars;Lnone/aid;Lnone/cm;Ljava/util/Random;)V
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 rand
+	METHOD a (Lnone/ars;Lnone/aid;Lnone/cm;Lnone/bby;Ljava/util/List;Lnone/rw;)V
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 box
+		ARG 4 list
+		ARG 5 entity
+	METHOD a (Lnone/ars;Lnone/aid;Lnone/cm;Lnone/bcb;Lnone/bcb;)Lnone/bbz;
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
+	METHOD a (Lnone/ars;Lnone/anf;)Lnone/ars;
+		ARG 0 state
+	METHOD a (Lnone/ars;Lnone/aos;)Lnone/ars;
+		ARG 0 state
+	METHOD a (Lnone/ars;Z)Z
+		ARG 0 state
+	METHOD a (Lnone/rw;)F
+		ARG 0 entity
 	METHOD b createStateContainer ()Lnone/art;
+	METHOD b (Lnone/aid;Lnone/cm;Lnone/ars;)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
 	METHOD b randomTick (Lnone/aid;Lnone/cm;Lnone/ars;Ljava/util/Random;)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 rand
+	METHOD b (Lnone/ars;)Z
+		ARG 0 state
+	METHOD b (Lnone/ars;Lnone/aih;Lnone/cm;)Lnone/ars;
+		ARG 0 state
+		ARG 1 accessor
+		ARG 2 pos
+	METHOD c (Lnone/aid;Lnone/cm;Lnone/ars;)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+	METHOD c (Lnone/ars;)Z
+		ARG 0 state
+	METHOD c (Lnone/ars;Lnone/aid;Lnone/cm;)Lnone/bby;
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
+	METHOD c (Lnone/ars;Lnone/aih;Lnone/cm;)I
+		ARG 0 state
+		ARG 1 accessor
+		ARG 2 pos
+	METHOD d (Lnone/aid;Lnone/cm;Lnone/ars;)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+	METHOD d getShape (Lnone/ars;Lnone/aih;Lnone/cm;)Lnone/aph$b;
+		ARG 0 state
+		ARG 1 accessor
+		ARG 2 pos
+	METHOD d (Lnone/ars;Lnone/aih;Lnone/cm;Lnone/ct;)Z
+		ARG 0 state
+		ARG 1 accessor
+		ARG 2 pos
+		ARG 3 side
 	METHOD e getMeta (Lnone/ars;)I
+		ARG 0 state
+	METHOD i (Lnone/ars;)Z
+		ARG 0 state
+	METHOD k (Lnone/ars;)Z
+		ARG 0 state
 	METHOD r getColor (Lnone/ars;)Lnone/axy;
+		ARG 0 state
+	METHOD x (Lnone/ars;)Ljava/util/List;
+		ARG 0 state
+	METHOD y (Lnone/ars;)Lnone/bby;
+		ARG 0 state
+	METHOD z (Lnone/ars;)Lnone/bby;
+		ARG 0 state
 CLASS none/api
 	METHOD a getState (I)Lnone/ars;
 	METHOD b createStateContainer ()Lnone/art;
@@ -3425,6 +3815,7 @@ CLASS none/app
 	METHOD a getState (I)Lnone/ars;
 	METHOD a getAmountDropped (Ljava/util/Random;)I
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/apr
@@ -3441,6 +3832,7 @@ CLASS none/aps
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/apt
 	METHOD a getState (I)Lnone/ars;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/apu
@@ -3451,6 +3843,7 @@ CLASS none/apv
 	CLASS none/apv$a
 		METHOD m asString ()Ljava/lang/String;
 	METHOD a getState (I)Lnone/ars;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
 CLASS none/apw
@@ -3700,6 +4093,7 @@ CLASS none/ark
 CLASS none/arl
 	METHOD a getState (I)Lnone/ars;
 	METHOD a createBlockEntity (Lnone/aid;I)Lnone/aqk;
+	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD e getMeta (Lnone/ars;)I
@@ -3936,6 +4330,73 @@ CLASS none/asm net/minecraft/world/WorldBorder
 CLASS none/asq net/minecraft/world/chunk/ChunkHandler
 CLASS none/asv net/minecraft/world/chunk/Chunk
 CLASS none/atl net/minecraft/world/Dimension
+CLASS none/auq
+	METHOD b (Lnone/aid;Ljava/util/Random;Lnone/cm;)Z
+		ARG 0 world
+		ARG 1 rand
+		ARG 2 pos
+CLASS none/aut
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/ars;)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+	METHOD b (Lnone/aid;Ljava/util/Random;Lnone/cm;)Z
+		ARG 0 world
+		ARG 1 rand
+		ARG 2 pos
+CLASS none/awh
+	CLASS none/awh$a
+		METHOD a writeToNBT (Lnone/dr;)V
+		METHOD b readFromNBT (Lnone/dr;)V
+CLASS none/awo
+	CLASS none/awo$a
+		METHOD a writeToNBT (Lnone/dr;)V
+		METHOD b readFromNBT (Lnone/dr;)V
+CLASS none/awu
+	METHOD a (Lnone/aid;)V
+		ARG 0 world
+	METHOD a (Lnone/aid;IIIILnone/atv;)V
+		ARG 0 world
+	METHOD a (Lnone/aid;Ljava/util/Random;Lnone/ahw;)Z
+		ARG 0 world
+		ARG 1 rand
+	METHOD a (Lnone/aid;Lnone/cm;)Lnone/cm;
+		ARG 0 world
+		ARG 1 pos
+	METHOD b (Lnone/aid;Lnone/cm;)Z
+		ARG 0 world
+		ARG 1 pos
+	METHOD b (Lnone/cm;)Z
+		ARG 0 pos
+	METHOD c (Lnone/cm;)Lnone/awy;
+		ARG 0 pos
+CLASS none/awy
+	METHOD a (Lnone/aid;Ljava/util/Random;I)V
+		ARG 1 rand
+	METHOD a (Lnone/aid;Ljava/util/Random;II)V
+		ARG 0 world
+		ARG 1 rand
+	METHOD a (Lnone/aid;Ljava/util/Random;Lnone/awg;)V
+		ARG 0 world
+		ARG 1 rand
+	METHOD a (Lnone/aid;Lnone/dr;)V
+		ARG 0 world
+		ARG 1 tag
+	METHOD a writeToNBT (Lnone/dr;)V
+		ARG 0 tag
+	METHOD b readFromNBT (Lnone/dr;)V
+		ARG 0 tag
+CLASS none/axa
+	CLASS none/axa$a
+		FIELD c valid Z
+		METHOD <init> (Lnone/aid;Ljava/util/Random;III)V
+			ARG 0 world
+			ARG 1 rand
+		METHOD a writeToNBT (Lnone/dr;)V
+			ARG 0 tag
+		METHOD b readFromNBT (Lnone/dr;)V
+			ARG 0 tag
+	FIELD a BIOMES Ljava/util/List;
 CLASS none/axx net/minecraft/block/material/Material
 	FIELD N color Lnone/axy;
 	FIELD a AIR Lnone/axx;
@@ -4293,6 +4754,7 @@ CLASS none/bie
 	METHOD a render (IIF)V
 CLASS none/bnn
 	METHOD a sendMessage (Lnone/ey;)V
+	METHOD a interact (Lnone/qs;)V
 	METHOD c getPos ()Lnone/cm;
 CLASS none/bno
 	METHOD a sendMessage (Lnone/ey;)V
