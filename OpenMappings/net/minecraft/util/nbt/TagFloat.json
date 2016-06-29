@@ -1,0 +1,51 @@
+{
+  "obf": "du",
+  "name": "net/minecraft/util/nbt/TagFloat",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getType",
+      "signature": "()B",
+      "args": []
+    },
+    {
+      "obf": "d",
+      "name": "getLong",
+      "signature": "()J",
+      "args": []
+    },
+    {
+      "obf": "e",
+      "name": "getInteger",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "f",
+      "name": "getShort",
+      "signature": "()S",
+      "args": []
+    },
+    {
+      "obf": "g",
+      "name": "getByte",
+      "signature": "()B",
+      "args": []
+    },
+    {
+      "obf": "h",
+      "name": "getDouble",
+      "signature": "()D",
+      "args": []
+    },
+    {
+      "obf": "i",
+      "name": "getFloat",
+      "signature": "()F",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

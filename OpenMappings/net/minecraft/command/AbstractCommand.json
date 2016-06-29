@@ -1,0 +1,432 @@
+{
+  "obf": "j",
+  "name": "net/minecraft/command/AbstractCommand",
+  "field": [
+    {
+      "obf": "a",
+      "name": "commandExecutor",
+      "type": "Lnone/i;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getMinimumPermissionLevel",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "getPos",
+      "signature": "(DLjava/lang/String;Z)Lnone/j$a;",
+      "args": [
+        {
+          "index": 0,
+          "name": "x"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lcom/google/gson/JsonParseException;)Lnone/cf;",
+      "args": [
+        {
+          "index": 0,
+          "name": "ex"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "parseInt",
+      "signature": "(Ljava/lang/String;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "s"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "parseDouble",
+      "signature": "(Ljava/lang/String;D)D",
+      "args": [
+        {
+          "index": 0,
+          "name": "s"
+        },
+        {
+          "index": 1,
+          "name": "min"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "parseDouble",
+      "signature": "(Ljava/lang/String;DD)D",
+      "args": [
+        {
+          "index": 0,
+          "name": "s"
+        },
+        {
+          "index": 1,
+          "name": "min"
+        },
+        {
+          "index": 2,
+          "name": "max"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "parseInt",
+      "signature": "(Ljava/lang/String;I)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "s"
+        },
+        {
+          "index": 1,
+          "name": "min"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "parseInt",
+      "signature": "(Ljava/lang/String;II)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "s"
+        },
+        {
+          "index": 1,
+          "name": "min"
+        },
+        {
+          "index": 2,
+          "name": "max"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "parseLong",
+      "signature": "(Ljava/lang/String;JJ)J",
+      "args": [
+        {
+          "index": 0,
+          "name": "s"
+        },
+        {
+          "index": 1,
+          "name": "min"
+        },
+        {
+          "index": 2,
+          "name": "max"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnet/minecraft/server/MinecraftServer;Lnone/n;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "server"
+        },
+        {
+          "index": 1,
+          "name": "user"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getPlayer",
+      "signature": "(Lnet/minecraft/server/MinecraftServer;Lnone/n;Ljava/lang/String;)Lnone/lu;",
+      "args": [
+        {
+          "index": 0,
+          "name": "server"
+        },
+        {
+          "index": 1,
+          "name": "user"
+        },
+        {
+          "index": 2,
+          "name": "s"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getEntity",
+      "signature": "(Lnet/minecraft/server/MinecraftServer;Lnone/n;Ljava/lang/String;Ljava/lang/Class;)Lnone/rw;",
+      "args": [
+        {
+          "index": 3,
+          "name": "clazz"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getTabCompletions",
+      "signature": "(Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;",
+      "args": [
+        {
+          "index": 0,
+          "name": "server"
+        },
+        {
+          "index": 1,
+          "name": "user"
+        },
+        {
+          "index": 2,
+          "name": "args"
+        },
+        {
+          "index": 3,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getPlayer",
+      "signature": "(Lnone/n;)Lnone/lu;",
+      "args": [
+        {
+          "index": 0,
+          "name": "user"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/n;Lnone/l;ILjava/lang/String;[Ljava/lang/Object;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "user"
+        },
+        {
+          "index": 1,
+          "name": "command"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/n;Lnone/l;Ljava/lang/String;[Ljava/lang/Object;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "user"
+        },
+        {
+          "index": 1,
+          "name": "command"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/n;[Ljava/lang/String;I)Lnone/ey;",
+      "args": [
+        {
+          "index": 0,
+          "name": "user"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/n;[Ljava/lang/String;IZ)Lnone/cm;",
+      "args": [
+        {
+          "index": 0,
+          "name": "user"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getTagFromEntity",
+      "signature": "(Lnone/rw;)Lnone/dr;",
+      "args": [
+        {
+          "index": 0,
+          "name": "entity"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "([Ljava/lang/String;[Ljava/lang/String;)Ljava/util/List;",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "getAliases",
+      "signature": "()Ljava/util/List;",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "parseLong",
+      "signature": "(Ljava/lang/String;)J",
+      "args": [
+        {
+          "index": 0,
+          "name": "s"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "getEntity",
+      "signature": "(Lnet/minecraft/server/MinecraftServer;Lnone/n;Ljava/lang/String;)Lnone/rw;",
+      "args": [
+        {
+          "index": 0,
+          "name": "server"
+        },
+        {
+          "index": 1,
+          "name": "user"
+        },
+        {
+          "index": 2,
+          "name": "s"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/n;[Ljava/lang/String;IZ)Lnone/ey;",
+      "args": [
+        {
+          "index": 0,
+          "name": "user"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "parseDouble",
+      "signature": "(Ljava/lang/String;)D",
+      "args": [
+        {
+          "index": 0,
+          "name": "s"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "getEntities",
+      "signature": "(Lnet/minecraft/server/MinecraftServer;Lnone/n;Ljava/lang/String;)Ljava/util/List;",
+      "args": [
+        {
+          "index": 0,
+          "name": "server"
+        },
+        {
+          "index": 1,
+          "name": "user"
+        },
+        {
+          "index": 2,
+          "name": "s"
+        }
+      ]
+    },
+    {
+      "obf": "d",
+      "name": "parseBoolean",
+      "signature": "(Ljava/lang/String;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "s"
+        }
+      ]
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "j$a",
+      "name": "Pos",
+      "field": [
+        {
+          "obf": "a",
+          "name": "x",
+          "type": "D"
+        },
+        {
+          "obf": "b",
+          "name": "y",
+          "type": "D"
+        },
+        {
+          "obf": "c",
+          "name": "z",
+          "type": "Z"
+        }
+      ],
+      "constructors": [
+        {
+          "signature": "(DDZ)V",
+          "args": [
+            {
+              "index": 0,
+              "name": "x"
+            },
+            {
+              "index": 1,
+              "name": "y"
+            },
+            {
+              "index": 2,
+              "name": "z"
+            }
+          ],
+          "statics": false
+        }
+      ],
+      "method": [
+        {
+          "obf": "a",
+          "name": "getX",
+          "signature": "()D",
+          "args": []
+        },
+        {
+          "obf": "b",
+          "name": "getY",
+          "signature": "()D",
+          "args": []
+        },
+        {
+          "obf": "c",
+          "name": "getZ",
+          "signature": "()Z",
+          "args": []
+        }
+      ],
+      "innerClass": []
+    }
+  ]
+}

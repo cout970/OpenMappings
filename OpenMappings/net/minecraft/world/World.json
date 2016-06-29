@@ -1,0 +1,110 @@
+{
+  "obf": "aid",
+  "name": "net/minecraft/world/World",
+  "field": [
+    {
+      "obf": "A",
+      "name": "villages",
+      "type": "Lnone/vx;"
+    },
+    {
+      "obf": "B",
+      "name": "loot",
+      "type": "Lnone/bas;"
+    },
+    {
+      "obf": "C",
+      "name": "profiler",
+      "type": "Lnone/oq;"
+    },
+    {
+      "obf": "D",
+      "name": "scoreboard",
+      "type": "Lnone/bch;"
+    },
+    {
+      "obf": "E",
+      "name": "isLocal",
+      "type": "Z"
+    },
+    {
+      "obf": "N",
+      "name": "border",
+      "type": "Lnone/asm;"
+    },
+    {
+      "obf": "i",
+      "name": "players",
+      "type": "Ljava/util/List;"
+    },
+    {
+      "obf": "r",
+      "name": "random",
+      "type": "Ljava/util/Random;"
+    },
+    {
+      "obf": "u",
+      "name": "eventHandlers",
+      "type": "Ljava/util/List;"
+    },
+    {
+      "obf": "x",
+      "name": "worldData",
+      "type": "Lnone/baa;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "E",
+      "name": "isYValid",
+      "signature": "(Lnone/cm;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "setBlockState",
+      "signature": "(Lnone/cm;Lnone/ars;)Z",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "getBiome",
+      "signature": "(Lnone/cm;)Lnone/aiq;",
+      "args": [
+        {
+          "index": 0,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "o",
+      "name": "getBlockState",
+      "signature": "(Lnone/cm;)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "r",
+      "name": "getBlockEntity",
+      "signature": "(Lnone/cm;)Lnone/aqk;",
+      "args": [
+        {
+          "index": 0,
+          "name": "pos"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

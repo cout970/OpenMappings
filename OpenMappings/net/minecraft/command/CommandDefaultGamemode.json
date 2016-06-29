@@ -1,0 +1,55 @@
+{
+  "obf": "z",
+  "name": "net/minecraft/command/CommandDefaultGamemode",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "execute",
+      "signature": "(Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "server"
+        },
+        {
+          "index": 1,
+          "name": "user"
+        },
+        {
+          "index": 2,
+          "name": "args"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aib;Lnet/minecraft/server/MinecraftServer;)V",
+      "args": [
+        {
+          "index": 1,
+          "name": "server"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "getHelp",
+      "signature": "(Lnone/n;)Ljava/lang/String;",
+      "args": [
+        {
+          "index": 0,
+          "name": "user"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "getName",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

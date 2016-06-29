@@ -1,0 +1,21 @@
+{
+  "obf": "ara",
+  "name": "net/minecraft/block/entity/BlockEntityMusicPlayer",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "readFromNBT",
+      "signature": "(Lnone/dr;)V",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "writeToNBT",
+      "signature": "(Lnone/dr;)Lnone/dr;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

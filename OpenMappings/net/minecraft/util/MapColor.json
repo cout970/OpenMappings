@@ -1,0 +1,44 @@
+{
+  "obf": "axy",
+  "name": "net/minecraft/util/MapColor",
+  "field": [
+    {
+      "obf": "L",
+      "name": "color",
+      "type": "I"
+    },
+    {
+      "obf": "M",
+      "name": "index",
+      "type": "I"
+    },
+    {
+      "obf": "a",
+      "name": "VALUES",
+      "type": "[Lnone/axy;"
+    },
+    {
+      "obf": "b",
+      "name": "TRANSPARENT",
+      "type": "Lnone/axy;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(II)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "index"
+        },
+        {
+          "index": 1,
+          "name": "color"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [],
+  "innerClass": []
+}

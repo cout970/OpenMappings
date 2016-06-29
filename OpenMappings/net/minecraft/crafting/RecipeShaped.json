@@ -1,0 +1,38 @@
+{
+  "obf": "agg",
+  "name": "net/minecraft/crafting/RecipeShaped",
+  "field": [
+    {
+      "obf": "d",
+      "name": "result",
+      "type": "Lnone/adz;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(II[Lnone/adz;Lnone/adz;)V",
+      "args": [
+        {
+          "index": 3,
+          "name": "result"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getSize",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "getResult",
+      "signature": "()Lnone/adz;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

@@ -1,0 +1,81 @@
+{
+  "obf": "cr",
+  "name": "net/minecraft/registry/DefaultedMappedRegistry",
+  "field": [
+    {
+      "obf": "d",
+      "name": "defaultKey",
+      "type": "Ljava/lang/Object;"
+    },
+    {
+      "obf": "e",
+      "name": "defaultValue",
+      "type": "Ljava/lang/Object;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "get",
+      "signature": "(I)Ljava/lang/Object;",
+      "args": [
+        {
+          "index": 0,
+          "name": "id"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "register",
+      "signature": "(ILjava/lang/Object;Ljava/lang/Object;)V",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "getID",
+      "signature": "(Ljava/lang/Object;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getRandom",
+      "signature": "(Ljava/util/Random;)Ljava/lang/Object;",
+      "args": [
+        {
+          "index": 0,
+          "name": "rand"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "getKey",
+      "signature": "(Ljava/lang/Object;)Ljava/lang/Object;",
+      "args": [
+        {
+          "index": 0,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "get",
+      "signature": "(Ljava/lang/Object;)Ljava/lang/Object;",
+      "args": [
+        {
+          "index": 0,
+          "name": "key"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

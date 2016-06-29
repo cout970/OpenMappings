@@ -1,0 +1,123 @@
+{
+  "obf": "adc",
+  "name": "net/minecraft/util/WoolColor",
+  "field": [
+    {
+      "obf": "a",
+      "name": "WHITE",
+      "type": "Lnone/adc;"
+    },
+    {
+      "obf": "b",
+      "name": "ORANGE",
+      "type": "Lnone/adc;"
+    },
+    {
+      "obf": "c",
+      "name": "MAGENTA",
+      "type": "Lnone/adc;"
+    },
+    {
+      "obf": "d",
+      "name": "LIGHT_BLUE",
+      "type": "Lnone/adc;"
+    },
+    {
+      "obf": "e",
+      "name": "YELLOW",
+      "type": "Lnone/adc;"
+    },
+    {
+      "obf": "f",
+      "name": "LIME",
+      "type": "Lnone/adc;"
+    },
+    {
+      "obf": "g",
+      "name": "PINK",
+      "type": "Lnone/adc;"
+    },
+    {
+      "obf": "h",
+      "name": "GRAY",
+      "type": "Lnone/adc;"
+    },
+    {
+      "obf": "i",
+      "name": "SILVER",
+      "type": "Lnone/adc;"
+    },
+    {
+      "obf": "j",
+      "name": "CYAN",
+      "type": "Lnone/adc;"
+    },
+    {
+      "obf": "k",
+      "name": "PURPLE",
+      "type": "Lnone/adc;"
+    },
+    {
+      "obf": "l",
+      "name": "BLUE",
+      "type": "Lnone/adc;"
+    },
+    {
+      "obf": "m",
+      "name": "BROWN",
+      "type": "Lnone/adc;"
+    },
+    {
+      "obf": "n",
+      "name": "GREEN",
+      "type": "Lnone/adc;"
+    },
+    {
+      "obf": "o",
+      "name": "RED",
+      "type": "Lnone/adc;"
+    },
+    {
+      "obf": "p",
+      "name": "BLACK",
+      "type": "Lnone/adc;"
+    },
+    {
+      "obf": "u",
+      "name": "name",
+      "type": "Ljava/lang/String;"
+    },
+    {
+      "obf": "w",
+      "name": "getColor",
+      "type": "Lnone/axy;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(Ljava/lang/String;IIILjava/lang/String;Ljava/lang/String;Lnone/axy;Lnone/a;)V",
+      "args": [],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "e",
+      "name": "getColor",
+      "signature": "()Lnone/axy;",
+      "args": []
+    },
+    {
+      "obf": "m",
+      "name": "asString",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

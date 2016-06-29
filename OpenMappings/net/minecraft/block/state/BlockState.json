@@ -1,0 +1,43 @@
+{
+  "obf": "ars",
+  "name": "net/minecraft/block/state/BlockState",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "signature": "(Lnone/asi;)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "property"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "with",
+      "signature": "(Lnone/asi;Ljava/lang/Comparable;)Lnone/ars;",
+      "args": []
+    },
+    {
+      "obf": "c",
+      "name": "get",
+      "signature": "(Lnone/asi;)Ljava/lang/Comparable;",
+      "args": []
+    },
+    {
+      "obf": "r",
+      "name": "getProperties",
+      "signature": "()Ljava/util/Collection;",
+      "args": []
+    },
+    {
+      "obf": "t",
+      "name": "getBlock",
+      "signature": "()Lnone/akf;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

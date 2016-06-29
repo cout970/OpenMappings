@@ -1,0 +1,27 @@
+{
+  "obf": "ba",
+  "name": "net/minecraft/command/CommandSaveOn",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "execute",
+      "signature": "(Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "getHelp",
+      "signature": "(Lnone/n;)Ljava/lang/String;",
+      "args": []
+    },
+    {
+      "obf": "c",
+      "name": "getName",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

@@ -1,0 +1,64 @@
+{
+  "obf": "bcx",
+  "name": "net/minecraft/client/MinecraftClient",
+  "field": [
+    {
+      "obf": "J",
+      "name": "LOGGER",
+      "type": "Lorg/apache/logging/log4j/Logger;"
+    },
+    {
+      "obf": "K",
+      "name": "SPLASH_TEXTURE",
+      "type": "Lnone/kn;"
+    },
+    {
+      "obf": "f",
+      "name": "world",
+      "type": "Lnone/bln;"
+    },
+    {
+      "obf": "k",
+      "name": "textRenderer",
+      "type": "Lnone/bdl;"
+    },
+    {
+      "obf": "m",
+      "name": "currentGUI",
+      "type": "Lnone/bft;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "G",
+      "name": "shutdown",
+      "signature": "()V",
+      "args": []
+    },
+    {
+      "obf": "I",
+      "name": "getTime",
+      "signature": "()J",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "start",
+      "signature": "()V",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "openGUI",
+      "signature": "(Lnone/bft;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "gui"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

@@ -1,0 +1,112 @@
+{
+  "obf": "ajz",
+  "name": "net/minecraft/block/BlockContainer",
+  "field": [],
+  "constructors": [
+    {
+      "signature": "(Lnone/axx;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "material"
+        }
+      ],
+      "statics": false
+    },
+    {
+      "signature": "(Lnone/axx;Lnone/axy;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "material"
+        },
+        {
+          "index": 1,
+          "name": "color"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ct;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "side"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;)Lnone/aop;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;Lnone/aid;Lnone/cm;II)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "world"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/aid;Lnone/cm;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

@@ -1,0 +1,45 @@
+{
+  "obf": "al",
+  "name": "net/minecraft/command/CommandHelp",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getMinimumPermissionLevel",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "execute",
+      "signature": "(Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "getTabCompletions",
+      "signature": "(Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "getAliases",
+      "signature": "()Ljava/util/List;",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "getHelp",
+      "signature": "(Lnone/n;)Ljava/lang/String;",
+      "args": []
+    },
+    {
+      "obf": "c",
+      "name": "getName",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

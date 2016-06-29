@@ -1,0 +1,27 @@
+{
+  "obf": "arm",
+  "name": "net/minecraft/block/entity/BlockEntityPiston",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "E_",
+      "name": "tick",
+      "signature": "()V",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "readFromNBT",
+      "signature": "(Lnone/dr;)V",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "writeToNBT",
+      "signature": "(Lnone/dr;)Lnone/dr;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

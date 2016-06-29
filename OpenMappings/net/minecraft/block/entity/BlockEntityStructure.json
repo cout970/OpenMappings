@@ -1,0 +1,41 @@
+{
+  "obf": "are",
+  "name": "net/minecraft/block/entity/BlockEntityStructure",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "readFromNBT",
+      "signature": "(Lnone/dr;)V",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "writeToNBT",
+      "signature": "(Lnone/dr;)Lnone/dr;",
+      "args": []
+    },
+    {
+      "obf": "c",
+      "name": "save",
+      "signature": "()Lnone/dr;",
+      "args": []
+    },
+    {
+      "obf": "i_",
+      "name": "getNameMessage",
+      "signature": "()Lnone/ey;",
+      "args": []
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "are$a",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    }
+  ]
+}

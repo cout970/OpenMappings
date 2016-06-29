@@ -1,0 +1,24 @@
+{
+  "obf": "i",
+  "name": "net/minecraft/command/CommandInformer",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "informAdmins",
+      "signature": "(Lnone/n;Lnone/l;ILjava/lang/String;[Ljava/lang/Object;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "user"
+        },
+        {
+          "index": 1,
+          "name": "command"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

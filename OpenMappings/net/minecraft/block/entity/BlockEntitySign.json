@@ -1,0 +1,42 @@
+{
+  "obf": "arc",
+  "name": "net/minecraft/block/entity/BlockEntitySign",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "readFromNBT",
+      "signature": "(Lnone/dr;)V",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "writeToNBT",
+      "signature": "(Lnone/dr;)Lnone/dr;",
+      "args": []
+    },
+    {
+      "obf": "c",
+      "name": "save",
+      "signature": "()Lnone/dr;",
+      "args": []
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "arc$1",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    },
+    {
+      "obf": "arc$2",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    }
+  ]
+}

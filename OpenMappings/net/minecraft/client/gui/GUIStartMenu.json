@@ -1,0 +1,21 @@
+{
+  "obf": "bga",
+  "name": "net/minecraft/client/gui/GUIStartMenu",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "render",
+      "signature": "(IIF)V",
+      "args": []
+    },
+    {
+      "obf": "m",
+      "name": "onGUIClosed",
+      "signature": "()V",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

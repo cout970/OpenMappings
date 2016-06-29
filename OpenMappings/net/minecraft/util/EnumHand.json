@@ -1,0 +1,19 @@
+{
+  "obf": "qr",
+  "name": "net/minecraft/util/EnumHand",
+  "field": [
+    {
+      "obf": "a",
+      "name": "MAIN",
+      "type": "Lnone/qr;"
+    },
+    {
+      "obf": "b",
+      "name": "OFF",
+      "type": "Lnone/qr;"
+    }
+  ],
+  "constructors": [],
+  "method": [],
+  "innerClass": []
+}

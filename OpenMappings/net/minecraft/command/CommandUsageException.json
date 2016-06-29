@@ -1,0 +1,19 @@
+{
+  "obf": "ci",
+  "name": "net/minecraft/command/CommandUsageException",
+  "field": [],
+  "constructors": [
+    {
+      "signature": "(Ljava/lang/String;[Ljava/lang/Object;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "args"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [],
+  "innerClass": []
+}

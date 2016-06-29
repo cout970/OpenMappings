@@ -1,0 +1,15 @@
+{
+  "obf": "aqt",
+  "name": "net/minecraft/block/entity/BlockEntityEnderChest",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "E_",
+      "name": "tick",
+      "signature": "()V",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

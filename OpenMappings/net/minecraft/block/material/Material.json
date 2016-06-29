@@ -1,0 +1,57 @@
+{
+  "obf": "axx",
+  "name": "net/minecraft/block/material/Material",
+  "field": [
+    {
+      "obf": "N",
+      "name": "color",
+      "type": "Lnone/axy;"
+    },
+    {
+      "obf": "a",
+      "name": "AIR",
+      "type": "Lnone/axx;"
+    },
+    {
+      "obf": "b",
+      "name": "GRASS",
+      "type": "Lnone/axx;"
+    },
+    {
+      "obf": "c",
+      "name": "DIRT",
+      "type": "Lnone/axx;"
+    },
+    {
+      "obf": "e",
+      "name": "ROCK",
+      "type": "Lnone/axx;"
+    },
+    {
+      "obf": "j",
+      "name": "WOOL",
+      "type": "Lnone/axx;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(Lnone/axy;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "color"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "r",
+      "name": "getColor",
+      "signature": "()Lnone/axy;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

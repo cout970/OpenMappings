@@ -1,0 +1,15 @@
+{
+  "obf": "aem",
+  "name": "net/minecraft/item/ItemPotion",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "addSubItems",
+      "signature": "(Lnone/adx;Lnone/acz;Ljava/util/List;)V",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

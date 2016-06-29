@@ -1,0 +1,21 @@
+{
+  "obf": "dp",
+  "name": "net/minecraft/util/nbt/TagByteArray",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getType",
+      "signature": "()B",
+      "args": []
+    },
+    {
+      "obf": "c",
+      "name": "getByteArray",
+      "signature": "()[B",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

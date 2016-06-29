@@ -1,0 +1,19 @@
+{
+  "obf": "cf",
+  "name": "net/minecraft/command/CommandSyntaxException",
+  "field": [],
+  "constructors": [
+    {
+      "signature": "(Ljava/lang/String;[Ljava/lang/Object;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "message"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [],
+  "innerClass": []
+}

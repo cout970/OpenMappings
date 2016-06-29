@@ -1,0 +1,359 @@
+{
+  "obf": "akd",
+  "name": "net/minecraft/block/BlockBed",
+  "field": [
+    {
+      "obf": "a",
+      "name": "PART",
+      "type": "Lnone/asg;"
+    },
+    {
+      "obf": "b",
+      "name": "OCCUPIED",
+      "type": "Lnone/ase;"
+    },
+    {
+      "obf": "c",
+      "name": "BOX",
+      "type": "Lnone/bby;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getState",
+      "signature": "(I)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "meta"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;I)Lnone/cm;",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;)Lnone/adz;",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;FI)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        },
+        {
+          "index": 3,
+          "name": "player"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "onBlockActivated",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        },
+        {
+          "index": 3,
+          "name": "player"
+        },
+        {
+          "index": 4,
+          "name": "hand"
+        },
+        {
+          "index": 5,
+          "name": "stack"
+        },
+        {
+          "index": 6,
+          "name": "side"
+        },
+        {
+          "index": 7,
+          "name": "hitX"
+        },
+        {
+          "index": 8,
+          "name": "hitY"
+        },
+        {
+          "index": 9,
+          "name": "hitZ"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getItemDropped",
+      "signature": "(Lnone/ars;Ljava/util/Random;I)Lnone/adx;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "rand"
+        },
+        {
+          "index": 2,
+          "name": "fortune"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;Lnone/aid;Lnone/cm;Lnone/akf;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "world"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        },
+        {
+          "index": 3,
+          "name": "block"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;Lnone/aih;Lnone/cm;)Lnone/bby;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "accessor"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;Lnone/anf;)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;Lnone/aos;)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "createStateContainer",
+      "signature": "()Lnone/art;",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/aid;Lnone/cm;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/ars;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/ars;Lnone/aih;Lnone/cm;)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "accessor"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "signature": "(Lnone/aid;Lnone/cm;)Lnone/zs;",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "signature": "(Lnone/ars;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "e",
+      "name": "getMeta",
+      "signature": "(Lnone/ars;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "h",
+      "signature": "(Lnone/ars;)Lnone/aya;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "akd$a",
+      "name": "BedPart",
+      "field": [
+        {
+          "obf": "a",
+          "name": "HEAD",
+          "type": "Lnone/akd$a;"
+        },
+        {
+          "obf": "b",
+          "name": "FOOT",
+          "type": "Lnone/akd$a;"
+        },
+        {
+          "obf": "c",
+          "name": "name",
+          "type": "Ljava/lang/String;"
+        }
+      ],
+      "constructors": [],
+      "method": [
+        {
+          "obf": "m",
+          "name": "asString",
+          "signature": "()Ljava/lang/String;",
+          "args": []
+        }
+      ],
+      "innerClass": []
+    }
+  ]
+}

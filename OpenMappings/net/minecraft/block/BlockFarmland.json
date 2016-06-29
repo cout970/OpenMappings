@@ -1,0 +1,236 @@
+{
+  "obf": "alv",
+  "name": "net/minecraft/block/BlockFarmland",
+  "field": [
+    {
+      "obf": "a",
+      "name": "MOISTURE",
+      "type": "Lnone/ash;"
+    },
+    {
+      "obf": "b",
+      "name": "BOX",
+      "type": "Lnone/bby;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getState",
+      "signature": "(I)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "meta"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;)Lnone/adz;",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/rw;F)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "entity"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getItemDropped",
+      "signature": "(Lnone/ars;Ljava/util/Random;I)Lnone/adx;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "rand"
+        },
+        {
+          "index": 2,
+          "name": "fortune"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;Lnone/aid;Lnone/cm;Lnone/akf;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "world"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        },
+        {
+          "index": 3,
+          "name": "block"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;Lnone/aih;Lnone/cm;)Lnone/bby;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "accessor"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;Lnone/aih;Lnone/cm;Lnone/ct;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "accessor"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        },
+        {
+          "index": 3,
+          "name": "side"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "createStateContainer",
+      "signature": "()Lnone/art;",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/aid;Lnone/cm;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "randomTick",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;Ljava/util/Random;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        },
+        {
+          "index": 3,
+          "name": "rand"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/ars;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "signature": "(Lnone/aid;Lnone/cm;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "signature": "(Lnone/ars;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "e",
+      "name": "getMeta",
+      "signature": "(Lnone/ars;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

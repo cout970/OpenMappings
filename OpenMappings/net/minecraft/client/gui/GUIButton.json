@@ -1,0 +1,132 @@
+{
+  "obf": "bdr",
+  "name": "net/minecraft/client/gui/GUIButton",
+  "field": [
+    {
+      "obf": "a",
+      "name": "TEXTURE",
+      "type": "Lnone/kn;"
+    },
+    {
+      "obf": "f",
+      "name": "width",
+      "type": "I"
+    },
+    {
+      "obf": "g",
+      "name": "height",
+      "type": "I"
+    },
+    {
+      "obf": "h",
+      "name": "x",
+      "type": "I"
+    },
+    {
+      "obf": "i",
+      "name": "y",
+      "type": "I"
+    },
+    {
+      "obf": "j",
+      "name": "text",
+      "type": "Ljava/lang/String;"
+    },
+    {
+      "obf": "k",
+      "name": "id",
+      "type": "I"
+    },
+    {
+      "obf": "l",
+      "name": "isEnabled",
+      "type": "Z"
+    },
+    {
+      "obf": "m",
+      "name": "isVisible",
+      "type": "Z"
+    },
+    {
+      "obf": "n",
+      "name": "isHovered",
+      "type": "Z"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(IIIIILjava/lang/String;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "id"
+        },
+        {
+          "index": 1,
+          "name": "x"
+        },
+        {
+          "index": 2,
+          "name": "y"
+        },
+        {
+          "index": 3,
+          "name": "width"
+        },
+        {
+          "index": 4,
+          "name": "height"
+        },
+        {
+          "index": 5,
+          "name": "text"
+        }
+      ],
+      "statics": false
+    },
+    {
+      "signature": "(IIILjava/lang/String;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "id"
+        },
+        {
+          "index": 1,
+          "name": "x"
+        },
+        {
+          "index": 2,
+          "name": "y"
+        },
+        {
+          "index": 3,
+          "name": "text"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "render",
+      "signature": "(Lnone/bcx;II)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "client"
+        },
+        {
+          "index": 1,
+          "name": "mouseX"
+        },
+        {
+          "index": 2,
+          "name": "mouseY"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

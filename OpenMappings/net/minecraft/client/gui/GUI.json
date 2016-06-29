@@ -1,0 +1,118 @@
+{
+  "obf": "bft",
+  "name": "net/minecraft/client/gui/GUI",
+  "field": [
+    {
+      "obf": "a",
+      "name": "LOGGER",
+      "type": "Lorg/apache/logging/log4j/Logger;"
+    },
+    {
+      "obf": "f",
+      "name": "URL_PROTOCOLS",
+      "type": "Ljava/util/Set;"
+    },
+    {
+      "obf": "g",
+      "name": "NEWLINE_SPLITTER",
+      "type": "Lcom/google/common/base/Splitter;"
+    },
+    {
+      "obf": "h",
+      "name": "currentButton",
+      "type": "Lnone/bdr;"
+    },
+    {
+      "obf": "j",
+      "name": "client",
+      "type": "Lnone/bcx;"
+    },
+    {
+      "obf": "l",
+      "name": "width",
+      "type": "I"
+    },
+    {
+      "obf": "m",
+      "name": "height",
+      "type": "I"
+    },
+    {
+      "obf": "n",
+      "name": "buttons",
+      "type": "Ljava/util/List;"
+    },
+    {
+      "obf": "o",
+      "name": "labels",
+      "type": "Ljava/util/List;"
+    },
+    {
+      "obf": "q",
+      "name": "textRenderer",
+      "type": "Lnone/bdl;"
+    },
+    {
+      "obf": "t",
+      "name": "currentURI",
+      "type": "Ljava/net/URI;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "render",
+      "signature": "(IIF)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "mouseX"
+        },
+        {
+          "index": 1,
+          "name": "mouseY"
+        },
+        {
+          "index": 2,
+          "name": "delta"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "addButton",
+      "signature": "(Lnone/bdr;)Lnone/bdr;",
+      "args": [
+        {
+          "index": 0,
+          "name": "button"
+        }
+      ]
+    },
+    {
+      "obf": "e",
+      "name": "setClipboardText",
+      "signature": "(Ljava/lang/String;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "text"
+        }
+      ]
+    },
+    {
+      "obf": "m",
+      "name": "onGUIClosed",
+      "signature": "()V",
+      "args": []
+    },
+    {
+      "obf": "o",
+      "name": "getClipboardText",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

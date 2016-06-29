@@ -1,0 +1,137 @@
+{
+  "obf": "asg",
+  "name": "net/minecraft/block/state/PropertyEnum",
+  "field": [
+    {
+      "obf": "a",
+      "name": "values",
+      "type": "Lcom/google/common/collect/ImmutableSet;"
+    },
+    {
+      "obf": "b",
+      "name": "nameValueMap",
+      "type": "Ljava/util/Map;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(Ljava/lang/String;Ljava/lang/Class;Ljava/util/Collection;)V",
+      "args": [
+        {
+          "index": 1,
+          "name": "clazz"
+        },
+        {
+          "index": 2,
+          "name": "values"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getName",
+      "signature": "(Ljava/lang/Enum;)Ljava/lang/String;",
+      "args": [
+        {
+          "index": 0,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "create",
+      "signature": "(Ljava/lang/String;Ljava/lang/Class;)Lnone/asg;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "clazz"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "create",
+      "signature": "(Ljava/lang/String;Ljava/lang/Class;Lcom/google/common/base/Predicate;)Lnone/asg;",
+      "args": [
+        {
+          "index": 1,
+          "name": "clazz"
+        },
+        {
+          "index": 2,
+          "name": "predicate"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "create",
+      "signature": "(Ljava/lang/String;Ljava/lang/Class;Ljava/util/Collection;)Lnone/asg;",
+      "args": [
+        {
+          "index": 1,
+          "name": "clazz"
+        },
+        {
+          "index": 2,
+          "name": "values"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "create",
+      "signature": "(Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Enum;)Lnone/asg;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "clazz"
+        },
+        {
+          "index": 2,
+          "name": "values"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "getValue",
+      "signature": "(Ljava/lang/String;)Lcom/google/common/base/Optional;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "getValues",
+      "signature": "()Ljava/util/Collection;",
+      "args": []
+    },
+    {
+      "obf": "equals",
+      "signature": "(Ljava/lang/Object;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

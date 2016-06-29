@@ -1,0 +1,33 @@
+{
+  "obf": "aqs",
+  "name": "net/minecraft/block/entity/BlockEntityEnchantingTable",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "E_",
+      "name": "tick",
+      "signature": "()V",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "readFromNBT",
+      "signature": "(Lnone/dr;)V",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "writeToNBT",
+      "signature": "(Lnone/dr;)Lnone/dr;",
+      "args": []
+    },
+    {
+      "obf": "i_",
+      "name": "getNameMessage",
+      "signature": "()Lnone/ey;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

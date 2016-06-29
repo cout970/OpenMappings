@@ -1,0 +1,39 @@
+{
+  "obf": "amt",
+  "name": "net/minecraft/block/BlockFacing",
+  "field": [
+    {
+      "obf": "D",
+      "name": "FACING",
+      "type": "Lnone/asf;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(Lnone/axx;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "material"
+        }
+      ],
+      "statics": false
+    },
+    {
+      "signature": "(Lnone/axx;Lnone/axy;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "material"
+        },
+        {
+          "index": 1,
+          "name": "color"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [],
+  "innerClass": []
+}

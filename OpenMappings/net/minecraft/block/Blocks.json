@@ -1,0 +1,1121 @@
+{
+  "obf": "akg",
+  "name": "net/minecraft/block/Blocks",
+  "field": [
+    {
+      "obf": "A",
+      "name": "SANDSTONE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "B",
+      "name": "NOTEBLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "C",
+      "name": "BED",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "D",
+      "name": "GOLDEN_RAIL",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "E",
+      "name": "DETECTOR_RAIL",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "F",
+      "name": "STICKY_PISTON",
+      "type": "Lnone/arj;"
+    },
+    {
+      "obf": "G",
+      "name": "WEB",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "H",
+      "name": "TALLGRASS",
+      "type": "Lnone/apr;"
+    },
+    {
+      "obf": "I",
+      "name": "DEADBUSH",
+      "type": "Lnone/alc;"
+    },
+    {
+      "obf": "J",
+      "name": "PISTON",
+      "type": "Lnone/arj;"
+    },
+    {
+      "obf": "K",
+      "name": "PISTON_HEAD",
+      "type": "Lnone/ark;"
+    },
+    {
+      "obf": "L",
+      "name": "WOOL",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "M",
+      "name": "PISTON_EXTENSION",
+      "type": "Lnone/arl;"
+    },
+    {
+      "obf": "N",
+      "name": "YELLOW_FLOWER",
+      "type": "Lnone/alz;"
+    },
+    {
+      "obf": "O",
+      "name": "RED_FLOWER",
+      "type": "Lnone/alz;"
+    },
+    {
+      "obf": "P",
+      "name": "BROWN_MUSHROOM",
+      "type": "Lnone/akl;"
+    },
+    {
+      "obf": "Q",
+      "name": "RED_MUSHROOM",
+      "type": "Lnone/akl;"
+    },
+    {
+      "obf": "R",
+      "name": "GOLD_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "S",
+      "name": "IRON_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "T",
+      "name": "DOUBLE_STONE_SLAB",
+      "type": "Lnone/amm;"
+    },
+    {
+      "obf": "U",
+      "name": "STONE_SLAB",
+      "type": "Lnone/amm;"
+    },
+    {
+      "obf": "V",
+      "name": "BRICK_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "W",
+      "name": "TNT",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "X",
+      "name": "BOOKSHELF",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "Y",
+      "name": "MOSSY_COBBLESTONE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "Z",
+      "name": "OBSIDIAN",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aA",
+      "name": "IRON_DOOR",
+      "type": "Lnone/ali;"
+    },
+    {
+      "obf": "aB",
+      "name": "WOODEN_PRESSURE_PLATE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aC",
+      "name": "REDSTONE_ORE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aD",
+      "name": "LIT_REDSTONE_ORE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aE",
+      "name": "UNLIT_REDSTONE_TORCH",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aF",
+      "name": "REDSTONE_TORCH",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aG",
+      "name": "STONE_BUTTON",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aH",
+      "name": "SNOW_LAYER",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aI",
+      "name": "ICE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aJ",
+      "name": "SNOW",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aK",
+      "name": "CACTUS",
+      "type": "Lnone/akn;"
+    },
+    {
+      "obf": "aL",
+      "name": "CLAY",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "a",
+      "name": "AIR",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aM",
+      "name": "REEDS",
+      "type": "Lnone/aoo;"
+    },
+    {
+      "obf": "aN",
+      "name": "JUKEBOX",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aO",
+      "name": "OAK_FENCE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aP",
+      "name": "SPRUCE_FENCE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aQ",
+      "name": "BIRCH_FENCE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aR",
+      "name": "JUNGLE_FENCE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aS",
+      "name": "DARK_OAK_FENCE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aT",
+      "name": "ACACIA_FENCE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aU",
+      "name": "PUMPKIN",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aV",
+      "name": "NETHERRACK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aW",
+      "name": "SOUL_SAND",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aX",
+      "name": "GLOWSTONE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aY",
+      "name": "PORTAL",
+      "type": "Lnone/any;"
+    },
+    {
+      "obf": "aZ",
+      "name": "LIT_PUMPKIN",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aa",
+      "name": "TORCH",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "ab",
+      "name": "FIRE",
+      "type": "Lnone/aly;"
+    },
+    {
+      "obf": "ac",
+      "name": "MOB_SPAWNER",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "ad",
+      "name": "OAK_STAIRS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "ae",
+      "name": "CHEST",
+      "type": "Lnone/akr;"
+    },
+    {
+      "obf": "af",
+      "name": "REDSTONE_WIRE",
+      "type": "Lnone/aol;"
+    },
+    {
+      "obf": "ag",
+      "name": "DIAMOND_ORE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "ah",
+      "name": "DIAMOND_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "ai",
+      "name": "CRAFTING_TABLE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aj",
+      "name": "WHEAT",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "ak",
+      "name": "FARMLAND",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "al",
+      "name": "FURNACE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "am",
+      "name": "LIT_FURNACE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "an",
+      "name": "STANDING_SIGN",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "ao",
+      "name": "WOODEN_DOOR",
+      "type": "Lnone/ali;"
+    },
+    {
+      "obf": "ap",
+      "name": "SPRUCE_DOOR",
+      "type": "Lnone/ali;"
+    },
+    {
+      "obf": "aq",
+      "name": "BIRCH_DOOR",
+      "type": "Lnone/ali;"
+    },
+    {
+      "obf": "ar",
+      "name": "JUNGLE_DOOR",
+      "type": "Lnone/ali;"
+    },
+    {
+      "obf": "as",
+      "name": "ACACIA_DOOR",
+      "type": "Lnone/ali;"
+    },
+    {
+      "obf": "at",
+      "name": "DARK_OAK_DOOR",
+      "type": "Lnone/ali;"
+    },
+    {
+      "obf": "au",
+      "name": "LADDER",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "av",
+      "name": "RAIL",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "aw",
+      "name": "STONE_STAIRS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "ax",
+      "name": "WALL_SIGN",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "ay",
+      "name": "LEVER",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "az",
+      "name": "STONE_PRESSURE_PLATE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bA",
+      "name": "NETHER_BRICK_STAIRS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bB",
+      "name": "NETHER_WART",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bC",
+      "name": "ENCHANTING_TABLE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bD",
+      "name": "BREWING_STAND",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bE",
+      "name": "CAULDRON",
+      "type": "Lnone/akq;"
+    },
+    {
+      "obf": "bF",
+      "name": "END_PORTAL",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bG",
+      "name": "END_PORTAL_FRAME",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bH",
+      "name": "END_STONE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bI",
+      "name": "DRAGON_EGG",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bJ",
+      "name": "REDSTONE_LAMP",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bK",
+      "name": "LIT_REDSTONE_LAMP",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bL",
+      "name": "DOUBLE_WOODEN_SLAB",
+      "type": "Lnone/amm;"
+    },
+    {
+      "obf": "b",
+      "name": "STONE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bM",
+      "name": "WOODEN_SLAB",
+      "type": "Lnone/amm;"
+    },
+    {
+      "obf": "bN",
+      "name": "COCOA",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bO",
+      "name": "SANDSTONE_STAIRS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bP",
+      "name": "EMERALD_ORE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bQ",
+      "name": "ENDER_CHEST",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bR",
+      "name": "TRIPWIRE_HOOK",
+      "type": "Lnone/apx;"
+    },
+    {
+      "obf": "bS",
+      "name": "TRIPWIRE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bT",
+      "name": "EMERALD_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bU",
+      "name": "SPRUCE_STAIRS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bV",
+      "name": "BIRCH_STAIRS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bW",
+      "name": "JUNGLE_STAIRS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bX",
+      "name": "COMMAND_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bY",
+      "name": "BEACON",
+      "type": "Lnone/akc;"
+    },
+    {
+      "obf": "bZ",
+      "name": "COBBLESTONE_WALL",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "ba",
+      "name": "CAKE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bb",
+      "name": "UNPOWERED_REPEATER",
+      "type": "Lnone/aoq;"
+    },
+    {
+      "obf": "bc",
+      "name": "POWERED_REPEATER",
+      "type": "Lnone/aoq;"
+    },
+    {
+      "obf": "bd",
+      "name": "TRAPDOOR",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "be",
+      "name": "MONSTER_EGG",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bf",
+      "name": "STONEBRICK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bg",
+      "name": "BROWN_MUSHROOM_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bh",
+      "name": "RED_MUSHROOM_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bi",
+      "name": "IRON_BARS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bj",
+      "name": "GLASS_PANE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bk",
+      "name": "MELON_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bl",
+      "name": "PUMPKIN_STEM",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bm",
+      "name": "MELON_STEM",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bn",
+      "name": "VINE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bo",
+      "name": "FENCE_GATE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bp",
+      "name": "SPRUCE_FENCE_GATE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bq",
+      "name": "BIRCH_FENCE_GATE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "br",
+      "name": "JUNGLE_FENCE_GATE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bs",
+      "name": "DARK_OAK_FENCE_GATE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bt",
+      "name": "ACACIA_FENCE_GATE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bu",
+      "name": "BRICK_STAIRS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bv",
+      "name": "STONE_BRICK_STAIRS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bw",
+      "name": "MYCELIUM",
+      "type": "Lnone/anj;"
+    },
+    {
+      "obf": "bx",
+      "name": "WATERLILY",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "by",
+      "name": "NETHER_BRICK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "bz",
+      "name": "NETHER_BRICK_FENCE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cA",
+      "name": "COAL_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cB",
+      "name": "PACKED_ICE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cC",
+      "name": "ACACIA_STAIRS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cD",
+      "name": "DARK_OAK_STAIRS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cE",
+      "name": "SLIME",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cF",
+      "name": "DOUBLE_PLANT",
+      "type": "Lnone/alj;"
+    },
+    {
+      "obf": "cG",
+      "name": "STAINED_GLASS",
+      "type": "Lnone/apf;"
+    },
+    {
+      "obf": "cH",
+      "name": "STAINED_GLASS_PANE",
+      "type": "Lnone/apg;"
+    },
+    {
+      "obf": "cI",
+      "name": "PRISMARINE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cJ",
+      "name": "SEA_LANTERN",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cK",
+      "name": "STANDING_BANNER",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cL",
+      "name": "WALL_BANNER",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "c",
+      "name": "GRASS",
+      "type": "Lnone/ami;"
+    },
+    {
+      "obf": "cM",
+      "name": "RED_SANDSTONE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cN",
+      "name": "RED_SANDSTONE_STAIRS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cO",
+      "name": "DOUBLE_STONE_SLAB2",
+      "type": "Lnone/amm;"
+    },
+    {
+      "obf": "cP",
+      "name": "STONE_SLAB2",
+      "type": "Lnone/amm;"
+    },
+    {
+      "obf": "cQ",
+      "name": "END_ROD",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cR",
+      "name": "CHORUS_PLANT",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cS",
+      "name": "CHORUS_FLOWER",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cT",
+      "name": "PURPUR_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cU",
+      "name": "PURPUR_PILLAR",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cV",
+      "name": "PURPUR_STAIRS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cW",
+      "name": "PURPUR_DOUBLE_SLAB",
+      "type": "Lnone/amm;"
+    },
+    {
+      "obf": "cX",
+      "name": "PURPUR_SLAB",
+      "type": "Lnone/amm;"
+    },
+    {
+      "obf": "cY",
+      "name": "END_BRICKS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cZ",
+      "name": "BEETROOTS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "ca",
+      "name": "FLOWER_POT",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cb",
+      "name": "CARROTS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cc",
+      "name": "POTATOES",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cd",
+      "name": "WOODEN_BUTTON",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "ce",
+      "name": "SKULL",
+      "type": "Lnone/aoy;"
+    },
+    {
+      "obf": "cf",
+      "name": "ANVIL",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cg",
+      "name": "TRAPPED_CHEST",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "ch",
+      "name": "LIGHT_WEIGHTED_PRESSURE_PLATE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "ci",
+      "name": "HEAVY_WEIGHTED_PRESSURE_PLATE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cj",
+      "name": "UNPOWERED_COMPARATOR",
+      "type": "Lnone/aky;"
+    },
+    {
+      "obf": "ck",
+      "name": "POWERED_COMPARATOR",
+      "type": "Lnone/aky;"
+    },
+    {
+      "obf": "cl",
+      "name": "DAYLIGHT_DETECTOR",
+      "type": "Lnone/alb;"
+    },
+    {
+      "obf": "cm",
+      "name": "DAYLIGHT_DETECTOR_INVERTED",
+      "type": "Lnone/alb;"
+    },
+    {
+      "obf": "cn",
+      "name": "REDSTONE_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "co",
+      "name": "QUARTZ_ORE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cp",
+      "name": "HOPPER",
+      "type": "Lnone/ams;"
+    },
+    {
+      "obf": "cq",
+      "name": "QUARTZ_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cr",
+      "name": "QUARTZ_STAIRS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cs",
+      "name": "ACTIVATOR_RAIL",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "ct",
+      "name": "DROPPER",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cu",
+      "name": "STAINED_HARDENED_CLAY",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cv",
+      "name": "BARRIER",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cw",
+      "name": "IRON_TRAPDOOR",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cx",
+      "name": "HAY_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cy",
+      "name": "CARPET",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "cz",
+      "name": "HARDENED_CLAY",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "d",
+      "name": "DIRT",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "da",
+      "name": "GRASS_PATH",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "db",
+      "name": "END_GATEWAY",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "dc",
+      "name": "REPEATING_COMMAND_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "dd",
+      "name": "CHAIN_COMMAND_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "de",
+      "name": "FROSTED_ICE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "df",
+      "name": "MAGMA",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "dg",
+      "name": "NETHER_WART_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "dh",
+      "name": "RED_NETHER_BRICK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "di",
+      "name": "BONE_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "dj",
+      "name": "STRUCTURE_VOID",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "dk",
+      "name": "STRUCTURE_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "dl",
+      "name": "ALL_BLOCKS",
+      "type": "Ljava/util/Set;"
+    },
+    {
+      "obf": "e",
+      "name": "COBBLESTONE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "f",
+      "name": "PLANKS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "g",
+      "name": "SAPLING",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "h",
+      "name": "BEDROCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "i",
+      "name": "FLOWING_WATER",
+      "type": "Lnone/alm;"
+    },
+    {
+      "obf": "j",
+      "name": "WATER",
+      "type": "Lnone/apj;"
+    },
+    {
+      "obf": "k",
+      "name": "FLOWING_LAVA",
+      "type": "Lnone/alm;"
+    },
+    {
+      "obf": "l",
+      "name": "LAVA",
+      "type": "Lnone/apj;"
+    },
+    {
+      "obf": "m",
+      "name": "SAND",
+      "type": "Lnone/aot;"
+    },
+    {
+      "obf": "n",
+      "name": "GRAVEL",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "o",
+      "name": "GOLD_ORE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "p",
+      "name": "IRON_ORE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "q",
+      "name": "COAL_ORE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "r",
+      "name": "LOG",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "s",
+      "name": "LOG2",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "t",
+      "name": "LEAVES",
+      "type": "Lnone/amy;"
+    },
+    {
+      "obf": "u",
+      "name": "LEAVES2",
+      "type": "Lnone/amy;"
+    },
+    {
+      "obf": "v",
+      "name": "SPONGE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "w",
+      "name": "GLASS",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "x",
+      "name": "LAPIS_ORE",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "y",
+      "name": "LAPIS_BLOCK",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "z",
+      "name": "DISPENSER",
+      "type": "Lnone/akf;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "find",
+      "signature": "(Ljava/lang/String;)Lnone/akf;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

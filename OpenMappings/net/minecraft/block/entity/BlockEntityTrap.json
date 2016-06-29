@@ -1,0 +1,33 @@
+{
+  "obf": "aqq",
+  "name": "net/minecraft/block/entity/BlockEntityTrap",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getStack",
+      "signature": "(I)Lnone/adz;",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "putStack",
+      "signature": "(ILnone/adz;)V",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "readFromNBT",
+      "signature": "(Lnone/dr;)V",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "writeToNBT",
+      "signature": "(Lnone/dr;)Lnone/dr;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

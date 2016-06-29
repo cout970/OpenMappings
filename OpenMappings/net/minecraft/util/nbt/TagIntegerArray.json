@@ -1,0 +1,21 @@
+{
+  "obf": "dv",
+  "name": "net/minecraft/util/nbt/TagIntegerArray",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getType",
+      "signature": "()B",
+      "args": []
+    },
+    {
+      "obf": "d",
+      "name": "getIntegerArray",
+      "signature": "()[I",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

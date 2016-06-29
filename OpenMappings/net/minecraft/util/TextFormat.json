@@ -1,0 +1,170 @@
+{
+  "obf": "a",
+  "name": "net/minecraft/util/TextFormat",
+  "field": [
+    {
+      "obf": "B",
+      "name": "str",
+      "type": "Ljava/lang/String;"
+    },
+    {
+      "obf": "C",
+      "name": "name",
+      "type": "I"
+    },
+    {
+      "obf": "a",
+      "name": "BLACK",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "b",
+      "name": "DARK_BLUE",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "c",
+      "name": "DARK_GREEN",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "d",
+      "name": "DARK_AQUA",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "e",
+      "name": "DARK_RED",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "f",
+      "name": "DARK_PURPLE",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "g",
+      "name": "GOLD",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "h",
+      "name": "GRAY",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "i",
+      "name": "DARK_GREY",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "j",
+      "name": "BLUE",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "k",
+      "name": "GREEN",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "l",
+      "name": "AQUA",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "m",
+      "name": "RED",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "n",
+      "name": "LIGHT_PURPLE",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "o",
+      "name": "YELLOW",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "p",
+      "name": "WHITE",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "q",
+      "name": "OBFUSCATED",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "r",
+      "name": "BOLD",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "s",
+      "name": "STRIKETHROUGH",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "t",
+      "name": "UNDERLINE",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "u",
+      "name": "ITALIC",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "v",
+      "name": "RESET",
+      "type": "Lnone/a;"
+    },
+    {
+      "obf": "w",
+      "name": "IDENTIFIERS",
+      "type": "Ljava/util/Map;"
+    },
+    {
+      "obf": "x",
+      "name": "MATCHER",
+      "type": "Ljava/util/regex/Pattern;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(Ljava/lang/String;ILjava/lang/String;CI)V",
+      "args": [
+        {
+          "index": 3,
+          "name": "name"
+        }
+      ],
+      "statics": false
+    },
+    {
+      "signature": "(Ljava/lang/String;ILjava/lang/String;CZ)V",
+      "args": [
+        {
+          "index": 3,
+          "name": "name"
+        }
+      ],
+      "statics": false
+    },
+    {
+      "signature": "(Ljava/lang/String;ILjava/lang/String;CZI)V",
+      "args": [
+        {
+          "index": 3,
+          "name": "name"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [],
+  "innerClass": []
+}

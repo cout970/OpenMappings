@@ -1,0 +1,81 @@
+{
+  "obf": "age",
+  "name": "net/minecraft/crafting/CraftingManager",
+  "field": [
+    {
+      "obf": "a",
+      "name": "INSTANCE",
+      "type": "Lnone/age;"
+    },
+    {
+      "obf": "b",
+      "name": "recipes",
+      "type": "Ljava/util/List;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getInstance",
+      "signature": "()Lnone/age;",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "addShaped",
+      "signature": "(Lnone/adz;[Ljava/lang/Object;)Lnone/agg;",
+      "args": [
+        {
+          "index": 0,
+          "name": "result"
+        },
+        {
+          "index": 1,
+          "name": "args"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "add",
+      "signature": "(Lnone/agd;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "recipe"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "getRecipes",
+      "signature": "()Ljava/util/List;",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "addShapeless",
+      "signature": "(Lnone/adz;[Ljava/lang/Object;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "result"
+        },
+        {
+          "index": 1,
+          "name": "args"
+        }
+      ]
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "age$1",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    }
+  ]
+}

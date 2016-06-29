@@ -1,0 +1,314 @@
+{
+  "obf": "bcb",
+  "name": "net/minecraft/util/Vector3d",
+  "field": [
+    {
+      "obf": "a",
+      "name": "ORIGIN",
+      "type": "Lnone/bcb;"
+    },
+    {
+      "obf": "b",
+      "name": "x",
+      "type": "D"
+    },
+    {
+      "obf": "c",
+      "name": "y",
+      "type": "D"
+    },
+    {
+      "obf": "d",
+      "name": "z",
+      "type": "D"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(DDD)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "x"
+        },
+        {
+          "index": 1,
+          "name": "y"
+        },
+        {
+          "index": 2,
+          "name": "z"
+        }
+      ],
+      "statics": false
+    },
+    {
+      "signature": "(Lnone/di;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "norm",
+      "signature": "()Lnone/bcb;",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "mul",
+      "signature": "(D)Lnone/bcb;",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "sub",
+      "signature": "(DDD)Lnone/bcb;",
+      "args": [
+        {
+          "index": 0,
+          "name": "x"
+        },
+        {
+          "index": 1,
+          "name": "y"
+        },
+        {
+          "index": 2,
+          "name": "z"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "rotatePitch",
+      "signature": "(F)Lnone/bcb;",
+      "args": [
+        {
+          "index": 0,
+          "name": "pitch"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "fromRotation",
+      "signature": "(FF)Lnone/bcb;",
+      "args": [
+        {
+          "index": 0,
+          "name": "pitch"
+        },
+        {
+          "index": 1,
+          "name": "yaw"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "directionTo",
+      "signature": "(Lnone/bcb;)Lnone/bcb;",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "interpolateX",
+      "signature": "(Lnone/bcb;D)Lnone/bcb;",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        },
+        {
+          "index": 1,
+          "name": "x"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "length",
+      "signature": "()D",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "add",
+      "signature": "(DDD)Lnone/bcb;",
+      "args": [
+        {
+          "index": 0,
+          "name": "x"
+        },
+        {
+          "index": 1,
+          "name": "y"
+        },
+        {
+          "index": 2,
+          "name": "z"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "rotateYaw",
+      "signature": "(F)Lnone/bcb;",
+      "args": [
+        {
+          "index": 0,
+          "name": "yaw"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "dot",
+      "signature": "(Lnone/bcb;)D",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "interpolateY",
+      "signature": "(Lnone/bcb;D)Lnone/bcb;",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        },
+        {
+          "index": 1,
+          "name": "y"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "lengthSquared",
+      "signature": "()D",
+      "args": []
+    },
+    {
+      "obf": "c",
+      "name": "distanceToSquared",
+      "signature": "(DDD)D",
+      "args": [
+        {
+          "index": 0,
+          "name": "x"
+        },
+        {
+          "index": 1,
+          "name": "y"
+        },
+        {
+          "index": 2,
+          "name": "z"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "cross",
+      "signature": "(Lnone/bcb;)Lnone/bcb;",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "interpolateZ",
+      "signature": "(Lnone/bcb;D)Lnone/bcb;",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        },
+        {
+          "index": 1,
+          "name": "z"
+        }
+      ]
+    },
+    {
+      "obf": "d",
+      "name": "sub",
+      "signature": "(Lnone/bcb;)Lnone/bcb;",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    },
+    {
+      "obf": "e",
+      "name": "add",
+      "signature": "(Lnone/bcb;)Lnone/bcb;",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    },
+    {
+      "obf": "equals",
+      "signature": "(Ljava/lang/Object;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    },
+    {
+      "obf": "f",
+      "name": "distanceTo",
+      "signature": "(Lnone/bcb;)D",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    },
+    {
+      "obf": "g",
+      "name": "distanceToSquared",
+      "signature": "(Lnone/bcb;)D",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

@@ -1,0 +1,54 @@
+{
+  "obf": "zr",
+  "name": "net/minecraft/entity/player/InventoryPlayer",
+  "field": [
+    {
+      "obf": "d",
+      "name": "selectedSlot",
+      "type": "I"
+    },
+    {
+      "obf": "e",
+      "name": "player",
+      "type": "Lnone/zs;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(Lnone/zs;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "player"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getStack",
+      "signature": "(I)Lnone/adz;",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "putStack",
+      "signature": "(ILnone/adz;)V",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "readFromNBT",
+      "signature": "(Lnone/dx;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "tag"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

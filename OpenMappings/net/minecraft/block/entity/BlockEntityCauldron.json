@@ -1,0 +1,33 @@
+{
+  "obf": "aql",
+  "name": "net/minecraft/block/entity/BlockEntityCauldron",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "E_",
+      "name": "tick",
+      "signature": "()V",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "getSlotsAccesibleFromSide",
+      "signature": "(Lnone/ct;)[I",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "readFromNBT",
+      "signature": "(Lnone/dr;)V",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "writeToNBT",
+      "signature": "(Lnone/dr;)Lnone/dr;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

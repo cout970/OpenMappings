@@ -1,0 +1,104 @@
+{
+  "obf": "r",
+  "name": "net/minecraft/command/CommandBanIp",
+  "field": [
+    {
+      "obf": "a",
+      "name": "IP_MATCHER",
+      "type": "Ljava/util/regex/Pattern;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getMinimumPermissionLevel",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnet/minecraft/server/MinecraftServer;Lnone/n;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "server"
+        },
+        {
+          "index": 1,
+          "name": "user"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnet/minecraft/server/MinecraftServer;Lnone/n;Ljava/lang/String;Ljava/lang/String;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "server"
+        },
+        {
+          "index": 1,
+          "name": "user"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "execute",
+      "signature": "(Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "server"
+        },
+        {
+          "index": 1,
+          "name": "user"
+        },
+        {
+          "index": 2,
+          "name": "args"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getTabCompletions",
+      "signature": "(Lnet/minecraft/server/MinecraftServer;Lnone/n;[Ljava/lang/String;Lnone/cm;)Ljava/util/List;",
+      "args": [
+        {
+          "index": 0,
+          "name": "server"
+        },
+        {
+          "index": 1,
+          "name": "user"
+        },
+        {
+          "index": 2,
+          "name": "args"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "getHelp",
+      "signature": "(Lnone/n;)Ljava/lang/String;",
+      "args": [
+        {
+          "index": 0,
+          "name": "user"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "getName",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

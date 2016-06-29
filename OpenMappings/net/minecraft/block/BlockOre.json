@@ -1,0 +1,68 @@
+{
+  "obf": "anv",
+  "name": "net/minecraft/block/BlockOre",
+  "field": [],
+  "constructors": [
+    {
+      "signature": "(Lnone/axy;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "color"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getAmountDropped",
+      "signature": "(Ljava/util/Random;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "rand"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;FI)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getItemDropped",
+      "signature": "(Lnone/ars;Ljava/util/Random;I)Lnone/adx;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "rand"
+        },
+        {
+          "index": 2,
+          "name": "fortune"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

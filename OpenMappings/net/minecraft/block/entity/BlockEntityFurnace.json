@@ -1,0 +1,228 @@
+{
+  "obf": "aqv",
+  "name": "net/minecraft/block/entity/BlockEntityFurnace",
+  "field": [
+    {
+      "obf": "a",
+      "name": "UP_SLOTS",
+      "type": "[I"
+    },
+    {
+      "obf": "f",
+      "name": "DOWN_SLOTS",
+      "type": "[I"
+    },
+    {
+      "obf": "g",
+      "name": "SIDE_SLOTS",
+      "type": "[I"
+    },
+    {
+      "obf": "h",
+      "name": "inventory",
+      "type": "[Lnone/adz;"
+    },
+    {
+      "obf": "i",
+      "name": "burnTime",
+      "type": "I"
+    },
+    {
+      "obf": "k",
+      "name": "cookTime",
+      "type": "I"
+    },
+    {
+      "obf": "l",
+      "name": "cookTimeTotal",
+      "type": "I"
+    },
+    {
+      "obf": "m",
+      "name": "customName",
+      "type": "Ljava/lang/String;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "E_",
+      "name": "tick",
+      "signature": "()V",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "getStack",
+      "signature": "(I)Lnone/adz;",
+      "args": [
+        {
+          "index": 0,
+          "name": "slot"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(ILnone/adz;)V",
+      "args": [
+        {
+          "index": 1,
+          "name": "stack"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "setCustomName",
+      "signature": "(Ljava/lang/String;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/adz;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "stack"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getSlotsAccesibleFromSide",
+      "signature": "(Lnone/ct;)[I",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "readFromNBT",
+      "signature": "(Lnone/dr;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "tag"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ql;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "inv"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/zr;Lnone/zs;)Lnone/abd;",
+      "args": [
+        {
+          "index": 1,
+          "name": "player"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/zs;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "player"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "getBurnTime",
+      "signature": "(Lnone/adz;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "stack"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "writeToNBT",
+      "signature": "(Lnone/dr;)Lnone/dr;",
+      "args": [
+        {
+          "index": 0,
+          "name": "tag"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/zs;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "player"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "canBurn",
+      "signature": "(Lnone/adz;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "stack"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "signature": "(Lnone/zs;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "player"
+        }
+      ]
+    },
+    {
+      "obf": "h_",
+      "name": "getName",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    },
+    {
+      "obf": "m",
+      "name": "isBurning",
+      "signature": "()Z",
+      "args": []
+    },
+    {
+      "obf": "n_",
+      "name": "hasCustomName",
+      "signature": "()Z",
+      "args": []
+    },
+    {
+      "obf": "u_",
+      "name": "getInventorySize",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "w_",
+      "name": "getMaxStackSize",
+      "signature": "()I",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

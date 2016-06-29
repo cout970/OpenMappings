@@ -1,0 +1,39 @@
+{
+  "obf": "aqm",
+  "name": "net/minecraft/block/entity/BlockEntityChest",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "E_",
+      "name": "tick",
+      "signature": "()V",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "getStack",
+      "signature": "(I)Lnone/adz;",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "putStack",
+      "signature": "(ILnone/adz;)V",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "readFromNBT",
+      "signature": "(Lnone/dr;)V",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "writeToNBT",
+      "signature": "(Lnone/dr;)Lnone/dr;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

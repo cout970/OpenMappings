@@ -1,0 +1,19 @@
+{
+  "obf": "ff",
+  "name": "net/minecraft/chat/TranslatableComponent",
+  "field": [
+    {
+      "obf": "d",
+      "name": "key",
+      "type": "Ljava/lang/String;"
+    },
+    {
+      "obf": "e",
+      "name": "args",
+      "type": "[Ljava/lang/Object;"
+    }
+  ],
+  "constructors": [],
+  "method": [],
+  "innerClass": []
+}

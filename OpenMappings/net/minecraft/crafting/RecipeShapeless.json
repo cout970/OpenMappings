@@ -1,0 +1,47 @@
+{
+  "obf": "agh",
+  "name": "net/minecraft/crafting/RecipeShapeless",
+  "field": [
+    {
+      "obf": "a",
+      "name": "result",
+      "type": "Lnone/adz;"
+    },
+    {
+      "obf": "b",
+      "name": "inputs",
+      "type": "Ljava/util/List;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(Lnone/adz;Ljava/util/List;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "result"
+        },
+        {
+          "index": 1,
+          "name": "inputs"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getSize",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "getResult",
+      "signature": "()Lnone/adz;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

@@ -1,0 +1,71 @@
+{
+  "obf": "aki",
+  "name": "net/minecraft/block/RandomTickingBlock",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Ljava/util/Random;Lnone/cm;Lnone/ars;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "rand"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        },
+        {
+          "index": 3,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;Z)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/aid;Ljava/util/Random;Lnone/cm;Lnone/ars;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "rand"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        },
+        {
+          "index": 3,
+          "name": "state"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

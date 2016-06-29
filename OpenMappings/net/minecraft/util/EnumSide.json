@@ -1,0 +1,449 @@
+{
+  "obf": "ct",
+  "name": "net/minecraft/util/EnumSide",
+  "field": [
+    {
+      "obf": "a",
+      "name": "DOWN",
+      "type": "Lnone/ct;"
+    },
+    {
+      "obf": "b",
+      "name": "UP",
+      "type": "Lnone/ct;"
+    },
+    {
+      "obf": "c",
+      "name": "NORTH",
+      "type": "Lnone/ct;"
+    },
+    {
+      "obf": "d",
+      "name": "SOUTH",
+      "type": "Lnone/ct;"
+    },
+    {
+      "obf": "e",
+      "name": "WEST",
+      "type": "Lnone/ct;"
+    },
+    {
+      "obf": "f",
+      "name": "EAST",
+      "type": "Lnone/ct;"
+    },
+    {
+      "obf": "g",
+      "name": "index",
+      "type": "I"
+    },
+    {
+      "obf": "h",
+      "name": "opposite",
+      "type": "I"
+    },
+    {
+      "obf": "i",
+      "name": "horizontalIndex",
+      "type": "I"
+    },
+    {
+      "obf": "j",
+      "name": "name",
+      "type": "Ljava/lang/String;"
+    },
+    {
+      "obf": "k",
+      "name": "axis",
+      "type": "Lnone/ct$a;"
+    },
+    {
+      "obf": "l",
+      "name": "direction",
+      "type": "Lnone/ct$b;"
+    },
+    {
+      "obf": "m",
+      "name": "vector",
+      "type": "Lnone/di;"
+    },
+    {
+      "obf": "n",
+      "name": "VALUES",
+      "type": "[Lnone/ct;"
+    },
+    {
+      "obf": "o",
+      "name": "HORIZONTALS",
+      "type": "[Lnone/ct;"
+    },
+    {
+      "obf": "p",
+      "name": "NAME_VALUE_MAP",
+      "type": "Ljava/util/Map;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(Ljava/lang/String;IIIILjava/lang/String;Lnone/ct$b;Lnone/ct$a;Lnone/di;)V",
+      "args": [
+        {
+          "index": 3,
+          "name": "name1"
+        },
+        {
+          "index": 4,
+          "name": "direction"
+        },
+        {
+          "index": 5,
+          "name": "axis1"
+        },
+        {
+          "index": 6,
+          "name": "name"
+        },
+        {
+          "index": 7,
+          "name": "dir"
+        },
+        {
+          "index": 8,
+          "name": "axis"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getIndex",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "getHorizontalSideFromAngle",
+      "signature": "(D)Lnone/ct;",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "getSide",
+      "signature": "(I)Lnone/ct;",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "get",
+      "signature": "(Ljava/lang/String;)Lnone/ct;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getRandom",
+      "signature": "(Ljava/util/Random;)Lnone/ct;",
+      "args": [
+        {
+          "index": 0,
+          "name": "rand"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "rotateCW",
+      "signature": "(Lnone/ct$a;)Lnone/ct;",
+      "args": [
+        {
+          "index": 0,
+          "name": "axis"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "fromAxisAndDirection",
+      "signature": "(Lnone/ct$b;Lnone/ct$a;)Lnone/ct;",
+      "args": [
+        {
+          "index": 0,
+          "name": "direction"
+        },
+        {
+          "index": 1,
+          "name": "axis"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "getOppositeIndex",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "getHorizontalSide",
+      "signature": "(I)Lnone/ct;",
+      "args": []
+    },
+    {
+      "obf": "c",
+      "name": "getDirection",
+      "signature": "()Lnone/ct$b;",
+      "args": []
+    },
+    {
+      "obf": "d",
+      "name": "getOpposite",
+      "signature": "()Lnone/ct;",
+      "args": []
+    },
+    {
+      "obf": "e",
+      "name": "rotateY",
+      "signature": "()Lnone/ct;",
+      "args": []
+    },
+    {
+      "obf": "f",
+      "name": "rotateCCW",
+      "signature": "()Lnone/ct;",
+      "args": []
+    },
+    {
+      "obf": "g",
+      "name": "xOffset",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "h",
+      "name": "yOffset",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "i",
+      "name": "zOffset",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "j",
+      "name": "getName",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    },
+    {
+      "obf": "k",
+      "name": "getAxis",
+      "signature": "()Lnone/ct$a;",
+      "args": []
+    },
+    {
+      "obf": "l",
+      "name": "getPitch",
+      "signature": "()F",
+      "args": []
+    },
+    {
+      "obf": "m",
+      "name": "asString",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    },
+    {
+      "obf": "n",
+      "name": "toVector3i",
+      "signature": "()Lnone/di;",
+      "args": []
+    },
+    {
+      "obf": "o",
+      "name": "rotateX",
+      "signature": "()Lnone/ct;",
+      "args": []
+    },
+    {
+      "obf": "q",
+      "name": "rotateZ",
+      "signature": "()Lnone/ct;",
+      "args": []
+    },
+    {
+      "obf": "values",
+      "name": "values",
+      "signature": "()[Lnone/ct;",
+      "args": []
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "ct$a",
+      "name": "Axis",
+      "field": [
+        {
+          "obf": "a",
+          "name": "X",
+          "type": "Lnone/ct$a;"
+        },
+        {
+          "obf": "b",
+          "name": "Y",
+          "type": "Lnone/ct$a;"
+        },
+        {
+          "obf": "c",
+          "name": "Z",
+          "type": "Lnone/ct$a;"
+        },
+        {
+          "obf": "d",
+          "name": "NAME_VALUE_MAP",
+          "type": "Ljava/util/Map;"
+        },
+        {
+          "obf": "e",
+          "name": "name",
+          "type": "Ljava/lang/String;"
+        }
+      ],
+      "constructors": [
+        {
+          "signature": "(Ljava/lang/String;ILjava/lang/String;Lnone/ct$c;)V",
+          "args": [
+            {
+              "index": 3,
+              "name": "name"
+            }
+          ],
+          "statics": false
+        }
+      ],
+      "method": [
+        {
+          "obf": "a",
+          "name": "getName",
+          "signature": "()Ljava/lang/String;",
+          "args": []
+        },
+        {
+          "obf": "a",
+          "name": "get",
+          "signature": "(Ljava/lang/String;)Lnone/ct$a;",
+          "args": [
+            {
+              "index": 0,
+              "name": "name"
+            }
+          ]
+        },
+        {
+          "obf": "m",
+          "name": "asString",
+          "signature": "()Ljava/lang/String;",
+          "args": []
+        }
+      ],
+      "innerClass": []
+    },
+    {
+      "obf": "ct$b",
+      "name": "Direction",
+      "field": [
+        {
+          "obf": "a",
+          "name": "POSITIVE",
+          "type": "Lnone/ct$b;"
+        },
+        {
+          "obf": "b",
+          "name": "NEGATIVE",
+          "type": "Lnone/ct$b;"
+        },
+        {
+          "obf": "c",
+          "name": "value",
+          "type": "I"
+        },
+        {
+          "obf": "d",
+          "name": "name",
+          "type": "Ljava/lang/String;"
+        }
+      ],
+      "constructors": [],
+      "method": [
+        {
+          "obf": "a",
+          "name": "getValue",
+          "signature": "()I",
+          "args": []
+        }
+      ],
+      "innerClass": []
+    },
+    {
+      "obf": "ct$c",
+      "name": "Plane",
+      "field": [
+        {
+          "obf": "a",
+          "name": "HORIZONTAL",
+          "type": "Lnone/ct$c;"
+        },
+        {
+          "obf": "b",
+          "name": "VERTICAL",
+          "type": "Lnone/ct$c;"
+        }
+      ],
+      "constructors": [],
+      "method": [
+        {
+          "obf": "a",
+          "name": "getSides",
+          "signature": "()[Lnone/ct;",
+          "args": []
+        },
+        {
+          "obf": "a",
+          "name": "getRandom",
+          "signature": "(Ljava/util/Random;)Lnone/ct;",
+          "args": [
+            {
+              "index": 0,
+              "name": "rand"
+            }
+          ]
+        },
+        {
+          "obf": "a",
+          "name": "isInPlane",
+          "signature": "(Lnone/ct;)Z",
+          "args": [
+            {
+              "index": 0,
+              "name": "side"
+            }
+          ]
+        },
+        {
+          "obf": "iterator",
+          "name": "iterator",
+          "signature": "()Ljava/util/Iterator;",
+          "args": []
+        }
+      ],
+      "innerClass": []
+    }
+  ]
+}

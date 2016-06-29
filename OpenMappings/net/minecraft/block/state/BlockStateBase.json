@@ -1,0 +1,25 @@
+{
+  "obf": "arp",
+  "name": "net/minecraft/block/state/BlockStateBase",
+  "field": [
+    {
+      "obf": "a",
+      "name": "COMMA_JOINER",
+      "type": "Lcom/google/common/base/Joiner;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "signature": "(Lnone/asi;)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "property"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

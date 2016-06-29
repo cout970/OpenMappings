@@ -1,0 +1,27 @@
+{
+  "obf": "ef",
+  "name": "net/minecraft/util/nbt/Tag",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getType",
+      "signature": "()B",
+      "args": []
+    },
+    {
+      "obf": "b_",
+      "name": "isEmpty",
+      "signature": "()Z",
+      "args": []
+    },
+    {
+      "obf": "c_",
+      "name": "getString",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

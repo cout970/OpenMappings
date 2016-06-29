@@ -1,0 +1,254 @@
+{
+  "obf": "acz",
+  "name": "net/minecraft/util/CreativeTab",
+  "field": [
+    {
+      "obf": "a",
+      "name": "TABS",
+      "type": "[Lnone/acz;"
+    },
+    {
+      "obf": "b",
+      "name": "BUILDING_BLOCKS",
+      "type": "Lnone/acz;"
+    },
+    {
+      "obf": "c",
+      "name": "DECORATIONS",
+      "type": "Lnone/acz;"
+    },
+    {
+      "obf": "d",
+      "name": "REDSTONE",
+      "type": "Lnone/acz;"
+    },
+    {
+      "obf": "e",
+      "name": "TRANSPORTATION",
+      "type": "Lnone/acz;"
+    },
+    {
+      "obf": "f",
+      "name": "MISC",
+      "type": "Lnone/acz;"
+    },
+    {
+      "obf": "g",
+      "name": "SEARCH",
+      "type": "Lnone/acz;"
+    },
+    {
+      "obf": "h",
+      "name": "FOOD",
+      "type": "Lnone/acz;"
+    },
+    {
+      "obf": "i",
+      "name": "TOOLS",
+      "type": "Lnone/acz;"
+    },
+    {
+      "obf": "j",
+      "name": "COMBAT",
+      "type": "Lnone/acz;"
+    },
+    {
+      "obf": "k",
+      "name": "BREWING",
+      "type": "Lnone/acz;"
+    },
+    {
+      "obf": "l",
+      "name": "MATERIALS",
+      "type": "Lnone/acz;"
+    },
+    {
+      "obf": "m",
+      "name": "INVENTORY",
+      "type": "Lnone/acz;"
+    },
+    {
+      "obf": "n",
+      "name": "index",
+      "type": "I"
+    },
+    {
+      "obf": "o",
+      "name": "name",
+      "type": "Ljava/lang/String;"
+    },
+    {
+      "obf": "p",
+      "name": "texture",
+      "type": "Ljava/lang/String;"
+    },
+    {
+      "obf": "t",
+      "name": "cacheItemStack",
+      "type": "Lnone/adz;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(ILjava/lang/String;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "index"
+        },
+        {
+          "index": 1,
+          "name": "name"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getIndex",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "setTexture",
+      "signature": "(Ljava/lang/String;)Lnone/acz;",
+      "args": [
+        {
+          "index": 0,
+          "name": "texture"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "getName",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    },
+    {
+      "obf": "c",
+      "name": "getUnlocalizedName",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    },
+    {
+      "obf": "d",
+      "name": "getItemStack",
+      "signature": "()Lnone/adz;",
+      "args": []
+    },
+    {
+      "obf": "e",
+      "name": "getItem",
+      "signature": "()Lnone/adx;",
+      "args": []
+    },
+    {
+      "obf": "f",
+      "name": "getItemMetadata",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "g",
+      "name": "getTexture",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    },
+    {
+      "obf": "l",
+      "name": "getSlot",
+      "signature": "()I",
+      "args": []
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "acz$1",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    },
+    {
+      "obf": "acz$2",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    },
+    {
+      "obf": "acz$3",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    },
+    {
+      "obf": "acz$4",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    },
+    {
+      "obf": "acz$5",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    },
+    {
+      "obf": "acz$6",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    },
+    {
+      "obf": "acz$7",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    },
+    {
+      "obf": "acz$8",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    },
+    {
+      "obf": "acz$9",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    },
+    {
+      "obf": "acz$10",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    },
+    {
+      "obf": "acz$11",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    },
+    {
+      "obf": "acz$12",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    }
+  ]
+}

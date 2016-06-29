@@ -1,0 +1,144 @@
+{
+  "obf": "bdx",
+  "name": "net/minecraft/client/gui/GUILabel",
+  "field": [
+    {
+      "obf": "a",
+      "name": "width",
+      "type": "I"
+    },
+    {
+      "obf": "f",
+      "name": "height",
+      "type": "I"
+    },
+    {
+      "obf": "g",
+      "name": "x",
+      "type": "I"
+    },
+    {
+      "obf": "h",
+      "name": "y",
+      "type": "I"
+    },
+    {
+      "obf": "i",
+      "name": "id",
+      "type": "I"
+    },
+    {
+      "obf": "j",
+      "name": "isVisible",
+      "type": "Z"
+    },
+    {
+      "obf": "k",
+      "name": "labels",
+      "type": "Ljava/util/List;"
+    },
+    {
+      "obf": "m",
+      "name": "isBackgroundVisible",
+      "type": "Z"
+    },
+    {
+      "obf": "n",
+      "name": "color",
+      "type": "I"
+    },
+    {
+      "obf": "r",
+      "name": "textRenderer",
+      "type": "Lnone/bdl;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(Lnone/bdl;IIIIII)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "textRenderer"
+        },
+        {
+          "index": 1,
+          "name": "id"
+        },
+        {
+          "index": 2,
+          "name": "x"
+        },
+        {
+          "index": 3,
+          "name": "y"
+        },
+        {
+          "index": 4,
+          "name": "width"
+        },
+        {
+          "index": 5,
+          "name": "height"
+        },
+        {
+          "index": 6,
+          "name": "color"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "addText",
+      "signature": "(Ljava/lang/String;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "text"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "render",
+      "signature": "(Lnone/bcx;II)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "client"
+        },
+        {
+          "index": 1,
+          "name": "mouseX"
+        },
+        {
+          "index": 2,
+          "name": "mouseY"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "renderBackground",
+      "signature": "(Lnone/bcx;II)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "client"
+        },
+        {
+          "index": 1,
+          "name": "mouseX"
+        },
+        {
+          "index": 2,
+          "name": "mouseY"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

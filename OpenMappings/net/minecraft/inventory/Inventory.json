@@ -1,0 +1,75 @@
+{
+  "obf": "ql",
+  "name": "net/minecraft/inventory/Inventory",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getStack",
+      "signature": "(I)Lnone/adz;",
+      "args": [
+        {
+          "index": 0,
+          "name": "slot"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "putStack",
+      "signature": "(ILnone/adz;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "slot"
+        },
+        {
+          "index": 1,
+          "name": "stack"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/zs;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "player"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "signature": "(ILnone/adz;)Z",
+      "args": [
+        {
+          "index": 1,
+          "name": "stack"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/zs;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "player"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "signature": "(Lnone/zs;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "player"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

@@ -1,0 +1,29 @@
+{
+  "obf": "aqn",
+  "name": "net/minecraft/block/entity/BlockEntityControl",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "readFromNBT",
+      "signature": "(Lnone/dr;)V",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "writeToNBT",
+      "signature": "(Lnone/dr;)Lnone/dr;",
+      "args": []
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "aqn$1",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    }
+  ]
+}

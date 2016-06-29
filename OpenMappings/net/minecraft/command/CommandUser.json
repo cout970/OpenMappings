@@ -1,0 +1,57 @@
+{
+  "obf": "n",
+  "name": "net/minecraft/command/CommandUser",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "sendMessage",
+      "signature": "(Lnone/ey;)V",
+      "args": []
+    },
+    {
+      "obf": "c",
+      "name": "getPos",
+      "signature": "()Lnone/cm;",
+      "args": []
+    },
+    {
+      "obf": "d",
+      "name": "getLocation",
+      "signature": "()Lnone/bcb;",
+      "args": []
+    },
+    {
+      "obf": "e",
+      "name": "getWorld",
+      "signature": "()Lnone/aid;",
+      "args": []
+    },
+    {
+      "obf": "f",
+      "name": "getEntity",
+      "signature": "()Lnone/rw;",
+      "args": []
+    },
+    {
+      "obf": "h",
+      "name": "getServer",
+      "signature": "()Lnet/minecraft/server/MinecraftServer;",
+      "args": []
+    },
+    {
+      "obf": "h_",
+      "name": "getName",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    },
+    {
+      "obf": "i_",
+      "name": "getChatName",
+      "signature": "()Lnone/ey;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

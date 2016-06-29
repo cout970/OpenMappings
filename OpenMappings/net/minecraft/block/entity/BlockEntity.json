@@ -1,0 +1,169 @@
+{
+  "obf": "aqk",
+  "name": "net/minecraft/block/entity/BlockEntity",
+  "field": [
+    {
+      "obf": "a",
+      "name": "LOGGER",
+      "type": "Lorg/apache/logging/log4j/Logger;"
+    },
+    {
+      "obf": "b",
+      "name": "world",
+      "type": "Lnone/aid;"
+    },
+    {
+      "obf": "c",
+      "name": "pos",
+      "type": "Lnone/cm;"
+    },
+    {
+      "obf": "e",
+      "name": "block",
+      "type": "Lnone/akf;"
+    },
+    {
+      "obf": "f",
+      "name": "NAME_CLASS_MAP",
+      "type": "Ljava/util/Map;"
+    },
+    {
+      "obf": "g",
+      "name": "CLASS_NAME_MAP",
+      "type": "Ljava/util/Map;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "D",
+      "name": "getWorld",
+      "signature": "()Lnone/aid;",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "register",
+      "signature": "(Ljava/lang/Class;Ljava/lang/String;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "clazz"
+        },
+        {
+          "index": 1,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "setWorld",
+      "signature": "(Lnone/aid;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "create",
+      "signature": "(Lnone/aid;Lnone/dr;)Lnone/aqk;",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "tag"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/c;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "report"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "setPosition",
+      "signature": "(Lnone/cm;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "readFromNBT",
+      "signature": "(Lnone/dr;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "tag"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/aid;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "writeToNBT",
+      "signature": "(Lnone/dr;)Lnone/dr;",
+      "args": [
+        {
+          "index": 0,
+          "name": "tag"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "save",
+      "signature": "()Lnone/dr;",
+      "args": []
+    },
+    {
+      "obf": "c",
+      "name": "save",
+      "signature": "(Lnone/dr;)Lnone/dr;",
+      "args": [
+        {
+          "index": 0,
+          "name": "tag"
+        }
+      ]
+    },
+    {
+      "obf": "i_",
+      "name": "getNameMessage",
+      "signature": "()Lnone/ey;",
+      "args": []
+    },
+    {
+      "obf": "t",
+      "name": "hasWorld",
+      "signature": "()Z",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

@@ -1,0 +1,48 @@
+{
+  "obf": "rd",
+  "name": "net/minecraft/inventory/SidedInventory",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "signature": "(ILnone/adz;Lnone/ct;)Z",
+      "args": [
+        {
+          "index": 1,
+          "name": "stack"
+        },
+        {
+          "index": 2,
+          "name": "side"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getSlotsAccesibleFromSide",
+      "signature": "(Lnone/ct;)[I",
+      "args": [
+        {
+          "index": 0,
+          "name": "side"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "signature": "(ILnone/adz;Lnone/ct;)Z",
+      "args": [
+        {
+          "index": 1,
+          "name": "stack"
+        },
+        {
+          "index": 2,
+          "name": "side"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

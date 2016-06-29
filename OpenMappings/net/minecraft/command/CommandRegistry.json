@@ -1,0 +1,60 @@
+{
+  "obf": "m",
+  "name": "net/minecraft/command/CommandRegistry",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getAvaliableCommands",
+      "signature": "(Lnone/n;)Ljava/util/List;",
+      "args": [
+        {
+          "index": 0,
+          "name": "user"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getPermissionLevel",
+      "signature": "(Lnone/n;Ljava/lang/String;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "user"
+        },
+        {
+          "index": 1,
+          "name": "commandName"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getAutoCompletionOptions",
+      "signature": "(Lnone/n;Ljava/lang/String;Lnone/cm;)Ljava/util/List;",
+      "args": [
+        {
+          "index": 0,
+          "name": "user"
+        },
+        {
+          "index": 1,
+          "name": "commandName"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "getCommands",
+      "signature": "()Ljava/util/Map;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

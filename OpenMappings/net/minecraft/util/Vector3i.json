@@ -1,0 +1,174 @@
+{
+  "obf": "di",
+  "name": "net/minecraft/util/Vector3i",
+  "field": [
+    {
+      "obf": "a",
+      "name": "x",
+      "type": "I"
+    },
+    {
+      "obf": "b",
+      "name": "y",
+      "type": "I"
+    },
+    {
+      "obf": "c",
+      "name": "z",
+      "type": "I"
+    },
+    {
+      "obf": "e",
+      "name": "ORIGIN",
+      "type": "Lnone/di;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(DDD)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "x"
+        },
+        {
+          "index": 1,
+          "name": "y"
+        },
+        {
+          "index": 2,
+          "name": "z"
+        }
+      ],
+      "statics": false
+    },
+    {
+      "signature": "(III)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "x"
+        },
+        {
+          "index": 1,
+          "name": "y"
+        },
+        {
+          "index": 2,
+          "name": "z"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "d",
+      "name": "cross",
+      "signature": "(Lnone/di;)Lnone/di;",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    },
+    {
+      "obf": "equals",
+      "signature": "(Ljava/lang/Object;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    },
+    {
+      "obf": "f",
+      "name": "distanceToSquared",
+      "signature": "(DDD)D",
+      "args": [
+        {
+          "index": 0,
+          "name": "x"
+        },
+        {
+          "index": 1,
+          "name": "y"
+        },
+        {
+          "index": 2,
+          "name": "z"
+        }
+      ]
+    },
+    {
+      "obf": "g",
+      "name": "distanceToCenterSquared",
+      "signature": "(DDD)D",
+      "args": [
+        {
+          "index": 0,
+          "name": "x"
+        },
+        {
+          "index": 1,
+          "name": "y"
+        },
+        {
+          "index": 2,
+          "name": "z"
+        }
+      ]
+    },
+    {
+      "obf": "h",
+      "name": "distanceTo",
+      "signature": "(III)D",
+      "args": [
+        {
+          "index": 0,
+          "name": "x"
+        },
+        {
+          "index": 1,
+          "name": "y"
+        },
+        {
+          "index": 2,
+          "name": "z"
+        }
+      ]
+    },
+    {
+      "obf": "n",
+      "name": "distanceToSquared",
+      "signature": "(Lnone/di;)D",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    },
+    {
+      "obf": "p",
+      "name": "getX",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "q",
+      "name": "getY",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "r",
+      "name": "getZ",
+      "signature": "()I",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

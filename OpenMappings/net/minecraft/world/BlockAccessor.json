@@ -1,0 +1,76 @@
+{
+  "obf": "aih",
+  "name": "net/minecraft/world/BlockAccessor",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "signature": "(Lnone/cm;Lnone/ct;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "pos"
+        },
+        {
+          "index": 1,
+          "name": "side"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "getBiome",
+      "signature": "(Lnone/cm;)Lnone/aiq;",
+      "args": [
+        {
+          "index": 0,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/cm;I)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "d",
+      "signature": "(Lnone/cm;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "o",
+      "name": "getBlockState",
+      "signature": "(Lnone/cm;)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "r",
+      "name": "getBlockEntity",
+      "signature": "(Lnone/cm;)Lnone/aqk;",
+      "args": [
+        {
+          "index": 0,
+          "name": "pos"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

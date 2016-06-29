@@ -1,0 +1,115 @@
+{
+  "obf": "aou",
+  "name": "net/minecraft/block/BlockSandstone",
+  "field": [
+    {
+      "obf": "a",
+      "name": "TYPE",
+      "type": "Lnone/asg;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getState",
+      "signature": "(I)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "meta"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "addSubItems",
+      "signature": "(Lnone/adx;Lnone/acz;Ljava/util/List;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "item"
+        },
+        {
+          "index": 1,
+          "name": "tab"
+        },
+        {
+          "index": 2,
+          "name": "list"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "createStateContainer",
+      "signature": "()Lnone/art;",
+      "args": []
+    },
+    {
+      "obf": "d",
+      "signature": "(Lnone/ars;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "e",
+      "name": "getMeta",
+      "signature": "(Lnone/ars;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "r",
+      "name": "getColor",
+      "signature": "(Lnone/ars;)Lnone/axy;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "aou$a",
+      "name": "Type",
+      "field": [
+        {
+          "obf": "a",
+          "name": "SANDSTONE",
+          "type": "Lnone/aou$a;"
+        },
+        {
+          "obf": "b",
+          "name": "CHISELED_SANDSTONE",
+          "type": "Lnone/aou$a;"
+        },
+        {
+          "obf": "c",
+          "name": "SMOOTH_SANDSTONE",
+          "type": "Lnone/aou$a;"
+        }
+      ],
+      "constructors": [],
+      "method": [
+        {
+          "obf": "m",
+          "name": "asString",
+          "signature": "()Ljava/lang/String;",
+          "args": []
+        }
+      ],
+      "innerClass": []
+    }
+  ]
+}

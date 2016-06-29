@@ -1,0 +1,65 @@
+{
+  "obf": "asf",
+  "name": "net/minecraft/block/state/PropertySide",
+  "field": [],
+  "constructors": [
+    {
+      "signature": "(Ljava/lang/String;Ljava/util/Collection;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "values"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "create",
+      "signature": "(Ljava/lang/String;)Lnone/asf;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "create",
+      "signature": "(Ljava/lang/String;Lcom/google/common/base/Predicate;)Lnone/asf;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "predicate"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "create",
+      "signature": "(Ljava/lang/String;Ljava/util/Collection;)Lnone/asf;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "values"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

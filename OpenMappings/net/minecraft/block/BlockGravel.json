@@ -1,0 +1,49 @@
+{
+  "obf": "amk",
+  "name": "net/minecraft/block/BlockGravel",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getItemDropped",
+      "signature": "(Lnone/ars;Ljava/util/Random;I)Lnone/adx;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "rand"
+        },
+        {
+          "index": 2,
+          "name": "fortune"
+        }
+      ]
+    },
+    {
+      "obf": "r",
+      "name": "getColor",
+      "signature": "(Lnone/ars;)Lnone/axy;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "x",
+      "signature": "(Lnone/ars;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

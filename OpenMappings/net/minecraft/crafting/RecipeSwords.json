@@ -1,0 +1,31 @@
+{
+  "obf": "agm",
+  "name": "net/minecraft/crafting/RecipeSwords",
+  "field": [
+    {
+      "obf": "a",
+      "name": "PATTERNS",
+      "type": "[[Ljava/lang/String;"
+    },
+    {
+      "obf": "b",
+      "name": "ITEMS",
+      "type": "[[Ljava/lang/Object;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "register",
+      "signature": "(Lnone/age;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "manager"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

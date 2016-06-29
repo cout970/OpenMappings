@@ -1,0 +1,15 @@
+{
+  "obf": "ClientBrandRetriever",
+  "name": "net/minecraft/client/ClientBrand",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "getClientModName",
+      "name": "getBrand",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

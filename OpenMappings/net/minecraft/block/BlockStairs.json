@@ -1,0 +1,666 @@
+{
+  "obf": "aph",
+  "name": "net/minecraft/block/BlockStairs",
+  "field": [
+    {
+      "obf": "a",
+      "name": "FACING",
+      "type": "Lnone/asf;"
+    },
+    {
+      "obf": "b",
+      "name": "HALF",
+      "type": "Lnone/asg;"
+    },
+    {
+      "obf": "c",
+      "name": "SHAPE",
+      "type": "Lnone/asg;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(Lnone/ars;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getState",
+      "signature": "(I)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "meta"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ahy;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "onBlockActivated",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        },
+        {
+          "index": 3,
+          "name": "player"
+        },
+        {
+          "index": 4,
+          "name": "hand"
+        },
+        {
+          "index": 5,
+          "name": "stack"
+        },
+        {
+          "index": 6,
+          "name": "side"
+        },
+        {
+          "index": 7,
+          "name": "hitX"
+        },
+        {
+          "index": 8,
+          "name": "hitY"
+        },
+        {
+          "index": 9,
+          "name": "hitZ"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ct;FFFILnone/sf;)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "side"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/rw;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "entity"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/rw;Lnone/bcb;)Lnone/bcb;",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "entity"
+        },
+        {
+          "index": 3,
+          "name": "vec"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/zs;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "player"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;Lnone/aid;Lnone/cm;Ljava/util/Random;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "world"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        },
+        {
+          "index": 3,
+          "name": "rand"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;Lnone/aid;Lnone/cm;Lnone/bby;Ljava/util/List;Lnone/rw;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "world"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        },
+        {
+          "index": 3,
+          "name": "box"
+        },
+        {
+          "index": 4,
+          "name": "list"
+        },
+        {
+          "index": 5,
+          "name": "entity"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;Lnone/aid;Lnone/cm;Lnone/bcb;Lnone/bcb;)Lnone/bbz;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "world"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;Lnone/anf;)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;Lnone/aos;)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;Z)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/rw;)F",
+      "args": [
+        {
+          "index": 0,
+          "name": "entity"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "createStateContainer",
+      "signature": "()Lnone/art;",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "randomTick",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;Ljava/util/Random;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        },
+        {
+          "index": 3,
+          "name": "rand"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/ars;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/ars;Lnone/aih;Lnone/cm;)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "accessor"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "signature": "(Lnone/ars;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "signature": "(Lnone/ars;Lnone/aid;Lnone/cm;)Lnone/bby;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "world"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "signature": "(Lnone/ars;Lnone/aih;Lnone/cm;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "accessor"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "d",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "d",
+      "name": "getShape",
+      "signature": "(Lnone/ars;Lnone/aih;Lnone/cm;)Lnone/aph$b;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "accessor"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "d",
+      "signature": "(Lnone/ars;Lnone/aih;Lnone/cm;Lnone/ct;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "accessor"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        },
+        {
+          "index": 3,
+          "name": "side"
+        }
+      ]
+    },
+    {
+      "obf": "e",
+      "name": "getMeta",
+      "signature": "(Lnone/ars;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "i",
+      "signature": "(Lnone/ars;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "k",
+      "signature": "(Lnone/ars;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "r",
+      "name": "getColor",
+      "signature": "(Lnone/ars;)Lnone/axy;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "x",
+      "signature": "(Lnone/ars;)Ljava/util/List;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "y",
+      "signature": "(Lnone/ars;)Lnone/bby;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "z",
+      "signature": "(Lnone/ars;)Lnone/bby;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "aph$a",
+      "name": "Half",
+      "field": [
+        {
+          "obf": "a",
+          "name": "TOP",
+          "type": "Lnone/aph$a;"
+        },
+        {
+          "obf": "b",
+          "name": "BOTTOM",
+          "type": "Lnone/aph$a;"
+        },
+        {
+          "obf": "c",
+          "name": "name",
+          "type": "Ljava/lang/String;"
+        }
+      ],
+      "constructors": [],
+      "method": [
+        {
+          "obf": "m",
+          "name": "asString",
+          "signature": "()Ljava/lang/String;",
+          "args": []
+        }
+      ],
+      "innerClass": []
+    },
+    {
+      "obf": "aph$b",
+      "name": "Shape",
+      "field": [
+        {
+          "obf": "a",
+          "name": "STRAIGHT",
+          "type": "Lnone/aph$b;"
+        },
+        {
+          "obf": "b",
+          "name": "INNER_LEFT",
+          "type": "Lnone/aph$b;"
+        },
+        {
+          "obf": "c",
+          "name": "INNER_RIGHT",
+          "type": "Lnone/aph$b;"
+        },
+        {
+          "obf": "d",
+          "name": "OUTER_LEFT",
+          "type": "Lnone/aph$b;"
+        },
+        {
+          "obf": "e",
+          "name": "OUTER_RIGHT",
+          "type": "Lnone/aph$b;"
+        },
+        {
+          "obf": "f",
+          "name": "name",
+          "type": "Ljava/lang/String;"
+        }
+      ],
+      "constructors": [],
+      "method": [
+        {
+          "obf": "m",
+          "name": "asString",
+          "signature": "()Ljava/lang/String;",
+          "args": []
+        }
+      ],
+      "innerClass": []
+    }
+  ]
+}

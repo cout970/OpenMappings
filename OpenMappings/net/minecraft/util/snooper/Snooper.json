@@ -1,0 +1,19 @@
+{
+  "obf": "rb",
+  "name": "net/minecraft/util/snooper/Snooper",
+  "field": [
+    {
+      "obf": "d",
+      "name": "url",
+      "type": "Ljava/net/URL;"
+    },
+    {
+      "obf": "f",
+      "name": "timer",
+      "type": "Ljava/util/Timer;"
+    }
+  ],
+  "constructors": [],
+  "method": [],
+  "innerClass": []
+}

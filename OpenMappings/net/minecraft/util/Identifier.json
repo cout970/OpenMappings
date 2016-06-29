@@ -1,0 +1,88 @@
+{
+  "obf": "kn",
+  "name": "net/minecraft/util/Identifier",
+  "field": [
+    {
+      "obf": "a",
+      "name": "domain",
+      "type": "Ljava/lang/String;"
+    },
+    {
+      "obf": "b",
+      "name": "name",
+      "type": "Ljava/lang/String;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(I[Ljava/lang/String;)V",
+      "args": [
+        {
+          "index": 1,
+          "name": "bits"
+        }
+      ],
+      "statics": false
+    },
+    {
+      "signature": "(Ljava/lang/String;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ],
+      "statics": false
+    },
+    {
+      "signature": "(Ljava/lang/String;Ljava/lang/String;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "domain"
+        },
+        {
+          "index": 1,
+          "name": "name"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getName",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "split",
+      "signature": "(Ljava/lang/String;)[Ljava/lang/String;",
+      "args": [
+        {
+          "index": 0,
+          "name": "s"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "getDomain",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    },
+    {
+      "obf": "equals",
+      "signature": "(Ljava/lang/Object;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

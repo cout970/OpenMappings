@@ -1,0 +1,262 @@
+{
+  "obf": "bby",
+  "name": "net/minecraft/util/BoundingBox",
+  "field": [
+    {
+      "obf": "a",
+      "name": "minX",
+      "type": "D"
+    },
+    {
+      "obf": "b",
+      "name": "minY",
+      "type": "D"
+    },
+    {
+      "obf": "c",
+      "name": "minZ",
+      "type": "D"
+    },
+    {
+      "obf": "d",
+      "name": "maxX",
+      "type": "D"
+    },
+    {
+      "obf": "e",
+      "name": "maxY",
+      "type": "D"
+    },
+    {
+      "obf": "f",
+      "name": "maxZ",
+      "type": "D"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(DDDDDD)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "minX"
+        },
+        {
+          "index": 1,
+          "name": "minY"
+        },
+        {
+          "index": 2,
+          "name": "minZ"
+        },
+        {
+          "index": 3,
+          "name": "maxX"
+        },
+        {
+          "index": 4,
+          "name": "maxY"
+        },
+        {
+          "index": 5,
+          "name": "maxZ"
+        }
+      ],
+      "statics": false
+    },
+    {
+      "signature": "(Lnone/bcb;Lnone/bcb;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "start"
+        },
+        {
+          "index": 1,
+          "name": "end"
+        }
+      ],
+      "statics": false
+    },
+    {
+      "signature": "(Lnone/cm;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "pos"
+        }
+      ],
+      "statics": false
+    },
+    {
+      "signature": "(Lnone/cm;Lnone/cm;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "minPos"
+        },
+        {
+          "index": 1,
+          "name": "maxPos"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "extend",
+      "signature": "(DDD)Lnone/bby;",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "collide",
+      "signature": "(DDDDDD)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "minX"
+        },
+        {
+          "index": 1,
+          "name": "minY"
+        },
+        {
+          "index": 2,
+          "name": "minZ"
+        },
+        {
+          "index": 3,
+          "name": "maxX"
+        },
+        {
+          "index": 4,
+          "name": "maxY"
+        },
+        {
+          "index": 5,
+          "name": "maxZ"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "join",
+      "signature": "(Lnone/bby;)Lnone/bby;",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "isInside",
+      "signature": "(Lnone/bcb;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "point"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "collide",
+      "signature": "(Lnone/bcb;Lnone/bcb;)Z",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "translate",
+      "signature": "(Lnone/cm;)Lnone/bby;",
+      "args": [
+        {
+          "index": 0,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "expand",
+      "signature": "(DDD)Lnone/bby;",
+      "args": [
+        {
+          "index": 0,
+          "name": "x"
+        },
+        {
+          "index": 1,
+          "name": "y"
+        },
+        {
+          "index": 2,
+          "name": "z"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "collide",
+      "signature": "(Lnone/bby;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "translate",
+      "signature": "(DDD)Lnone/bby;",
+      "args": [
+        {
+          "index": 0,
+          "name": "x"
+        },
+        {
+          "index": 1,
+          "name": "y"
+        },
+        {
+          "index": 2,
+          "name": "z"
+        }
+      ]
+    },
+    {
+      "obf": "e",
+      "name": "withMaxY",
+      "signature": "(D)Lnone/bby;",
+      "args": [
+        {
+          "index": 0,
+          "name": "maxY"
+        }
+      ]
+    },
+    {
+      "obf": "g",
+      "name": "expand",
+      "signature": "(D)Lnone/bby;",
+      "args": [
+        {
+          "index": 0,
+          "name": "amount"
+        }
+      ]
+    },
+    {
+      "obf": "h",
+      "name": "contract",
+      "signature": "(D)Lnone/bby;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

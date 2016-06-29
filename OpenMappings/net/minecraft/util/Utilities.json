@@ -1,0 +1,76 @@
+{
+  "obf": "h",
+  "name": "net/minecraft/util/Utilities",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getOperatingSystem",
+      "signature": "()Lnone/h$a;",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "getLast",
+      "signature": "(Ljava/util/List;)Ljava/lang/Object;",
+      "args": [
+        {
+          "index": 0,
+          "name": "list"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "runTask",
+      "signature": "(Ljava/util/concurrent/FutureTask;Lorg/apache/logging/log4j/Logger;)Ljava/lang/Object;",
+      "args": [
+        {
+          "index": 0,
+          "name": "task"
+        },
+        {
+          "index": 1,
+          "name": "logger"
+        }
+      ]
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "h$a",
+      "name": "OS",
+      "field": [
+        {
+          "obf": "a",
+          "name": "LINUX",
+          "type": "Lnone/h$a;"
+        },
+        {
+          "obf": "b",
+          "name": "SOLARIS",
+          "type": "Lnone/h$a;"
+        },
+        {
+          "obf": "c",
+          "name": "WINDOWS",
+          "type": "Lnone/h$a;"
+        },
+        {
+          "obf": "d",
+          "name": "MACOS",
+          "type": "Lnone/h$a;"
+        },
+        {
+          "obf": "e",
+          "name": "UNKNOWN",
+          "type": "Lnone/h$a;"
+        }
+      ],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    }
+  ]
+}

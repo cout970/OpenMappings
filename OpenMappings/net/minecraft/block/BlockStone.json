@@ -1,0 +1,225 @@
+{
+  "obf": "apl",
+  "name": "net/minecraft/block/BlockStone",
+  "field": [
+    {
+      "obf": "a",
+      "name": "VARIANT",
+      "type": "Lnone/asg;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getState",
+      "signature": "(I)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "meat"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "addSubItems",
+      "signature": "(Lnone/adx;Lnone/acz;Ljava/util/List;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "item"
+        },
+        {
+          "index": 1,
+          "name": "tab"
+        },
+        {
+          "index": 2,
+          "name": "list"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getItemDropped",
+      "signature": "(Lnone/ars;Ljava/util/Random;I)Lnone/adx;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "rand"
+        },
+        {
+          "index": 2,
+          "name": "fortune"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "createStateContainer",
+      "signature": "()Lnone/art;",
+      "args": []
+    },
+    {
+      "obf": "d",
+      "signature": "(Lnone/ars;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "e",
+      "name": "getMeta",
+      "signature": "(Lnone/ars;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "r",
+      "name": "getColor",
+      "signature": "(Lnone/ars;)Lnone/axy;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "apl$a",
+      "name": "Type",
+      "field": [
+        {
+          "obf": "a",
+          "name": "STONE",
+          "type": "Lnone/apl$a;"
+        },
+        {
+          "obf": "b",
+          "name": "GRANITE",
+          "type": "Lnone/apl$a;"
+        },
+        {
+          "obf": "c",
+          "name": "GRANITE_SMOOTH",
+          "type": "Lnone/apl$a;"
+        },
+        {
+          "obf": "d",
+          "name": "DIORITE",
+          "type": "Lnone/apl$a;"
+        },
+        {
+          "obf": "e",
+          "name": "DIORITE_SMOOTH",
+          "type": "Lnone/apl$a;"
+        },
+        {
+          "obf": "f",
+          "name": "ANDESITE",
+          "type": "Lnone/apl$a;"
+        },
+        {
+          "obf": "g",
+          "name": "ANDESITE_SMOOTH",
+          "type": "Lnone/apl$a;"
+        },
+        {
+          "obf": "h",
+          "name": "VALUES",
+          "type": "[Lnone/apl$a;"
+        },
+        {
+          "obf": "i",
+          "name": "meta",
+          "type": "I"
+        },
+        {
+          "obf": "j",
+          "name": "name",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "obf": "k",
+          "name": "secondaryName",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "obf": "l",
+          "name": "color",
+          "type": "Lnone/axy;"
+        }
+      ],
+      "constructors": [
+        {
+          "signature": "(Ljava/lang/String;IILnone/axy;Ljava/lang/String;)V",
+          "args": [],
+          "statics": false
+        },
+        {
+          "signature": "(Ljava/lang/String;IILnone/axy;Ljava/lang/String;Ljava/lang/String;)V",
+          "args": [],
+          "statics": false
+        }
+      ],
+      "method": [
+        {
+          "obf": "a",
+          "name": "getMeta",
+          "signature": "()I",
+          "args": []
+        },
+        {
+          "obf": "a",
+          "name": "getType",
+          "signature": "(I)Lnone/apl$a;",
+          "args": [
+            {
+              "index": 0,
+              "name": "meta"
+            }
+          ]
+        },
+        {
+          "obf": "c",
+          "name": "getColor",
+          "signature": "()Lnone/axy;",
+          "args": []
+        },
+        {
+          "obf": "d",
+          "name": "getSecondaryName",
+          "signature": "()Ljava/lang/String;",
+          "args": []
+        },
+        {
+          "obf": "m",
+          "name": "asString",
+          "signature": "()Ljava/lang/String;",
+          "args": []
+        },
+        {
+          "obf": "values",
+          "name": "values",
+          "signature": "()[Lnone/apl$a;",
+          "args": []
+        }
+      ],
+      "innerClass": []
+    }
+  ]
+}

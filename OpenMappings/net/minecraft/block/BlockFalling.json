@@ -1,0 +1,163 @@
+{
+  "obf": "alu",
+  "name": "net/minecraft/block/BlockFalling",
+  "field": [],
+  "constructors": [
+    {
+      "signature": "(Lnone/axx;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "material"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;Lnone/aid;Lnone/cm;Ljava/util/Random;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "world"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        },
+        {
+          "index": 3,
+          "name": "rand"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;Lnone/aid;Lnone/cm;Lnone/akf;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "world"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        },
+        {
+          "index": 3,
+          "name": "block"
+        }
+      ]
+    },
+    {
+      "obf": "a_",
+      "signature": "(Lnone/aid;Lnone/cm;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/aid;Lnone/cm;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "randomTick",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;Ljava/util/Random;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        },
+        {
+          "index": 3,
+          "name": "rand"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "i",
+      "signature": "(Lnone/ars;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "x",
+      "signature": "(Lnone/ars;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

@@ -1,0 +1,46 @@
+{
+  "obf": "anq",
+  "name": "net/minecraft/block/BlockBedrock",
+  "field": [],
+  "constructors": [
+    {
+      "signature": "(Lnone/axx;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "material"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getAmountDropped",
+      "signature": "(Ljava/util/Random;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "rand"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getItemDropped",
+      "signature": "(Lnone/ars;Ljava/util/Random;I)Lnone/adx;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "rand"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

@@ -1,0 +1,222 @@
+{
+  "obf": "alg",
+  "name": "net/minecraft/block/BlockDirt",
+  "field": [
+    {
+      "obf": "a",
+      "name": "VARIANT",
+      "type": "Lnone/asg;"
+    },
+    {
+      "obf": "b",
+      "name": "SNOWY",
+      "type": "Lnone/ase;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getState",
+      "signature": "(I)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "meta"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "addSubItems",
+      "signature": "(Lnone/adx;Lnone/acz;Ljava/util/List;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "item"
+        },
+        {
+          "index": 1,
+          "name": "tab"
+        },
+        {
+          "index": 2,
+          "name": "list"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;)Lnone/adz;",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "createStateContainer",
+      "signature": "()Lnone/art;",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/ars;Lnone/aih;Lnone/cm;)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "accessor"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "d",
+      "signature": "(Lnone/ars;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "e",
+      "name": "getMeta",
+      "signature": "(Lnone/ars;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "r",
+      "name": "getColor",
+      "signature": "(Lnone/ars;)Lnone/axy;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "alg$a",
+      "name": "Type",
+      "field": [
+        {
+          "obf": "a",
+          "name": "DIRT",
+          "type": "Lnone/alg$a;"
+        },
+        {
+          "obf": "b",
+          "name": "COARSE_DIRT",
+          "type": "Lnone/alg$a;"
+        },
+        {
+          "obf": "c",
+          "name": "PODZOL",
+          "type": "Lnone/alg$a;"
+        },
+        {
+          "obf": "d",
+          "name": "VALUES",
+          "type": "[Lnone/alg$a;"
+        },
+        {
+          "obf": "e",
+          "name": "meta",
+          "type": "I"
+        },
+        {
+          "obf": "f",
+          "name": "name",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "obf": "g",
+          "name": "secondaryName",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "obf": "h",
+          "name": "color",
+          "type": "Lnone/axy;"
+        }
+      ],
+      "constructors": [
+        {
+          "signature": "(Ljava/lang/String;IILjava/lang/String;Lnone/axy;)V",
+          "args": [],
+          "statics": false
+        }
+      ],
+      "method": [
+        {
+          "obf": "a",
+          "name": "getMeta",
+          "signature": "()I",
+          "args": []
+        },
+        {
+          "obf": "a",
+          "name": "getType",
+          "signature": "(I)Lnone/alg$a;",
+          "args": [
+            {
+              "index": 0,
+              "name": "meta"
+            }
+          ]
+        },
+        {
+          "obf": "c",
+          "name": "getSecondaryName",
+          "signature": "()Ljava/lang/String;",
+          "args": []
+        },
+        {
+          "obf": "d",
+          "name": "getColor",
+          "signature": "()Lnone/axy;",
+          "args": []
+        },
+        {
+          "obf": "m",
+          "name": "asString",
+          "signature": "()Ljava/lang/String;",
+          "args": []
+        },
+        {
+          "obf": "values",
+          "name": "values",
+          "signature": "()[Lnone/alg$a;",
+          "args": []
+        }
+      ],
+      "innerClass": []
+    }
+  ]
+}

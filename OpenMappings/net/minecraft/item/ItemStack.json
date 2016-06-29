@@ -1,0 +1,27 @@
+{
+  "obf": "adz",
+  "name": "net/minecraft/item/ItemStack",
+  "field": [
+    {
+      "obf": "e",
+      "name": "tag",
+      "type": "Lnone/dr;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "n",
+      "name": "hasTag",
+      "signature": "()Z",
+      "args": []
+    },
+    {
+      "obf": "o",
+      "name": "getTag",
+      "signature": "()Lnone/dr;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

@@ -1,0 +1,21 @@
+{
+  "obf": "agd",
+  "name": "net/minecraft/crafting/IRecipe",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getSize",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "getResult",
+      "signature": "()Lnone/adz;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

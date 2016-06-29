@@ -1,0 +1,14 @@
+{
+  "obf": "vx",
+  "name": "net/minecraft/world/structure/village/VillageList",
+  "field": [
+    {
+      "obf": "b",
+      "name": "world",
+      "type": "Lnone/aid;"
+    }
+  ],
+  "constructors": [],
+  "method": [],
+  "innerClass": []
+}

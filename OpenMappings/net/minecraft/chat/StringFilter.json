@@ -1,0 +1,31 @@
+{
+  "obf": "g",
+  "name": "net/minecraft/chat/StringFilter",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "filter",
+      "signature": "(C)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "character"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "filter",
+      "signature": "(Ljava/lang/String;)Ljava/lang/String;",
+      "args": [
+        {
+          "index": 0,
+          "name": "str"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

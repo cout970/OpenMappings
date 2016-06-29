@@ -1,0 +1,27 @@
+{
+  "obf": "qy",
+  "name": "net/minecraft/util/Nameable",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "h_",
+      "name": "getName",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    },
+    {
+      "obf": "i_",
+      "name": "getNameMessage",
+      "signature": "()Lnone/ey;",
+      "args": []
+    },
+    {
+      "obf": "n_",
+      "name": "hasName",
+      "signature": "()Z",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

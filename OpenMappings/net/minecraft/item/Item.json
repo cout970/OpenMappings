@@ -1,0 +1,226 @@
+{
+  "obf": "adx",
+  "name": "net/minecraft/item/Item",
+  "field": [
+    {
+      "obf": "a",
+      "name": "blockToItemMap",
+      "type": "Ljava/util/Map;"
+    },
+    {
+      "obf": "g",
+      "name": "REGISTRY",
+      "type": "Lnone/da;"
+    },
+    {
+      "obf": "k",
+      "name": "maxStackSize",
+      "type": "I"
+    },
+    {
+      "obf": "n",
+      "name": "creativeTab",
+      "type": "Lnone/acz;"
+    },
+    {
+      "obf": "o",
+      "name": "maxDamage",
+      "type": "I"
+    },
+    {
+      "obf": "q",
+      "name": "name",
+      "type": "Ljava/lang/String;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getUnlocalizedName",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "registerItem",
+      "signature": "(ILjava/lang/String;Lnone/adx;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "id"
+        },
+        {
+          "index": 1,
+          "name": "name"
+        },
+        {
+          "index": 2,
+          "name": "item"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "registerItem",
+      "signature": "(ILnone/kn;Lnone/adx;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "id"
+        },
+        {
+          "index": 1,
+          "name": "name"
+        },
+        {
+          "index": 2,
+          "name": "item"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "setCreativeTab",
+      "signature": "(Lnone/acz;)Lnone/adx;",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "addSubItems",
+      "signature": "(Lnone/adx;Lnone/acz;Ljava/util/List;)V",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "getItem",
+      "signature": "(Lnone/akf;)Lnone/adx;",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "registerItem",
+      "signature": "(Lnone/akf;Lnone/adx;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "block"
+        },
+        {
+          "index": 1,
+          "name": "item"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "isToolEffective",
+      "signature": "(Lnone/ars;)Z",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "getCreativeTab",
+      "signature": "()Lnone/acz;",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "registerItem",
+      "signature": "(Lnone/akf;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "block"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "setName",
+      "signature": "(Ljava/lang/String;)Lnone/adx;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "d",
+      "name": "setMaxStackSize",
+      "signature": "(I)Lnone/adx;",
+      "args": [
+        {
+          "index": 0,
+          "name": "stackSize"
+        }
+      ]
+    },
+    {
+      "obf": "e",
+      "name": "setMaxDamage",
+      "signature": "(I)Lnone/adx;",
+      "args": []
+    },
+    {
+      "obf": "f_",
+      "name": "getUnlocalizedName",
+      "signature": "(Lnone/adz;)Ljava/lang/String;",
+      "args": [
+        {
+          "index": 0,
+          "name": "stack"
+        }
+      ]
+    },
+    {
+      "obf": "j",
+      "name": "getMaxStackSize",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "l",
+      "name": "getMaxDamage",
+      "signature": "()I",
+      "args": []
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "adx$a",
+      "name": "ToolType",
+      "field": [
+        {
+          "obf": "a",
+          "name": "WOOD",
+          "type": "Lnone/adx$a;"
+        },
+        {
+          "obf": "b",
+          "name": "STONE",
+          "type": "Lnone/adx$a;"
+        },
+        {
+          "obf": "c",
+          "name": "IRON",
+          "type": "Lnone/adx$a;"
+        },
+        {
+          "obf": "d",
+          "name": "DIAMOND",
+          "type": "Lnone/adx$a;"
+        },
+        {
+          "obf": "e",
+          "name": "GOLD",
+          "type": "Lnone/adx$a;"
+        }
+      ],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    }
+  ]
+}

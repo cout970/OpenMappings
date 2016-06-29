@@ -1,0 +1,15 @@
+{
+  "obf": "bob",
+  "name": "net/minecraft/client/util/OpenGL",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "c",
+      "name": "setColor",
+      "signature": "(FFFF)V",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

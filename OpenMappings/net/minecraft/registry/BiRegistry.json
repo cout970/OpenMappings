@@ -1,0 +1,88 @@
+{
+  "obf": "da",
+  "name": "net/minecraft/registry/BiRegistry",
+  "field": [
+    {
+      "obf": "b",
+      "name": "map",
+      "type": "Ljava/util/Map;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "get",
+      "signature": "(I)Ljava/lang/Object;",
+      "args": [
+        {
+          "index": 0,
+          "name": "id"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "register",
+      "signature": "(ILjava/lang/Object;Ljava/lang/Object;)V",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "getID",
+      "signature": "(Ljava/lang/Object;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "createMap",
+      "signature": "()Ljava/util/Map;",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "getKey",
+      "signature": "(Ljava/lang/Object;)Ljava/lang/Object;",
+      "args": [
+        {
+          "index": 0,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "get",
+      "signature": "(Ljava/lang/Object;)Ljava/lang/Object;",
+      "args": [
+        {
+          "index": 0,
+          "name": "key"
+        }
+      ]
+    },
+    {
+      "obf": "d",
+      "name": "contains",
+      "signature": "(Ljava/lang/Object;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "key"
+        }
+      ]
+    },
+    {
+      "obf": "iterator",
+      "name": "iterator",
+      "signature": "()Ljava/util/Iterator;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

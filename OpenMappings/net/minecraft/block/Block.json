@@ -1,0 +1,491 @@
+{
+  "obf": "akf",
+  "name": "net/minecraft/block/Block",
+  "field": [
+    {
+      "obf": "A",
+      "name": "stateContainer",
+      "type": "Lnone/art;"
+    },
+    {
+      "obf": "a",
+      "name": "identitier",
+      "type": "Lnone/kn;"
+    },
+    {
+      "obf": "b",
+      "name": "creativeTab",
+      "type": "Lnone/acz;"
+    },
+    {
+      "obf": "c",
+      "name": "defaultState",
+      "type": "Lnone/ars;"
+    },
+    {
+      "obf": "d",
+      "name": "name",
+      "type": "Ljava/lang/String;"
+    },
+    {
+      "obf": "h",
+      "name": "REGISTRY",
+      "type": "Lnone/cr;"
+    },
+    {
+      "obf": "x",
+      "name": "material",
+      "type": "Lnone/axx;"
+    },
+    {
+      "obf": "y",
+      "name": "color",
+      "type": "Lnone/axy;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getUnlocalizedName",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "getState",
+      "signature": "(I)Lnone/ars;",
+      "args": [
+        {
+          "index": 0,
+          "name": "meta"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "register",
+      "signature": "(ILjava/lang/String;Lnone/akf;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "id"
+        },
+        {
+          "index": 1,
+          "name": "name"
+        },
+        {
+          "index": 2,
+          "name": "block"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(ILjava/util/Random;)I",
+      "args": [
+        {
+          "index": 1,
+          "name": "rand"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "register",
+      "signature": "(ILnone/kn;Lnone/akf;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "id"
+        },
+        {
+          "index": 1,
+          "name": "identifier"
+        },
+        {
+          "index": 2,
+          "name": "block"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getAmountDropped",
+      "signature": "(Ljava/util/Random;)I",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "setCreativeTab",
+      "signature": "(Lnone/acz;)Lnone/akf;",
+      "args": [
+        {
+          "index": 0,
+          "name": "tab"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getBlock",
+      "signature": "(Lnone/adx;)Lnone/akf;",
+      "args": [
+        {
+          "index": 0,
+          "name": "item"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "addSubItems",
+      "signature": "(Lnone/adx;Lnone/acz;Ljava/util/List;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "item"
+        },
+        {
+          "index": 1,
+          "name": "tab"
+        },
+        {
+          "index": 2,
+          "name": "list"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;)Lnone/adz;",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;Lnone/sf;Lnone/adz;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        },
+        {
+          "index": 4,
+          "name": "stack"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "state"
+        },
+        {
+          "index": 3,
+          "name": "player"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "onBlockActivated",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/rw;F)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        },
+        {
+          "index": 2,
+          "name": "entity"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/rw;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "pos"
+        },
+        {
+          "index": 1,
+          "name": "entity"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/aid;Lnone/zs;Lnone/cm;Lnone/ars;Lnone/aqk;Lnone/adz;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "player"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        },
+        {
+          "index": 3,
+          "name": "state"
+        },
+        {
+          "index": 4,
+          "name": "entity"
+        },
+        {
+          "index": 5,
+          "name": "stack"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getBlockID",
+      "signature": "(Lnone/akf;)I",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "getItemDropped",
+      "signature": "(Lnone/ars;Ljava/util/Random;I)Lnone/adx;",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ars;Lnone/aid;Lnone/cm;II)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "world"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "createStateContainer",
+      "signature": "()Lnone/art;",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "getBlock",
+      "signature": "(I)Lnone/akf;",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "randomTick",
+      "signature": "(Lnone/aid;Lnone/cm;Lnone/ars;Ljava/util/Random;)V",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "signature": "(Lnone/akf;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "block"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "setName",
+      "signature": "(Ljava/lang/String;)Lnone/akf;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "d",
+      "signature": "(Lnone/ars;Lnone/aid;Lnone/cm;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        },
+        {
+          "index": 1,
+          "name": "world"
+        },
+        {
+          "index": 2,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "e",
+      "name": "getMeta",
+      "signature": "(Lnone/ars;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "f",
+      "signature": "(Lnone/ars;)F",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "h",
+      "signature": "(Lnone/aid;Lnone/cm;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "pos"
+        }
+      ]
+    },
+    {
+      "obf": "h",
+      "signature": "(Lnone/ars;)Lnone/aya;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "q",
+      "name": "getMaterial",
+      "signature": "(Lnone/ars;)Lnone/axx;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "r",
+      "name": "getCreativeTab",
+      "signature": "()Lnone/acz;",
+      "args": []
+    },
+    {
+      "obf": "r",
+      "name": "getColor",
+      "signature": "(Lnone/ars;)Lnone/axy;",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "t",
+      "name": "getStateContainer",
+      "signature": "()Lnone/art;",
+      "args": []
+    },
+    {
+      "obf": "u",
+      "name": "getDefaultState",
+      "signature": "()Lnone/ars;",
+      "args": []
+    },
+    {
+      "obf": "v",
+      "signature": "(Lnone/ars;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "w",
+      "name": "setDefaultState",
+      "signature": "(Lnone/ars;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "state"
+        }
+      ]
+    },
+    {
+      "obf": "x",
+      "name": "initialize",
+      "signature": "()V",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

@@ -1,0 +1,101 @@
+{
+  "obf": "c",
+  "name": "net/minecraft/util/crash/CrashReportElement",
+  "field": [
+    {
+      "obf": "a",
+      "name": "report",
+      "type": "Lnone/b;"
+    },
+    {
+      "obf": "b",
+      "name": "name",
+      "type": "Ljava/lang/String;"
+    },
+    {
+      "obf": "c",
+      "name": "elements",
+      "type": "Ljava/util/List;"
+    },
+    {
+      "obf": "d",
+      "name": "stackTrace",
+      "type": "[Ljava/lang/StackTraceElement;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(Lnone/b;Ljava/lang/String;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "report"
+        },
+        {
+          "index": 1,
+          "name": "name"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "addEntry",
+      "signature": "(Ljava/lang/String;Ljava/lang/Object;)V",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "addEntry",
+      "signature": "(Ljava/lang/String;Lnone/d;)V",
+      "args": []
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "c$a",
+      "name": "Element",
+      "field": [
+        {
+          "obf": "a",
+          "name": "name",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "obf": "b",
+          "name": "value",
+          "type": "Ljava/lang/String;"
+        }
+      ],
+      "constructors": [
+        {
+          "signature": "(Ljava/lang/String;Ljava/lang/Object;)V",
+          "args": [
+            {
+              "index": 0,
+              "name": "name"
+            }
+          ],
+          "statics": false
+        }
+      ],
+      "method": [
+        {
+          "obf": "a",
+          "name": "getName",
+          "signature": "()Ljava/lang/String;",
+          "args": []
+        },
+        {
+          "obf": "b",
+          "name": "getValue",
+          "signature": "()Ljava/lang/String;",
+          "args": []
+        }
+      ],
+      "innerClass": []
+    }
+  ]
+}

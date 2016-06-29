@@ -1,0 +1,131 @@
+{
+  "obf": "zs",
+  "name": "net/minecraft/entity/player/EntityPlayer",
+  "field": [
+    {
+      "obf": "bH",
+      "name": "sleeping",
+      "type": "Z"
+    },
+    {
+      "obf": "bM",
+      "name": "xpLevel",
+      "type": "I"
+    },
+    {
+      "obf": "bN",
+      "name": "xpTotal",
+      "type": "I"
+    },
+    {
+      "obf": "bO",
+      "name": "xpP",
+      "type": "F"
+    },
+    {
+      "obf": "bt",
+      "name": "inventory",
+      "type": "Lnone/zr;"
+    },
+    {
+      "obf": "d",
+      "name": "sleepTimer",
+      "type": "I"
+    },
+    {
+      "obf": "h",
+      "name": "xpSeed",
+      "type": "I"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "signature": "(Lnone/adz;Lnone/qr;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "stack"
+        },
+        {
+          "index": 1,
+          "name": "hand"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "readFromNBT",
+      "signature": "(Lnone/dr;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "tag"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "interact",
+      "signature": "(Lnone/qs;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "interaction"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/rw;Lnone/adz;Lnone/qr;)Lnone/qt;",
+      "args": [
+        {
+          "index": 0,
+          "name": "entity"
+        },
+        {
+          "index": 1,
+          "name": "stack"
+        },
+        {
+          "index": 2,
+          "name": "hand"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/wr;Lnone/ql;)V",
+      "args": [
+        {
+          "index": 1,
+          "name": "inv"
+        }
+      ]
+    },
+    {
+      "obf": "f",
+      "signature": "(Lnone/rw;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "entity"
+        }
+      ]
+    },
+    {
+      "obf": "h_",
+      "name": "getName",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    },
+    {
+      "obf": "i_",
+      "name": "getChatName",
+      "signature": "()Lnone/ey;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

@@ -1,0 +1,34 @@
+{
+  "obf": "art",
+  "name": "net/minecraft/block/state/StateContainer",
+  "field": [
+    {
+      "obf": "a",
+      "name": "NAME_MATCHER",
+      "type": "Ljava/util/regex/Pattern;"
+    },
+    {
+      "obf": "b",
+      "name": "NAMER",
+      "type": "Lcom/google/common/base/Function;"
+    }
+  ],
+  "constructors": [],
+  "method": [],
+  "innerClass": [
+    {
+      "obf": "art$1",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    },
+    {
+      "obf": "art$a",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "obf": "op",
+  "name": "net/minecraft/util/MathUtil",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "sqrt",
+      "signature": "(D)F",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

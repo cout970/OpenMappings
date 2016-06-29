@@ -1,0 +1,73 @@
+{
+  "obf": "lu",
+  "name": "net/minecraft/entity/player/EntityPlayerServer",
+  "field": [
+    {
+      "obf": "b",
+      "name": "server",
+      "type": "Lnet/minecraft/server/MinecraftServer;"
+    },
+    {
+      "obf": "bS",
+      "name": "LOGGER",
+      "type": "Lorg/apache/logging/log4j/Logger;"
+    },
+    {
+      "obf": "bT",
+      "name": "language",
+      "type": "Ljava/lang/String;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(Lnet/minecraft/server/MinecraftServer;Lnone/ls;Lcom/mojang/authlib/GameProfile;Lnone/lv;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "server"
+        },
+        {
+          "index": 1,
+          "name": "world"
+        },
+        {
+          "index": 2,
+          "name": "profile"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "readFromNBT",
+      "signature": "(Lnone/dr;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "tag"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "sendMessage",
+      "signature": "(Lnone/ey;)V",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "interact",
+      "signature": "(Lnone/qs;)V",
+      "args": []
+    },
+    {
+      "obf": "c",
+      "name": "getPos",
+      "signature": "()Lnone/cm;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

@@ -1,0 +1,1046 @@
+{
+  "obf": "aeb",
+  "name": "net/minecraft/item/Items",
+  "field": [
+    {
+      "obf": "A",
+      "name": "STICK",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "B",
+      "name": "BOWL",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "C",
+      "name": "MUSHROOM_STEW",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "D",
+      "name": "GOLDEN_SWORD",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "E",
+      "name": "GOLDEN_SHOVEL",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "F",
+      "name": "GOLDEN_PICKAXE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "G",
+      "name": "GOLDEN_AXE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "H",
+      "name": "STRING",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "I",
+      "name": "FEATHER",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "J",
+      "name": "GUNPOWDER",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "K",
+      "name": "WOODEN_HOE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "L",
+      "name": "STONE_HOE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "M",
+      "name": "IRON_HOE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "N",
+      "name": "DIAMOND_HOE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "O",
+      "name": "GOLDEN_HOE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "P",
+      "name": "WHEAT_SEEDS",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "Q",
+      "name": "WHEAT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "R",
+      "name": "BREAD",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "S",
+      "name": "LEATHER_HELMET",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "T",
+      "name": "LEATHER_CHESTPLATE",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "U",
+      "name": "LEATHER_LEGGINGS",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "V",
+      "name": "LEATHER_BOOTS",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "W",
+      "name": "CHAINMAIL_HELMET",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "X",
+      "name": "CHAINMAIL_CHESTPLATE",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "Y",
+      "name": "CHAINMAIL_LEGGINGS",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "Z",
+      "name": "CHAINMAIL_BOOTS",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "aA",
+      "name": "LAVA_BUCKET",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aB",
+      "name": "MINECART",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aC",
+      "name": "SADDLE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aD",
+      "name": "IRON_DOOR",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aE",
+      "name": "REDSTONE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aF",
+      "name": "SNOWBALL",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aG",
+      "name": "OAK_BOAT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aH",
+      "name": "SPRUCE_BOAT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aI",
+      "name": "BIRCH_BOAT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aJ",
+      "name": "JUGNLE_BOAT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aK",
+      "name": "ACACIA_BOAT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aL",
+      "name": "DARK_OAK_BOAT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "a",
+      "name": "IRON_SHOVEL",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aM",
+      "name": "LEATHER",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aN",
+      "name": "MILK_BUCKET",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aO",
+      "name": "BRICK",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aP",
+      "name": "CLAY_BALL",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aQ",
+      "name": "REEDS",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aR",
+      "name": "PAPER",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aS",
+      "name": "BOOK",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aT",
+      "name": "SLIME_BALL",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aU",
+      "name": "CHEST_MINECART",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aV",
+      "name": "FURNACE_MINECART",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aW",
+      "name": "EGG",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aX",
+      "name": "COMPASS",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aY",
+      "name": "FISHING_ROD",
+      "type": "Lnone/adr;"
+    },
+    {
+      "obf": "aZ",
+      "name": "CLOCK",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aa",
+      "name": "IRON_HELMET",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "ab",
+      "name": "IRON_CHESTPLATE",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "ac",
+      "name": "IRON_LEGGINGS",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "ad",
+      "name": "IRON_BOOTS",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "ae",
+      "name": "DIAMOND_HELMET",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "af",
+      "name": "DIAMOND_CHESTPLATE",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "ag",
+      "name": "DIAMOND_LEGGINGS",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "ah",
+      "name": "DIAMOND_BOOTS",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "ai",
+      "name": "GOLDEN_HELMET",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "aj",
+      "name": "GOLDEN_CHESTPLATE",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "ak",
+      "name": "GOLDEN_LEGGINGS",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "al",
+      "name": "GOLDEN_BOOTS",
+      "type": "Lnone/acf;"
+    },
+    {
+      "obf": "am",
+      "name": "FLINT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "an",
+      "name": "PORKCHOP",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "ao",
+      "name": "COOKED_PORKCHOP",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "ap",
+      "name": "PAINTING",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aq",
+      "name": "GOLDEN_APPLE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "ar",
+      "name": "SIGN",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "as",
+      "name": "OAK_DOOR",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "at",
+      "name": "SPRUCE_DOOR",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "au",
+      "name": "BIRCH_DOOR",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "av",
+      "name": "JUNGLE_DOOR",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "aw",
+      "name": "ACACIA_DOOR",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "ax",
+      "name": "DARK_OAK_DOOR",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "ay",
+      "name": "BUCKET",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "az",
+      "name": "WATER_BUCKET",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bA",
+      "name": "ROTTEN_FLESH",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bB",
+      "name": "ENDER_PEARL",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bC",
+      "name": "BLAZE_ROD",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bD",
+      "name": "GHAST_TEAR",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bE",
+      "name": "GOLD_NUGGET",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bF",
+      "name": "NETHER_WART",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bG",
+      "name": "POTION",
+      "type": "Lnone/aem;"
+    },
+    {
+      "obf": "bH",
+      "name": "SPLASH_POTION",
+      "type": "Lnone/aem;"
+    },
+    {
+      "obf": "bI",
+      "name": "LINGERING_POTION",
+      "type": "Lnone/aem;"
+    },
+    {
+      "obf": "bJ",
+      "name": "GLASS_BOTTLE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bK",
+      "name": "DRAGON_BREATH",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bL",
+      "name": "SPIDER_EYE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "b",
+      "name": "IRON_PICKAXE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bM",
+      "name": "FERMENTED_SPIDER_EYE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bN",
+      "name": "BLAZE_POWDER",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bO",
+      "name": "MAGMA_CREAM",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bP",
+      "name": "BREWING_STAND",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bQ",
+      "name": "CAULDRON",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bR",
+      "name": "ENDER_EYE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bS",
+      "name": "SPECKLED_MELON",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bT",
+      "name": "SPAWN_EGG",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bU",
+      "name": "EXPERIENCE_BOTTLE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bV",
+      "name": "FIRE_CHARGE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bW",
+      "name": "WRITABLE_BOOK",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bX",
+      "name": "WRITTEN_BOOK",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bY",
+      "name": "EMERALD",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bZ",
+      "name": "ITEM_FRAME",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "ba",
+      "name": "GLOWSTONE_DUST",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bb",
+      "name": "FISH",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bc",
+      "name": "COOKED_FISH",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bd",
+      "name": "DYE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "be",
+      "name": "BONE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bf",
+      "name": "SUGAR",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bg",
+      "name": "CAKE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bh",
+      "name": "BED",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bi",
+      "name": "REPEATER",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bj",
+      "name": "COOKIE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bk",
+      "name": "FILLED_MAP",
+      "type": "Lnone/aef;"
+    },
+    {
+      "obf": "bl",
+      "name": "SHEARS",
+      "type": "Lnone/aeu;"
+    },
+    {
+      "obf": "bm",
+      "name": "MELON",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bn",
+      "name": "PUMPKIN_SEEDS",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bo",
+      "name": "MELON_SEEDS",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bp",
+      "name": "BEEF",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bq",
+      "name": "COOKED_BEEF",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "br",
+      "name": "CHICKEN",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bs",
+      "name": "COOKED_CHICKEN",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bt",
+      "name": "MUTTON",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bu",
+      "name": "COOKED_MUTTON",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bv",
+      "name": "RABBIT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bw",
+      "name": "COOKED_RABBIT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bx",
+      "name": "RABBIT_STEW",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "by",
+      "name": "RABBIT_FOOT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "bz",
+      "name": "RABBIT_HIDE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cA",
+      "name": "RECORD_13",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cB",
+      "name": "RECORD_CAT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cC",
+      "name": "RECORD_BLOCKS",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cD",
+      "name": "RECORD_CHIRP",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cE",
+      "name": "RECORD_FAR",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cF",
+      "name": "RECORD_MALL",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cG",
+      "name": "RECORD_MELLOHI",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cH",
+      "name": "RECORD_STAL",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cI",
+      "name": "RECORD_STRAD",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cJ",
+      "name": "RECORD_WARD",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cK",
+      "name": "RECORD_11",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cL",
+      "name": "RECORD_WAIT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "c",
+      "name": "IRON_AXE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cM",
+      "name": "PRISMARINE_SHARD",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cN",
+      "name": "PRISMARINE_CRYSTALS",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cO",
+      "name": "BANNER",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cP",
+      "name": "END_CRYSTAL",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cQ",
+      "name": "SHIELD",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cR",
+      "name": "ELYTRA",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cS",
+      "name": "CHORUS_FRUIT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cT",
+      "name": "CHORUS_FRUIT_POPPED",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cU",
+      "name": "BEETROOT_SEEDS",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cV",
+      "name": "BEETROOT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cW",
+      "name": "BEETROOT_SOUP",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "ca",
+      "name": "FLOWER_POT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cb",
+      "name": "CARROT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cc",
+      "name": "POTATO",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cd",
+      "name": "BAKED_POTATO",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "ce",
+      "name": "POISONOUS_POTATO",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cf",
+      "name": "EMPTY_MAP",
+      "type": "Lnone/adh;"
+    },
+    {
+      "obf": "cg",
+      "name": "GOLDEN_CARROT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "ch",
+      "name": "SKULL",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "ci",
+      "name": "CARROT_ON_A_STICK",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cj",
+      "name": "NETHER_STAR",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "ck",
+      "name": "PUMPKIN_PIE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cl",
+      "name": "FIREWORKS",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cm",
+      "name": "FIREWORK_CHARGE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cn",
+      "name": "ENCHANTED_BOOK",
+      "type": "Lnone/adi;"
+    },
+    {
+      "obf": "co",
+      "name": "COMPARATOR",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cp",
+      "name": "NETHERBRICK",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cq",
+      "name": "QUARTZ",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cr",
+      "name": "TNT_MINECART",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cs",
+      "name": "HOPPER_MINECART",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "ct",
+      "name": "ARMOR_STAND",
+      "type": "Lnone/acg;"
+    },
+    {
+      "obf": "cu",
+      "name": "IRON_HORSE_ARMOR",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cv",
+      "name": "GOLDEN_HORSE_ARMOR",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cw",
+      "name": "DIAMOND_HORSE_ARMOR",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cx",
+      "name": "LEAD",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cy",
+      "name": "NAME_TAG",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "cz",
+      "name": "COMMAND_BLOCK_MINECART",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "d",
+      "name": "FLINT_AND_STEEL",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "e",
+      "name": "APPLE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "f",
+      "name": "BOW",
+      "type": "Lnone/acq;"
+    },
+    {
+      "obf": "g",
+      "name": "ARROW",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "h",
+      "name": "SPECTRAL_ARROW",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "i",
+      "name": "TIPPED_ARROW",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "j",
+      "name": "COAL",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "k",
+      "name": "DIAMOND",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "l",
+      "name": "IRON_INGOT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "m",
+      "name": "GOLD_INGOT",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "n",
+      "name": "IRON_SWORD",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "o",
+      "name": "WOODEN_SWORD",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "p",
+      "name": "WOODEN_SHOVEL",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "q",
+      "name": "WOODEN_PICKAXE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "r",
+      "name": "WOODEN_AXE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "s",
+      "name": "STONE_SWORD",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "t",
+      "name": "STONE_SHOVEL",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "u",
+      "name": "STONE_PICKAXE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "v",
+      "name": "STONE_AXE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "w",
+      "name": "DIAMOND_SWORD",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "x",
+      "name": "DIAMOND_SHOVEL",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "y",
+      "name": "DIAMOND_PICKAXE",
+      "type": "Lnone/adx;"
+    },
+    {
+      "obf": "z",
+      "name": "DIAMOND_AXE",
+      "type": "Lnone/adx;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "find",
+      "signature": "(Ljava/lang/String;)Lnone/adx;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

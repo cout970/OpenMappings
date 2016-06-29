@@ -1,0 +1,15 @@
+{
+  "obf": "ot",
+  "name": "net/minecraft/util/StringSerializable",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "m",
+      "name": "asString",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

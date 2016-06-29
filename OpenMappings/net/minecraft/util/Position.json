@@ -1,0 +1,355 @@
+{
+  "obf": "cm",
+  "name": "net/minecraft/util/Position",
+  "field": [
+    {
+      "obf": "a",
+      "name": "ORIGIN",
+      "type": "Lnone/cm;"
+    },
+    {
+      "obf": "b",
+      "name": "LOGGER",
+      "type": "Lorg/apache/logging/log4j/Logger;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(DDD)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "x"
+        },
+        {
+          "index": 1,
+          "name": "y"
+        },
+        {
+          "index": 2,
+          "name": "z"
+        }
+      ],
+      "statics": false
+    },
+    {
+      "signature": "(III)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "x"
+        },
+        {
+          "index": 1,
+          "name": "y"
+        },
+        {
+          "index": 2,
+          "name": "z"
+        }
+      ],
+      "statics": false
+    },
+    {
+      "signature": "(Lnone/di;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "vec"
+        }
+      ],
+      "statics": false
+    },
+    {
+      "signature": "(Lnone/rw;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "entity"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "up",
+      "signature": "()Lnone/cm;",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "add",
+      "signature": "(DDD)Lnone/cm;",
+      "args": [
+        {
+          "index": 0,
+          "name": "x"
+        },
+        {
+          "index": 1,
+          "name": "y"
+        },
+        {
+          "index": 2,
+          "name": "z"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "add",
+      "signature": "(III)Lnone/cm;",
+      "args": [
+        {
+          "index": 0,
+          "name": "x"
+        },
+        {
+          "index": 1,
+          "name": "y"
+        },
+        {
+          "index": 2,
+          "name": "z"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "offset",
+      "signature": "(Lnone/ct;)Lnone/cm;",
+      "args": [
+        {
+          "index": 0,
+          "name": "side"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "offset",
+      "signature": "(Lnone/ct;I)Lnone/cm;",
+      "args": [
+        {
+          "index": 0,
+          "name": "side"
+        },
+        {
+          "index": 1,
+          "name": "amount"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "add",
+      "signature": "(Lnone/di;)Lnone/cm;",
+      "args": [
+        {
+          "index": 0,
+          "name": "vec"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "down",
+      "signature": "()Lnone/cm;",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "up",
+      "signature": "(I)Lnone/cm;",
+      "args": [
+        {
+          "index": 0,
+          "name": "amount"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "subtract",
+      "signature": "(Lnone/di;)Lnone/cm;",
+      "args": [
+        {
+          "index": 0,
+          "name": "vec"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "north",
+      "signature": "()Lnone/cm;",
+      "args": []
+    },
+    {
+      "obf": "c",
+      "name": "down",
+      "signature": "(I)Lnone/cm;",
+      "args": [
+        {
+          "index": 0,
+          "name": "amount"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "signature": "(Lnone/di;)Lnone/cm;",
+      "args": [
+        {
+          "index": 0,
+          "name": "vec"
+        }
+      ]
+    },
+    {
+      "obf": "d",
+      "name": "south",
+      "signature": "()Lnone/cm;",
+      "args": []
+    },
+    {
+      "obf": "d",
+      "name": "north",
+      "signature": "(I)Lnone/cm;",
+      "args": [
+        {
+          "index": 0,
+          "name": "amount"
+        }
+      ]
+    },
+    {
+      "obf": "d",
+      "name": "cross",
+      "signature": "(Lnone/di;)Lnone/di;",
+      "args": []
+    },
+    {
+      "obf": "e",
+      "name": "west",
+      "signature": "()Lnone/cm;",
+      "args": []
+    },
+    {
+      "obf": "e",
+      "name": "south",
+      "signature": "(I)Lnone/cm;",
+      "args": [
+        {
+          "index": 0,
+          "name": "amount"
+        }
+      ]
+    },
+    {
+      "obf": "f",
+      "name": "east",
+      "signature": "()Lnone/cm;",
+      "args": []
+    },
+    {
+      "obf": "f",
+      "name": "west",
+      "signature": "(I)Lnone/cm;",
+      "args": [
+        {
+          "index": 0,
+          "name": "amount"
+        }
+      ]
+    },
+    {
+      "obf": "g",
+      "name": "east",
+      "signature": "(I)Lnone/cm;",
+      "args": [
+        {
+          "index": 0,
+          "name": "amount"
+        }
+      ]
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "cm$1",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    },
+    {
+      "obf": "cm$a",
+      "name": "MutablePosition",
+      "field": [],
+      "constructors": [],
+      "method": [
+        {
+          "obf": "d",
+          "name": "cross",
+          "signature": "(Lnone/di;)Lnone/di;",
+          "args": []
+        },
+        {
+          "obf": "p",
+          "name": "getX",
+          "signature": "()I",
+          "args": []
+        },
+        {
+          "obf": "q",
+          "name": "getY",
+          "signature": "()I",
+          "args": []
+        },
+        {
+          "obf": "r",
+          "name": "getZ",
+          "signature": "()I",
+          "args": []
+        }
+      ],
+      "innerClass": []
+    },
+    {
+      "obf": "cm$b",
+      "name": "PooledMutablePosition",
+      "field": [
+        {
+          "obf": "g",
+          "name": "pool",
+          "type": "Ljava/util/List;"
+        }
+      ],
+      "constructors": [
+        {
+          "signature": "(III)V",
+          "args": [
+            {
+              "index": 0,
+              "name": "x"
+            },
+            {
+              "index": 1,
+              "name": "y"
+            },
+            {
+              "index": 2,
+              "name": "z"
+            }
+          ],
+          "statics": false
+        }
+      ],
+      "method": [],
+      "innerClass": []
+    }
+  ]
+}

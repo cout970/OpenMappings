@@ -1,0 +1,52 @@
+{
+  "obf": "dx",
+  "name": "net/minecraft/util/nbt/TagList",
+  "field": [
+    {
+      "obf": "b",
+      "name": "LOGGER",
+      "type": "Lorg/apache/logging/log4j/Logger;"
+    },
+    {
+      "obf": "c",
+      "name": "list",
+      "type": "Ljava/util/List;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getType",
+      "signature": "()B",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "signature": "(Ljava/io/DataInput;ILnone/dz;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "input"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Lnone/ef;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "tag"
+        }
+      ]
+    },
+    {
+      "obf": "b_",
+      "name": "isEmpty",
+      "signature": "()Z",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

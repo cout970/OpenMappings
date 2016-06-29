@@ -1,0 +1,75 @@
+{
+  "obf": "ase",
+  "name": "net/minecraft/block/state/PropertyBoolean",
+  "field": [
+    {
+      "obf": "a",
+      "name": "values",
+      "type": "Lcom/google/common/collect/ImmutableSet;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(Ljava/lang/String;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getName",
+      "signature": "(Ljava/lang/Boolean;)Ljava/lang/String;",
+      "args": [
+        {
+          "index": 0,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "create",
+      "signature": "(Ljava/lang/String;)Lnone/ase;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "getValue",
+      "signature": "(Ljava/lang/String;)Lcom/google/common/base/Optional;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "getValues",
+      "signature": "()Ljava/util/Collection;",
+      "args": []
+    },
+    {
+      "obf": "equals",
+      "signature": "(Ljava/lang/Object;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

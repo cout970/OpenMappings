@@ -1,0 +1,503 @@
+{
+  "obf": "dr",
+  "name": "net/minecraft/util/nbt/TagCompound",
+  "field": [
+    {
+      "obf": "b",
+      "name": "map",
+      "type": "Ljava/util/Map;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getType",
+      "signature": "()B",
+      "args": []
+    },
+    {
+      "obf": "a",
+      "name": "read",
+      "signature": "(BLjava/lang/String;Ljava/io/DataInput;ILnone/dz;)Lnone/ef;",
+      "args": [
+        {
+          "index": 2,
+          "name": "input"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "signature": "(Ljava/io/DataInput;ILnone/dz;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "input"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "getUUID",
+      "signature": "(Ljava/lang/String;)Ljava/util/UUID;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "setByte",
+      "signature": "(Ljava/lang/String;B)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "setDouble",
+      "signature": "(Ljava/lang/String;D)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "setFloat",
+      "signature": "(Ljava/lang/String;F)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "setInteger",
+      "signature": "(Ljava/lang/String;I)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "createCrashReport",
+      "signature": "(Ljava/lang/String;ILjava/lang/ClassCastException;)Lnone/b;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "expectedType"
+        },
+        {
+          "index": 2,
+          "name": "ex"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "setLong",
+      "signature": "(Ljava/lang/String;J)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "setString",
+      "signature": "(Ljava/lang/String;Ljava/lang/String;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "setUUID",
+      "signature": "(Ljava/lang/String;Ljava/util/UUID;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "setTag",
+      "signature": "(Ljava/lang/String;Lnone/ef;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "tag"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "write",
+      "signature": "(Ljava/lang/String;Lnone/ef;Ljava/io/DataOutput;)V",
+      "args": [
+        {
+          "index": 2,
+          "name": "output"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "setShort",
+      "signature": "(Ljava/lang/String;S)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "setBoolean",
+      "signature": "(Ljava/lang/String;Z)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "setByteArray",
+      "signature": "(Ljava/lang/String;[B)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "obf": "a",
+      "name": "setIntegerArray",
+      "signature": "(Ljava/lang/String;[I)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "hasUUID",
+      "signature": "(Ljava/lang/String;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "b",
+      "name": "hasTag",
+      "signature": "(Ljava/lang/String;I)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "type"
+        }
+      ]
+    },
+    {
+      "obf": "b_",
+      "name": "isEmpty",
+      "signature": "()Z",
+      "args": []
+    },
+    {
+      "obf": "c",
+      "name": "getKeys",
+      "signature": "()Ljava/util/Set;",
+      "args": []
+    },
+    {
+      "obf": "c",
+      "name": "getTag",
+      "signature": "(Ljava/lang/String;)Lnone/ef;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "name": "getTag",
+      "signature": "(Ljava/lang/String;I)Lnone/dx;",
+      "args": []
+    },
+    {
+      "obf": "d",
+      "name": "getSize",
+      "signature": "()I",
+      "args": []
+    },
+    {
+      "obf": "d",
+      "name": "getType",
+      "signature": "(Ljava/lang/String;)B",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "e",
+      "name": "hasTag",
+      "signature": "(Ljava/lang/String;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "equals",
+      "signature": "(Ljava/lang/Object;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    },
+    {
+      "obf": "f",
+      "name": "getByte",
+      "signature": "(Ljava/lang/String;)B",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "g",
+      "name": "getShort",
+      "signature": "(Ljava/lang/String;)S",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "h",
+      "name": "getInteger",
+      "signature": "(Ljava/lang/String;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "i",
+      "name": "getLong",
+      "signature": "(Ljava/lang/String;)J",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "j",
+      "name": "getFloat",
+      "signature": "(Ljava/lang/String;)F",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "k",
+      "name": "getDouble",
+      "signature": "(Ljava/lang/String;)D",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "l",
+      "name": "getString",
+      "signature": "(Ljava/lang/String;)Ljava/lang/String;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "m",
+      "name": "getByteArray",
+      "signature": "(Ljava/lang/String;)[B",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "n",
+      "name": "getIntegerArray",
+      "signature": "(Ljava/lang/String;)[I",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "o",
+      "name": "getTagCompound",
+      "signature": "(Ljava/lang/String;)Lnone/dr;",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "p",
+      "name": "getBoolean",
+      "signature": "(Ljava/lang/String;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "obf": "q",
+      "name": "remove",
+      "signature": "(Ljava/lang/String;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        }
+      ]
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "dr$1",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    },
+    {
+      "obf": "dr$2",
+      "field": [],
+      "constructors": [],
+      "method": [],
+      "innerClass": []
+    }
+  ]
+}

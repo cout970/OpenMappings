@@ -1,0 +1,26 @@
+{
+  "obf": "agc",
+  "name": "net/minecraft/crafting/RecipeStorage",
+  "field": [
+    {
+      "obf": "a",
+      "name": "RECIPES",
+      "type": "[[Ljava/lang/Object;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "register",
+      "signature": "(Lnone/age;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "manager"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

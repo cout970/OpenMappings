@@ -1,0 +1,41 @@
+{
+  "obf": "amg",
+  "name": "net/minecraft/block/BlockGlass",
+  "field": [],
+  "constructors": [
+    {
+      "signature": "(Lnone/axx;Z)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "material"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getAmountDropped",
+      "signature": "(Ljava/util/Random;)I",
+      "args": [
+        {
+          "index": 0,
+          "name": "rand"
+        }
+      ]
+    },
+    {
+      "obf": "c",
+      "signature": "(Lnone/ars;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "rand"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

@@ -1,0 +1,24 @@
+{
+  "obf": "alt",
+  "name": "net/minecraft/block/entity/BlockEntityProvider",
+  "field": [],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "a",
+      "name": "createBlockEntity",
+      "signature": "(Lnone/aid;I)Lnone/aqk;",
+      "args": [
+        {
+          "index": 0,
+          "name": "world"
+        },
+        {
+          "index": 1,
+          "name": "meta"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}

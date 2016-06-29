@@ -1,0 +1,57 @@
+{
+  "obf": "asd",
+  "name": "net/minecraft/block/state/PropertyBase",
+  "field": [
+    {
+      "obf": "a",
+      "name": "clazz",
+      "type": "Ljava/lang/Class;"
+    },
+    {
+      "obf": "b",
+      "name": "name",
+      "type": "Ljava/lang/String;"
+    }
+  ],
+  "constructors": [
+    {
+      "signature": "(Ljava/lang/String;Ljava/lang/Class;)V",
+      "args": [
+        {
+          "index": 0,
+          "name": "name"
+        },
+        {
+          "index": 1,
+          "name": "clazz"
+        }
+      ],
+      "statics": false
+    }
+  ],
+  "method": [
+    {
+      "obf": "a",
+      "name": "getName",
+      "signature": "()Ljava/lang/String;",
+      "args": []
+    },
+    {
+      "obf": "b",
+      "name": "getValueClass",
+      "signature": "()Ljava/lang/Class;",
+      "args": []
+    },
+    {
+      "obf": "equals",
+      "signature": "(Ljava/lang/Object;)Z",
+      "args": [
+        {
+          "index": 0,
+          "name": "other"
+        }
+      ]
+    }
+  ],
+  "innerClass": []
+}
