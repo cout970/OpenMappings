@@ -1548,7 +1548,28 @@ CLASS none/ada net/minecraft/item/ItemTool
 	METHOD <init> (FFLnone/adx$a;Ljava/util/Set;)V
 		ARG 2 type
 		ARG 3 validBlocks
-CLASS none/adc
+CLASS none/adc net/minecraft/util/WoolColor
+	FIELD a WHITE Lnone/adc;
+	FIELD b ORANGE Lnone/adc;
+	FIELD c MAGENTA Lnone/adc;
+	FIELD d LIGHT_BLUE Lnone/adc;
+	FIELD e YELLOW Lnone/adc;
+	FIELD f LIME Lnone/adc;
+	FIELD g PINK Lnone/adc;
+	FIELD h GRAY Lnone/adc;
+	FIELD i SILVER Lnone/adc;
+	FIELD j CYAN Lnone/adc;
+	FIELD k PURPLE Lnone/adc;
+	FIELD l BLUE Lnone/adc;
+	FIELD m BROWN Lnone/adc;
+	FIELD n GREEN Lnone/adc;
+	FIELD o RED Lnone/adc;
+	FIELD p BLACK Lnone/adc;
+	FIELD u name Ljava/lang/String;
+	FIELD w getColor Lnone/axy;
+	METHOD <init> (Ljava/lang/String;IIILjava/lang/String;Ljava/lang/String;Lnone/axy;Lnone/a;)V
+	METHOD a ()I
+	METHOD e getColor ()Lnone/axy;
 	METHOD m asString ()Ljava/lang/String;
 CLASS none/add
 	METHOD a addSubItems (Lnone/adx;Lnone/acz;Ljava/util/List;)V
@@ -2132,10 +2153,70 @@ CLASS none/akd net/minecraft/block/BlockBed
 	FIELD b OCCUPIED Lnone/ase;
 	FIELD c BOX Lnone/bby;
 	METHOD a getState (I)Lnone/ars;
+		ARG 0 meta
+	METHOD a (Lnone/aid;Lnone/cm;I)Lnone/cm;
+		ARG 0 world
+		ARG 1 pos
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/ars;)Lnone/adz;
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/ars;FI)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 player
 	METHOD a onBlockActivated (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/zs;Lnone/qr;Lnone/adz;Lnone/ct;FFF)Z
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 player
+		ARG 4 hand
+		ARG 5 stack
+		ARG 6 side
+		ARG 7 hitX
+		ARG 8 hitY
+		ARG 9 hitZ
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
+		ARG 0 state
+		ARG 1 rand
+		ARG 2 fortune
+	METHOD a (Lnone/ars;Lnone/aid;Lnone/cm;Lnone/akf;)V
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 block
+	METHOD a (Lnone/ars;Lnone/aih;Lnone/cm;)Lnone/bby;
+		ARG 0 state
+		ARG 1 accessor
+		ARG 2 pos
+	METHOD a (Lnone/ars;Lnone/anf;)Lnone/ars;
+		ARG 0 state
+	METHOD a (Lnone/ars;Lnone/aos;)Lnone/ars;
+		ARG 0 state
 	METHOD b createStateContainer ()Lnone/art;
+	METHOD b (Lnone/aid;Lnone/cm;)Z
+		ARG 0 world
+		ARG 1 pos
+	METHOD b (Lnone/ars;)Z
+		ARG 0 state
+	METHOD b (Lnone/ars;Lnone/aih;Lnone/cm;)Lnone/ars;
+		ARG 0 state
+		ARG 1 accessor
+		ARG 2 pos
+	METHOD c (Lnone/aid;Lnone/cm;)Lnone/zs;
+		ARG 0 world
+		ARG 1 pos
+	METHOD c (Lnone/ars;)Z
+		ARG 0 state
 	METHOD e getMeta (Lnone/ars;)I
+		ARG 0 state
+	METHOD h (Lnone/ars;)Lnone/aya;
+		ARG 0 state
 CLASS none/ake
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD b randomTick (Lnone/aid;Lnone/cm;Lnone/ars;Ljava/util/Random;)V
@@ -3251,8 +3332,24 @@ CLASS none/anc
 	CLASS none/anc$a
 		METHOD m asString ()Ljava/lang/String;
 CLASS none/and
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/rw;)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 entity
+	METHOD a (Lnone/ars;Lnone/rw;)Z
+		ARG 0 state
+		ARG 1 entity
 	METHOD b randomTick (Lnone/aid;Lnone/cm;Lnone/ars;Ljava/util/Random;)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 rand
+	METHOD c (Lnone/ars;Lnone/aih;Lnone/cm;)I
+		ARG 0 state
+		ARG 1 accessor
+		ARG 2 pos
 	METHOD r getColor (Lnone/ars;)Lnone/axy;
+		ARG 0 state
 CLASS none/ane
 	METHOD a getAmountDropped (Ljava/util/Random;)I
 	METHOD a getItemDropped (Lnone/ars;Ljava/util/Random;I)Lnone/adx;
@@ -3660,6 +3757,17 @@ CLASS none/apb
 	METHOD b createStateContainer ()Lnone/art;
 	METHOD b randomTick (Lnone/aid;Lnone/cm;Lnone/ars;Ljava/util/Random;)V
 	METHOD e getMeta (Lnone/ars;)I
+CLASS none/apc
+	FIELD a box Lnone/bby;
+	METHOD a (Lnone/aid;Lnone/cm;Lnone/ars;Lnone/rw;)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 entity
+	METHOD a (Lnone/ars;Lnone/aid;Lnone/cm;)Lnone/bby;
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
 CLASS none/ape
 	METHOD a getState (I)Lnone/ars;
 	METHOD a addSubItems (Lnone/adx;Lnone/acz;Ljava/util/List;)V
@@ -3673,6 +3781,7 @@ CLASS none/apf
 	METHOD e getMeta (Lnone/ars;)I
 	METHOD r getColor (Lnone/ars;)Lnone/axy;
 CLASS none/apg
+	FIELD a COLOR Lnone/asg;
 	METHOD a getState (I)Lnone/ars;
 	METHOD a addSubItems (Lnone/adx;Lnone/acz;Ljava/util/List;)V
 	METHOD b createStateContainer ()Lnone/art;
@@ -4479,6 +4588,11 @@ CLASS none/auh
 		ARG 0 world
 		ARG 1 rand
 		ARG 2 pos
+CLASS none/auj
+	METHOD b (Lnone/aid;Ljava/util/Random;Lnone/cm;)Z
+		ARG 0 world
+		ARG 1 rand
+		ARG 2 pos
 CLASS none/auq
 	METHOD b (Lnone/aid;Ljava/util/Random;Lnone/cm;)Z
 		ARG 0 world
@@ -4494,6 +4608,12 @@ CLASS none/aut
 		ARG 0 world
 		ARG 1 pos
 		ARG 2 state
+	METHOD b (Lnone/aid;Ljava/util/Random;Lnone/cm;)Z
+		ARG 0 world
+		ARG 1 rand
+		ARG 2 pos
+CLASS none/auu
+	FIELD b state Lnone/ars;
 	METHOD b (Lnone/aid;Ljava/util/Random;Lnone/cm;)Z
 		ARG 0 world
 		ARG 1 rand
