@@ -28,9 +28,29 @@
       "type": "Z"
     },
     {
+      "obf": "F",
+      "name": "allowHostileMobs",
+      "type": "Z"
+    },
+    {
+      "obf": "G",
+      "name": "allowPeacefulMobs",
+      "type": "Z"
+    },
+    {
+      "obf": "L",
+      "name": "calendar",
+      "type": "Ljava/util/Calendar;"
+    },
+    {
       "obf": "N",
       "name": "border",
       "type": "Lnone/asm;"
+    },
+    {
+      "obf": "a",
+      "name": "seaLevel",
+      "type": "I"
     },
     {
       "obf": "i",
@@ -41,6 +61,11 @@
       "obf": "r",
       "name": "random",
       "type": "Ljava/util/Random;"
+    },
+    {
+      "obf": "s",
+      "name": "dimension",
+      "type": "Lnone/atl;"
     },
     {
       "obf": "u",

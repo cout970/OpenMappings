@@ -3,6 +3,11 @@
   "name": "net/minecraft/client/MinecraftClient",
   "field": [
     {
+      "obf": "B",
+      "name": "profiler",
+      "type": "Lnone/oq;"
+    },
+    {
       "obf": "J",
       "name": "LOGGER",
       "type": "Lorg/apache/logging/log4j/Logger;"
@@ -11,6 +16,46 @@
       "obf": "K",
       "name": "SPLASH_TEXTURE",
       "type": "Lnone/kn;"
+    },
+    {
+      "obf": "M",
+      "name": "resourcePacksDir",
+      "type": "Ljava/io/File;"
+    },
+    {
+      "obf": "R",
+      "name": "instance",
+      "type": "Lnone/bcx;"
+    },
+    {
+      "obf": "Z",
+      "name": "snooper",
+      "type": "Lnone/rb;"
+    },
+    {
+      "obf": "aL",
+      "name": "mojangLogo",
+      "type": "Lnone/kn;"
+    },
+    {
+      "obf": "aM",
+      "name": "session",
+      "type": "Lcom/mojang/authlib/minecraft/MinecraftSessionService;"
+    },
+    {
+      "obf": "aP",
+      "name": "gameThread",
+      "type": "Ljava/lang/Thread;"
+    },
+    {
+      "obf": "a",
+      "name": "OS_X",
+      "type": "Z"
+    },
+    {
+      "obf": "ao",
+      "name": "saveFormat",
+      "type": "Lnone/bad;"
     },
     {
       "obf": "f",

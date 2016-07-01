@@ -1,8 +1,185 @@
 {
   "obf": "aiq",
   "name": "net/minecraft/world/biome/Biome",
-  "field": [],
+  "field": [
+    {
+      "obf": "F",
+      "name": "allowSnow",
+      "type": "Z"
+    },
+    {
+      "obf": "G",
+      "name": "allowRain",
+      "type": "Z"
+    },
+    {
+      "obf": "a",
+      "name": "STONE_BLOCK",
+      "type": "Lnone/ars;"
+    },
+    {
+      "obf": "b",
+      "name": "AIR_BLOCK",
+      "type": "Lnone/ars;"
+    },
+    {
+      "obf": "c",
+      "name": "BEDROCK_BLOCK",
+      "type": "Lnone/ars;"
+    },
+    {
+      "obf": "d",
+      "name": "GRAVEL_BLOCK",
+      "type": "Lnone/ars;"
+    },
+    {
+      "obf": "e",
+      "name": "RED_SANDSTONE_BLOCK",
+      "type": "Lnone/ars;"
+    },
+    {
+      "obf": "f",
+      "name": "SANDSTONE_BLOCK",
+      "type": "Lnone/ars;"
+    },
+    {
+      "obf": "g",
+      "name": "ICE_BLOCK",
+      "type": "Lnone/ars;"
+    },
+    {
+      "obf": "h",
+      "name": "WATER_BLOCK",
+      "type": "Lnone/ars;"
+    },
+    {
+      "obf": "y",
+      "name": "LOGGER",
+      "type": "Lorg/apache/logging/log4j/Logger;"
+    }
+  ],
   "constructors": [],
-  "method": [],
-  "innerClass": []
+  "method": [
+    {
+      "obf": "a",
+      "name": "register",
+      "signature": "(ILjava/lang/String;Lnone/aiq;)V",
+      "args": []
+    },
+    {
+      "obf": "p",
+      "name": "allowSnow",
+      "signature": "()Z",
+      "args": []
+    },
+    {
+      "obf": "q",
+      "name": "registerVanillaBiomes",
+      "signature": "()V",
+      "args": []
+    }
+  ],
+  "innerClass": [
+    {
+      "obf": "aiq$a",
+      "name": "BiomeData",
+      "field": [
+        {
+          "obf": "a",
+          "name": "name",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "obf": "b",
+          "name": "baseHeight",
+          "type": "F"
+        },
+        {
+          "obf": "c",
+          "name": "heightVariation",
+          "type": "F"
+        },
+        {
+          "obf": "d",
+          "name": "temperature",
+          "type": "F"
+        },
+        {
+          "obf": "f",
+          "name": "waterColor",
+          "type": "I"
+        },
+        {
+          "obf": "g",
+          "name": "allowSnow",
+          "type": "Z"
+        },
+        {
+          "obf": "h",
+          "name": "allowRain",
+          "type": "Z"
+        }
+      ],
+      "constructors": [],
+      "method": [
+        {
+          "obf": "a",
+          "name": "disableRain",
+          "signature": "()Lnone/aiq$a;",
+          "args": []
+        },
+        {
+          "obf": "a",
+          "name": "setTemperature",
+          "signature": "(F)Lnone/aiq$a;",
+          "args": [
+            {
+              "index": 0,
+              "name": "temperature"
+            }
+          ]
+        },
+        {
+          "obf": "a",
+          "name": "setWaterColor",
+          "signature": "(I)Lnone/aiq$a;",
+          "args": [
+            {
+              "index": 0,
+              "name": "waterColor"
+            }
+          ]
+        },
+        {
+          "obf": "b",
+          "name": "enableSnow",
+          "signature": "()Lnone/aiq$a;",
+          "args": []
+        },
+        {
+          "obf": "c",
+          "name": "setBaseHeight",
+          "signature": "(F)Lnone/aiq$a;",
+          "args": [
+            {
+              "index": 0,
+              "name": "baseHeight"
+            }
+          ]
+        },
+        {
+          "obf": "d",
+          "name": "setHeightVariation",
+          "signature": "(F)Lnone/aiq$a;",
+          "args": [
+            {
+              "index": 0,
+              "name": "heightVariation"
+            }
+          ]
+        }
+      ],
+      "innerClass": []
+    }
+  ]
 }

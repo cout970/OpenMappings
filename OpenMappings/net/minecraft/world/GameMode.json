@@ -1,0 +1,36 @@
+{
+  "obf": "aib",
+  "name": "net/minecraft/world/GameMode",
+  "field": [
+    {
+      "obf": "b",
+      "name": "SURVIVAL",
+      "type": "Lnone/aib;"
+    },
+    {
+      "obf": "c",
+      "name": "CREATIVE",
+      "type": "Lnone/aib;"
+    },
+    {
+      "obf": "d",
+      "name": "ADVENTURE",
+      "type": "Lnone/aib;"
+    },
+    {
+      "obf": "e",
+      "name": "SPECTATOR",
+      "type": "Lnone/aib;"
+    }
+  ],
+  "constructors": [],
+  "method": [
+    {
+      "obf": "d",
+      "name": "isCreative",
+      "signature": "()Z",
+      "args": []
+    }
+  ],
+  "innerClass": []
+}

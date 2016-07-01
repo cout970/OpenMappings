@@ -1,0 +1,14 @@
+{
+  "obf": "bln",
+  "name": "net/minecraft/world/WorldClient",
+  "field": [
+    {
+      "obf": "K",
+      "name": "client",
+      "type": "Lnone/bcx;"
+    }
+  ],
+  "constructors": [],
+  "method": [],
+  "innerClass": []
+}
