@@ -8,6 +8,11 @@
       "type": "Lnone/oq;"
     },
     {
+      "obf": "C",
+      "name": "running",
+      "type": "Z"
+    },
+    {
       "obf": "J",
       "name": "LOGGER",
       "type": "Lorg/apache/logging/log4j/Logger;"
